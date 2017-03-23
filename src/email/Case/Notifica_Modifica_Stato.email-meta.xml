@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notifica della modifica di stato del Caso</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Letterhead_1</letterhead>
+    <name>Notifica Modifica Stato</name>
+    <style>formalLetter</style>
+    <subject>Aggiornamento del Caso</subject>
+    <textOnly>Gentile {!Contact.Name},
+
+La informiamo che lo stato della sua richiesta di supporto è passato a &quot;{!Case.Status}&quot;.
+
+Per qualsiasi informazione non esiti a contattarci.
+
+Cordiali Saluti,
+
+Team Unieuro
+{!Case.OwnerFirstName}
+
+Per qualsiasi richiesta di assistenza, Unieuro S.p.A. può essere contatta telefonicamente al numero 02-61317291 (Lunedì – Domenica ore 9.00 – 20.00)</textOnly>
+    <type>html</type>
+</EmailTemplate>

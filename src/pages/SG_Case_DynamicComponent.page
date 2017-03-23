@@ -1,0 +1,10 @@
+<!--12/2016 Matteo Facchini-->
+<apex:page standardcontroller="Case" extensions="SG_retrieveFieldVisibility" tabstyle="Case">
+    <apex:form >
+
+        <apex:pageblock mode="maindetail">
+            <apex:dynamiccomponent componentvalue="{!PrintOutputFields}" invokeafteraction="true" />
+        </apex:pageblock>
+        
+    </apex:form>
+</apex:page>

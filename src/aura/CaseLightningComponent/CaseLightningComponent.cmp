@@ -1,0 +1,9 @@
+<aura:component >
+    <tbody>
+        <tr>
+            <td class="labelCol">Etichetta</td>
+            <td class="data2Col">Dato</td>
+        </tr>
+    </tbody>
+    <!--<input id="caseNum"	readonly="readonly" type="text" value="{!c.CaseNum}" />-->
+</aura:component>

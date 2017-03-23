@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Oggetto che contiene i codici voucher richiesti ad hybris</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Codice_Voucher__c</fullName>
+        <externalId>false</externalId>
+        <label>Codice Voucher</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Richiesta_Voucher__c</fullName>
+        <externalId>false</externalId>
+        <label>Richiesta Voucher</label>
+        <referenceTo>Richiesta_Voucher__c</referenceTo>
+        <relationshipLabel>Vouchers</relationshipLabel>
+        <relationshipName>Vouchers</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Stato__c</fullName>
+        <description>N=Nuovo
+A=Assegnato
+C=Annullato</description>
+        <externalId>false</externalId>
+        <label>Stato</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>N</fullName>
+                    <default>false</default>
+                    <label>N</label>
+                </value>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                    <label>A</label>
+                </value>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                    <label>C</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Voucher</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>V{000000}</displayFormat>
+        <label>Nome Voucher</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Vouchers</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Annulla_Voucher</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Annulla Voucher</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&apos;//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js&apos;)} 
+{!REQUIRESCRIPT(&apos;//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js&apos;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)} 
+
+var html = &apos;&lt;div id=&quot;dialog&quot; style=&quot;display: none&quot; title=&quot;Annulla Voucher&quot;&gt;&lt;p&gt;Sicuro di voler annullare il voucher?&lt;/p&gt;&lt;/div&gt;&apos;; 
+
+var $g = jQuery.noConflict(); 
+$g(function() { 
+
+
+$g(&apos;head&apos;).append(&apos;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css&quot; type=&quot;text/css&quot;/&gt;&apos;); 
+$g(&apos;body&apos;).append(html); 
+$g(&quot;#dialog&quot;).dialog({ 
+autoOpen: true, 
+modal: false, 
+buttons: { 
+&quot;Conferma&quot;: function() { 
+var V_ID = &apos;{!Voucher__c.Id}&apos; 
+var result = sforce.apex.execute(&quot;SG_WS_Voucher&quot;,&quot;AnnullaVoucher&quot;,{VoucherID:V_ID}); 
+if(result==&apos;OK&apos;){ 
+alert(&apos;{!Voucher__c.Id}&apos; );
+$g(this).dialog(&quot;close&quot;); 
+window.location.reload(); 
+
+} 
+else 
+{ 
+alert(&apos;{!Voucher__c.Id}&apos; );
+alert(&apos;Si è verificato un problema&apos;); 
+$g(this).dialog(&quot;close&quot;); 
+window.location.reload(); 
+} 
+
+
+}, 
+&quot;Annulla&quot;: function() { 
+$g(this).dialog(&quot;close&quot;); 
+} 
+} 
+}); 
+});</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Verifica</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Verifica</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>www.google.com</url>
+    </webLinks>
+</CustomObject>

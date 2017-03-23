@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notifica della creazione del caso</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Letterhead_1</letterhead>
+    <name>Notifica Creazione Caso</name>
+    <style>formalLetter</style>
+    <subject>Notifica della Creazione del Caso</subject>
+    <textOnly>Gentile {!Contact.Name}
+Abbiamo ricevuto la sua richiesta di supporto.
+
+La contatteremo quanto prima
+
+Team Unieuro,
+{!Case.OwnerFirstName}
+Per qualsiasi richiesta di assistenza, Unieuro S.p.A. può essere contatta telefonicamente al numero 02-61317291 (Lunedì – Domenica ore 9.00 – 20.00)</textOnly>
+    <type>html</type>
+</EmailTemplate>

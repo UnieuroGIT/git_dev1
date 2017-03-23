@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Gestione degli indirizzi utilizzati nei web service</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Aggiorna_punti_loyalty__c</fullName>
+        <description>aggiorna punti loyalty con vslp</description>
+        <externalId>false</externalId>
+        <inlineHelpText>aggiorna punti loyalty con vslp</inlineHelpText>
+        <label>Aggiorna punti loyalty</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Aggiornamento_ordine__c</fullName>
+        <description>aggiornamento ordini su Hybris (caso di ordini annullati)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>aggiornamento ordini su Hybris (caso di ordini annullati)</inlineHelpText>
+        <label>Aggiornamento ordine</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Aggiornamento_pratica__c</fullName>
+        <description>aggiornamento pratica garanzie in caso di sollecito da SF</description>
+        <externalId>false</externalId>
+        <inlineHelpText>aggiornamento pratica garanzie in caso di sollecito da SF</inlineHelpText>
+        <label>Aggiornamento pratica</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Annulla_pagamento_Paypal__c</fullName>
+        <description>annullamento pagamento Paypal</description>
+        <externalId>false</externalId>
+        <inlineHelpText>annullamento pagamento Paypal</inlineHelpText>
+        <label>Annulla pagamento Paypal</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Annullamento_voucher__c</fullName>
+        <description>annullamento voucher su Hybris</description>
+        <externalId>false</externalId>
+        <inlineHelpText>annullamento voucher su Hybris</inlineHelpText>
+        <label>Annullamento voucher</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Creazione_RMA_strike__c</fullName>
+        <description>creazione case su SF e creazione RMA su strike con ID salesforce</description>
+        <externalId>false</externalId>
+        <inlineHelpText>creazione case su SF e creazione RMA su strike con ID salesforce</inlineHelpText>
+        <label>Creazione RMA strike</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Creazione_cliente_hybris__c</fullName>
+        <description>creazione cliente su Hybris e creazione immediata su SF</description>
+        <externalId>false</externalId>
+        <inlineHelpText>creazione cliente su Hybris e creazione immediata su SF</inlineHelpText>
+        <label>Creazione cliente hybris</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Disponibilita_prodotti_hybris__c</fullName>
+        <description>verifica disponibilità prodotto su Hybris</description>
+        <externalId>false</externalId>
+        <inlineHelpText>verifica disponibilità prodotto su Hybris</inlineHelpText>
+        <label>Disponibilità prodotti Hybris</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Disponibilita_prodotti_strike__c</fullName>
+        <description>verifica disponibilità prodotto su strike</description>
+        <externalId>false</externalId>
+        <inlineHelpText>verifica disponibilità prodotto su strike</inlineHelpText>
+        <label>Disponibilità prodotti Strike</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Richiesta_ID_garanzie__c</fullName>
+        <description>creazione case su SF e richiesta ID al portale garanzie</description>
+        <externalId>false</externalId>
+        <inlineHelpText>creazione case su SF e richiesta ID al portale garanzie</inlineHelpText>
+        <label>Richiesta ID garanzie</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Richiesta_rimborso_Barclays__c</fullName>
+        <description>richiesta rimborso</description>
+        <externalId>false</externalId>
+        <inlineHelpText>richiesta rimborso</inlineHelpText>
+        <label>Richiesta rimborso Barclays</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Richiesta_rimborso_Paypal__c</fullName>
+        <description>richiesta rimborso paypal</description>
+        <externalId>false</externalId>
+        <inlineHelpText>richiesta rimborso paypal</inlineHelpText>
+        <label>Richiesta rimborso Paypal</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Richiesta_ultimi_ordini__c</fullName>
+        <description>richiesta degli ultimi ordini web ad Hybris</description>
+        <externalId>false</externalId>
+        <inlineHelpText>richiesta degli ultimi ordini web ad Hybris</inlineHelpText>
+        <label>Richiesta ultimi ordini</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Richiesta_voucher__c</fullName>
+        <description>Richiesta codici Voucher ad Hybris</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Richiesta codici Voucher ad Hybris</inlineHelpText>
+        <label>Richiesta voucher</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sostituzione_prodotto__c</fullName>
+        <description>creazione di una riga di ordine su Hybris in caso di sostituzione di un prodotto</description>
+        <externalId>false</externalId>
+        <inlineHelpText>creazione di una riga di ordine su Hybris in caso di sostituzione di un prodotto</inlineHelpText>
+        <label>Sostituzione prodotto</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tracking_spedizione__c</fullName>
+        <description>richiesta tracking della spedizione a QHD</description>
+        <externalId>false</externalId>
+        <inlineHelpText>richiesta tracking della spedizione a QHD</inlineHelpText>
+        <label>Tracking spedizione</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Verifica_punti_loyalty__c</fullName>
+        <description>Verifica punti loyalty su vslp</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Verifica punti loyalty su vslp</inlineHelpText>
+        <label>Verifica punti loyalty</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Verifica_rimborso_Barclays__c</fullName>
+        <description>verifica rimborso</description>
+        <externalId>false</externalId>
+        <inlineHelpText>verifica rimborso</inlineHelpText>
+        <label>Verifica rimborso Barclays</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Verifica_rimborso_paypal__c</fullName>
+        <description>Verifica rimborso paypal</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Verifica rimborso paypal</inlineHelpText>
+        <label>Verifica rimborso paypal</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Verifica_voucher__c</fullName>
+        <description>Verifica utilizzo voucher su Hybris</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Verifica utilizzo voucher su Hybris</inlineHelpText>
+        <label>Verifica voucher</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>annullamento_pagamento_barclays__c</fullName>
+        <description>annullamento pagamento Barclays</description>
+        <externalId>false</externalId>
+        <inlineHelpText>annullamento pagamento Barclays</inlineHelpText>
+        <label>annullamento pagamento Barclays</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Endpoint Web Service</label>
+    <visibility>Public</visibility>
+</CustomObject>

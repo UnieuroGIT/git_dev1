@@ -1,0 +1,3124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{a34d0f28-84df-45c9-bc0e-37be91fcee0f}</ProjectGuid>
+    <Login>marco.sozzi@unieuro.com.dev1</Login>
+    <Password>noT6s7MiQmaKLPUdsRZL+p+B3lRtR09Z1Ug+pEplDJjOmL2WeS2FV55Nz1pr916daBXRW00Vpvc=</Password>
+    <SecurityToken>vlvT3pqlpgqNXrAxVpg54V/cx5DDbyWMfYKDwyoRUNSBrqep1n0wcw==</SecurityToken>
+    <Domain>test</Domain>
+    <Environment>1</Environment>
+    <ApexVersion>39.0</ApexVersion>
+    <Name>dev1</Name>
+    <AssemblyName>dev1</AssemblyName>
+    <RootNamespace>dev1</RootNamespace>
+    <ProjectVersion>5</ProjectVersion>
+    <PackageVersion>1.6.4.4</PackageVersion>
+    <SyncOption>False</SyncOption>
+    <AntSupport>True</AntSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Folder Include="AnonymousApex" />
+    <Folder Include="aura\" />
+    <Folder Include="aura\CaseLightningComponent\" />
+    <Folder Include="aura\forgotPassword\" />
+    <Folder Include="aura\GridComponent\" />
+    <Folder Include="aura\lcvfTest\" />
+    <Folder Include="aura\LightningApplicationBundle1\" />
+    <Folder Include="aura\loginForm\" />
+    <Folder Include="aura\MotivoDiContatto\" />
+    <Folder Include="aura\selfRegister\" />
+    <Folder Include="aura\setStartUrl\" />
+    <Folder Include="aura\TitlePageComponent\" />
+    <Folder Include="classes\" />
+    <Folder Include="components\" />
+    <Folder Include="email\" />
+    <Folder Include="email\Case\" />
+    <Folder Include="email\unfiled$public\" />
+    <Folder Include="objects\" />
+    <Folder Include="pages\" />
+    <Folder Include="Soql" />
+    <Folder Include="staticresources\" />
+    <Folder Include="staticresources\scc_tour_images\" />
+    <Folder Include="staticresources\scc_tour_images\Tour_Images\" />
+    <Folder Include="staticresources\SiteSamples\" />
+    <Folder Include="staticresources\SiteSamples\img\" />
+    <Folder Include="triggers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aura\CaseLightningComponent\CaseLightningComponent.cmp">
+      <PhysicalRelativePath>src\aura\CaseLightningComponent\CaseLightningComponent.cmp</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E00000057LkSAI</Id>
+      <LastModifiedDateUtcTicks>131333992160000000</LastModifiedDateUtcTicks>
+      <Hash>NR4QVrsSI7SajRUNCcndSA==</Hash>
+      <BundleName>CaseLightningComponent</BundleName>
+      <LightningType>Component</LightningType>
+    </Compile>
+    <Compile Include="aura\CaseLightningComponent\CaseLightningComponentController.js">
+      <PhysicalRelativePath>src\aura\CaseLightningComponent\CaseLightningComponentController.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E00000057LlSAI</Id>
+      <LastModifiedDateUtcTicks>131333963350000000</LastModifiedDateUtcTicks>
+      <Hash>aJa7Gq5SDlr7FwBQiFfowQ==</Hash>
+      <BundleName>CaseLightningComponent</BundleName>
+      <LightningType>Controller</LightningType>
+    </Compile>
+    <Compile Include="aura\forgotPassword\forgotPassword.cmp">
+      <PhysicalRelativePath>src\aura\forgotPassword\forgotPassword.cmp</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E000000510xSAA</Id>
+      <LastModifiedDateUtcTicks>131262001430000000</LastModifiedDateUtcTicks>
+      <Hash>uKRj5XbnWrI5/Ocggu3Oyg==</Hash>
+      <BundleName>forgotPassword</BundleName>
+      <LightningType>Component</LightningType>
+    </Compile>
+    <Compile Include="aura\forgotPassword\forgotPassword.css">
+      <PhysicalRelativePath>src\aura\forgotPassword\forgotPassword.css</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E0000005110SAA</Id>
+      <LastModifiedDateUtcTicks>131262001430000000</LastModifiedDateUtcTicks>
+      <Hash>BXQhL1RqMnghv/r0cmUIdg==</Hash>
+      <BundleName>forgotPassword</BundleName>
+      <LightningType>Style</LightningType>
+    </Compile>
+    <Compile Include="aura\forgotPassword\forgotPassword.design">
+      <PhysicalRelativePath>src\aura\forgotPassword\forgotPassword.design</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E0000005111SAA</Id>
+      <LastModifiedDateUtcTicks>131262001430000000</LastModifiedDateUtcTicks>
+      <Hash>S3YfeYmVf1zxabGiRnTehw==</Hash>
+      <BundleName>forgotPassword</BundleName>
+      <LightningType>Design</LightningType>
+    </Compile>
+    <Compile Include="aura\forgotPassword\forgotPasswordController.js">
+      <PhysicalRelativePath>src\aura\forgotPassword\forgotPasswordController.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E000000510ySAA</Id>
+      <LastModifiedDateUtcTicks>131262001430000000</LastModifiedDateUtcTicks>
+      <Hash>qfREudKMCjYjaqzJG++mlw==</Hash>
+      <BundleName>forgotPassword</BundleName>
+      <LightningType>Controller</LightningType>
+    </Compile>
+    <Compile Include="aura\forgotPassword\forgotPasswordHelper.js">
+      <PhysicalRelativePath>src\aura\forgotPassword\forgotPasswordHelper.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E000000510zSAA</Id>
+      <LastModifiedDateUtcTicks>131262001430000000</LastModifiedDateUtcTicks>
+      <Hash>ssB4L4Wg2PM/WXdHwlOCSA==</Hash>
+      <BundleName>forgotPassword</BundleName>
+      <LightningType>Helper</LightningType>
+    </Compile>
+    <Compile Include="aura\GridComponent\GridComponent.cmp">
+      <PhysicalRelativePath>src\aura\GridComponent\GridComponent.cmp</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E0000004yMUSAY</Id>
+      <LastModifiedDateUtcTicks>131241931960000000</LastModifiedDateUtcTicks>
+      <Hash>C/x2D8o+VE+mtLQM6flg3g==</Hash>
+      <BundleName>GridComponent</BundleName>
+      <LightningType>Component</LightningType>
+    </Compile>
+    <Compile Include="aura\GridComponent\GridComponentController.js">
+      <PhysicalRelativePath>src\aura\GridComponent\GridComponentController.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E0000004zpQSAQ</Id>
+      <LastModifiedDateUtcTicks>131239591930000000</LastModifiedDateUtcTicks>
+      <Hash>iUY7Zf0Blq763dJMb+zLrg==</Hash>
+      <BundleName>GridComponent</BundleName>
+      <LightningType>Controller</LightningType>
+    </Compile>
+    <Compile Include="aura\GridComponent\GridComponentHelper.js">
+      <PhysicalRelativePath>src\aura\GridComponent\GridComponentHelper.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E0000004zpVSAQ</Id>
+      <LastModifiedDateUtcTicks>131239586270000000</LastModifiedDateUtcTicks>
+      <Hash>n/tJwgAE14kh1ztTwS4jsg==</Hash>
+      <BundleName>GridComponent</BundleName>
+      <LightningType>Helper</LightningType>
+    </Compile>
+    <Compile Include="aura\lcvfTest\lcvfTest.app">
+      <PhysicalRelativePath>src\aura\lcvfTest\lcvfTest.app</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E00000057KwSAI</Id>
+      <LastModifiedDateUtcTicks>131333973590000000</LastModifiedDateUtcTicks>
+      <Hash>Ceb/VxHAy9sACVi7Gd1NYQ==</Hash>
+      <BundleName>lcvfTest</BundleName>
+      <LightningType>Application</LightningType>
+    </Compile>
+    <Compile Include="aura\LightningApplicationBundle1\LightningApplicationBundle1.app">
+      <PhysicalRelativePath>src\aura\LightningApplicationBundle1\LightningApplicationBundle1.app</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E0000004yIVSAY</Id>
+      <LastModifiedDateUtcTicks>131232599650000000</LastModifiedDateUtcTicks>
+      <Hash>7aiYMim1wMsnB3v3YMkTHA==</Hash>
+      <BundleName>LightningApplicationBundle1</BundleName>
+      <LightningType>Application</LightningType>
+    </Compile>
+    <Compile Include="aura\loginForm\loginForm.cmp">
+      <PhysicalRelativePath>src\aura\loginForm\loginForm.cmp</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E000000510nSAA</Id>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>ws3VaY/8Mn/0mv8yWqLHFQ==</Hash>
+      <BundleName>loginForm</BundleName>
+      <LightningType>Component</LightningType>
+    </Compile>
+    <Compile Include="aura\loginForm\loginForm.css">
+      <PhysicalRelativePath>src\aura\loginForm\loginForm.css</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E000000510qSAA</Id>
+      <LastModifiedDateUtcTicks>131262001420000000</LastModifiedDateUtcTicks>
+      <Hash>wpOWDyxZAFQLcoDLl7UWAQ==</Hash>
+      <BundleName>loginForm</BundleName>
+      <LightningType>Style</LightningType>
+    </Compile>
+    <Compile Include="aura\loginForm\loginForm.design">
+      <PhysicalRelativePath>src\aura\loginForm\loginForm.design</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E000000510rSAA</Id>
+      <LastModifiedDateUtcTicks>131262001420000000</LastModifiedDateUtcTicks>
+      <Hash>/T0gi+JYLi0AhrSb6YUAdQ==</Hash>
+      <BundleName>loginForm</BundleName>
+      <LightningType>Design</LightningType>
+    </Compile>
+    <Compile Include="aura\loginForm\loginFormController.js">
+      <PhysicalRelativePath>src\aura\loginForm\loginFormController.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E000000510oSAA</Id>
+      <LastModifiedDateUtcTicks>131262001420000000</LastModifiedDateUtcTicks>
+      <Hash>LOfEvEaiollFQTroMgc1KA==</Hash>
+      <BundleName>loginForm</BundleName>
+      <LightningType>Controller</LightningType>
+    </Compile>
+    <Compile Include="aura\loginForm\loginFormHelper.js">
+      <PhysicalRelativePath>src\aura\loginForm\loginFormHelper.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E000000510pSAA</Id>
+      <LastModifiedDateUtcTicks>131262001420000000</LastModifiedDateUtcTicks>
+      <Hash>L0sgClgp6qyawGVBYCAFxw==</Hash>
+      <BundleName>loginForm</BundleName>
+      <LightningType>Helper</LightningType>
+    </Compile>
+    <Compile Include="aura\MotivoDiContatto\MotivoDiContatto.app">
+      <PhysicalRelativePath>src\aura\MotivoDiContatto\MotivoDiContatto.app</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E0000004yLaSAI</Id>
+      <LastModifiedDateUtcTicks>131241925260000000</LastModifiedDateUtcTicks>
+      <Hash>sN+/nwsAamgazm0XVZbUbA==</Hash>
+      <BundleName>MotivoDiContatto</BundleName>
+      <LightningType>Application</LightningType>
+    </Compile>
+    <Compile Include="aura\MotivoDiContatto\MotivoDiContatto.css">
+      <PhysicalRelativePath>src\aura\MotivoDiContatto\MotivoDiContatto.css</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E0000004yLbSAI</Id>
+      <LastModifiedDateUtcTicks>131236093350000000</LastModifiedDateUtcTicks>
+      <Hash>sxvtMzXj2ZEaQ112GvgcZQ==</Hash>
+      <BundleName>MotivoDiContatto</BundleName>
+      <LightningType>Style</LightningType>
+    </Compile>
+    <Compile Include="aura\selfRegister\selfRegister.cmp">
+      <PhysicalRelativePath>src\aura\selfRegister\selfRegister.cmp</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E000000510sSAA</Id>
+      <LastModifiedDateUtcTicks>131262001420000000</LastModifiedDateUtcTicks>
+      <Hash>ZjfxEEQupQOQBWxDGRSi1g==</Hash>
+      <BundleName>selfRegister</BundleName>
+      <LightningType>Component</LightningType>
+    </Compile>
+    <Compile Include="aura\selfRegister\selfRegister.css">
+      <PhysicalRelativePath>src\aura\selfRegister\selfRegister.css</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E000000510vSAA</Id>
+      <LastModifiedDateUtcTicks>131262001430000000</LastModifiedDateUtcTicks>
+      <Hash>ntUniowvfunZKI4FOp/tbw==</Hash>
+      <BundleName>selfRegister</BundleName>
+      <LightningType>Style</LightningType>
+    </Compile>
+    <Compile Include="aura\selfRegister\selfRegister.design">
+      <PhysicalRelativePath>src\aura\selfRegister\selfRegister.design</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E000000510wSAA</Id>
+      <LastModifiedDateUtcTicks>131262001430000000</LastModifiedDateUtcTicks>
+      <Hash>QZX+Q1SyPcfAd4GsLR1kPA==</Hash>
+      <BundleName>selfRegister</BundleName>
+      <LightningType>Design</LightningType>
+    </Compile>
+    <Compile Include="aura\selfRegister\selfRegisterController.js">
+      <PhysicalRelativePath>src\aura\selfRegister\selfRegisterController.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E000000510tSAA</Id>
+      <LastModifiedDateUtcTicks>131262001430000000</LastModifiedDateUtcTicks>
+      <Hash>+gx5xPnPqinvO8tfLk30Nw==</Hash>
+      <BundleName>selfRegister</BundleName>
+      <LightningType>Controller</LightningType>
+    </Compile>
+    <Compile Include="aura\selfRegister\selfRegisterHelper.js">
+      <PhysicalRelativePath>src\aura\selfRegister\selfRegisterHelper.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E000000510uSAA</Id>
+      <LastModifiedDateUtcTicks>131262001430000000</LastModifiedDateUtcTicks>
+      <Hash>9lMdlhk4NIJoCHZH9iwwvQ==</Hash>
+      <BundleName>selfRegister</BundleName>
+      <LightningType>Helper</LightningType>
+    </Compile>
+    <Compile Include="aura\setStartUrl\setStartUrl.evt">
+      <PhysicalRelativePath>src\aura\setStartUrl\setStartUrl.evt</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E000000510iSAA</Id>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>ElLuHucx3Pu34wGffUMbkw==</Hash>
+      <BundleName>setStartUrl</BundleName>
+      <LightningType>Event</LightningType>
+    </Compile>
+    <Compile Include="aura\TitlePageComponent\TitlePageComponent.cmp">
+      <PhysicalRelativePath>src\aura\TitlePageComponent\TitlePageComponent.cmp</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E0000004yLLSAY</Id>
+      <LastModifiedDateUtcTicks>131239304520000000</LastModifiedDateUtcTicks>
+      <Hash>Q6juUWljUCXtNzFysduvug==</Hash>
+      <BundleName>TitlePageComponent</BundleName>
+      <LightningType>Component</LightningType>
+    </Compile>
+    <Compile Include="aura\TitlePageComponent\TitlePageComponent.css">
+      <PhysicalRelativePath>src\aura\TitlePageComponent\TitlePageComponent.css</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <Id>0Ad4E0000004yLMSAY</Id>
+      <LastModifiedDateUtcTicks>131236086420000000</LastModifiedDateUtcTicks>
+      <Hash>sxvtMzXj2ZEaQ112GvgcZQ==</Hash>
+      <BundleName>TitlePageComponent</BundleName>
+      <LightningType>Style</LightningType>
+    </Compile>
+    <Compile Include="classes\Case_OverridePageEdit.cls">
+      <PhysicalRelativePath>src\classes\Case_OverridePageEdit.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006m6gQAA</Id>
+      <LastModifiedDateUtcTicks>131336175190000000</LastModifiedDateUtcTicks>
+      <Hash>lLdOLdSGwfpeZHUYk9TvTA==</Hash>
+    </Compile>
+    <Compile Include="classes\ChangePasswordController.cls">
+      <PhysicalRelativePath>src\classes\ChangePasswordController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wS2QAI</Id>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>5fU+vmLmMyNkgxqiTXdyTw==</Hash>
+    </Compile>
+    <Compile Include="classes\ChangePasswordControllerTest.cls">
+      <PhysicalRelativePath>src\classes\ChangePasswordControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wS3QAI</Id>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>dPIkufIQdG33PbFDL7ol1A==</Hash>
+    </Compile>
+    <Compile Include="classes\ChatterAnswers.cls">
+      <PhysicalRelativePath>src\classes\ChatterAnswers.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p58000007TOyqAAG</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>+byCy7CBubflFymxjAvV7g==</Hash>
+    </Compile>
+    <Compile Include="classes\ChatterAnswersEscalationTriggerTest.cls">
+      <PhysicalRelativePath>src\classes\ChatterAnswersEscalationTriggerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p58000007TOyrAAG</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>NW3Hfb+cAUaSG1n+AFp2UQ==</Hash>
+    </Compile>
+    <Compile Include="classes\CommunitiesLandingController.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesLandingController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wSAQAY</Id>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>2MFIKanFgJX+AJPQ8/xRYg==</Hash>
+    </Compile>
+    <Compile Include="classes\CommunitiesLandingControllerTest.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesLandingControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wSBQAY</Id>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>kUYm5NBt3/mxtxJR0VidrQ==</Hash>
+    </Compile>
+    <Compile Include="classes\CommunitiesLoginController.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesLoginController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wS8QAI</Id>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>XUUy4jUp7f5AEcw7TVlVQQ==</Hash>
+    </Compile>
+    <Compile Include="classes\CommunitiesLoginControllerTest.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesLoginControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wS9QAI</Id>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>azdU/2VNXhJlcN0TuYyzWQ==</Hash>
+    </Compile>
+    <Compile Include="classes\CommunitiesSelfRegConfirmController.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegConfirmController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wSEQAY</Id>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>yRKE+7HvnAZ6f6Qb+xkzJA==</Hash>
+    </Compile>
+    <Compile Include="classes\CommunitiesSelfRegConfirmControllerTest.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegConfirmControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wSFQAY</Id>
+      <LastModifiedDateUtcTicks>131262001400000000</LastModifiedDateUtcTicks>
+      <Hash>shX7GeYKnS5RlS5JNnor9g==</Hash>
+    </Compile>
+    <Compile Include="classes\CommunitiesSelfRegController.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wSCQAY</Id>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>DbwQIjdjYkZBirwgA1osAA==</Hash>
+    </Compile>
+    <Compile Include="classes\CommunitiesSelfRegControllerTest.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wSDQAY</Id>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>lj9aDHDl5+W2o3mGu29Q/g==</Hash>
+    </Compile>
+    <Compile Include="classes\ForgotPasswordController.cls">
+      <PhysicalRelativePath>src\classes\ForgotPasswordController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wS4QAI</Id>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>2PBu1CvNXOdQ7kEoGcKGGw==</Hash>
+    </Compile>
+    <Compile Include="classes\ForgotPasswordControllerTest.cls">
+      <PhysicalRelativePath>src\classes\ForgotPasswordControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wS5QAI</Id>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>YcvvWs2ojzc5vPWpORO6UQ==</Hash>
+    </Compile>
+    <Compile Include="classes\GoogleEnterpriseSignOn.cls">
+      <PhysicalRelativePath>src\classes\GoogleEnterpriseSignOn.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000799WQAQ</Id>
+      <LastModifiedDateUtcTicks>131269633750000000</LastModifiedDateUtcTicks>
+      <Hash>PupT2+KF1WokCS7xGqzqBQ==</Hash>
+    </Compile>
+    <Compile Include="classes\LightningForgotPasswordController.cls">
+      <PhysicalRelativePath>src\classes\LightningForgotPasswordController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wSHQAY</Id>
+      <LastModifiedDateUtcTicks>131262001400000000</LastModifiedDateUtcTicks>
+      <Hash>+XK+L2Z7BQnp6VYFwjKpfQ==</Hash>
+    </Compile>
+    <Compile Include="classes\LightningForgotPasswordControllerTest.cls">
+      <PhysicalRelativePath>src\classes\LightningForgotPasswordControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wSKQAY</Id>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>vTFfu3yDq56R3w3HDT5Grw==</Hash>
+    </Compile>
+    <Compile Include="classes\LightningLoginFormController.cls">
+      <PhysicalRelativePath>src\classes\LightningLoginFormController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wSIQAY</Id>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>185H1VMPqoxGRp+wrCxf6A==</Hash>
+    </Compile>
+    <Compile Include="classes\LightningLoginFormControllerTest.cls">
+      <PhysicalRelativePath>src\classes\LightningLoginFormControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wSJQAY</Id>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>4S4/1QTjsuySZjWQA1+liw==</Hash>
+    </Compile>
+    <Compile Include="classes\LightningSelfRegisterController.cls">
+      <PhysicalRelativePath>src\classes\LightningSelfRegisterController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wSGQAY</Id>
+      <LastModifiedDateUtcTicks>131262001400000000</LastModifiedDateUtcTicks>
+      <Hash>mfz0DSMVB3jDqqcTamNbmg==</Hash>
+    </Compile>
+    <Compile Include="classes\LightningSelfRegisterControllerTest.cls">
+      <PhysicalRelativePath>src\classes\LightningSelfRegisterControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wSLQAY</Id>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>Wukl0ACU8f67HgVgcil0ew==</Hash>
+    </Compile>
+    <Compile Include="classes\MyProfilePageController.cls">
+      <PhysicalRelativePath>src\classes\MyProfilePageController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wS6QAI</Id>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>H6VL99jZpK4JNLXvUlqFNA==</Hash>
+    </Compile>
+    <Compile Include="classes\MyProfilePageControllerTest.cls">
+      <PhysicalRelativePath>src\classes\MyProfilePageControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wS7QAI</Id>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>HpJQJhD+hyls62/IxHFBDg==</Hash>
+    </Compile>
+    <Compile Include="classes\ProcessJobApplicantEmail.cls">
+      <PhysicalRelativePath>src\classes\ProcessJobApplicantEmail.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006IDmQAM</Id>
+      <LastModifiedDateUtcTicks>131233338030000000</LastModifiedDateUtcTicks>
+      <Hash>ZGdF7gcTuhSZ4Kla107CCw==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_AvoidRecursion.cls">
+      <PhysicalRelativePath>src\classes\SG_AvoidRecursion.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000825PQAQ</Id>
+      <LastModifiedDateUtcTicks>131340488640000000</LastModifiedDateUtcTicks>
+      <Hash>d1c1OY+Or1AElO2/n6TTGA==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_CaseExtendedController.cls">
+      <PhysicalRelativePath>src\classes\SG_CaseExtendedController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000HAcJQAW</Id>
+      <LastModifiedDateUtcTicks>131346771840000000</LastModifiedDateUtcTicks>
+      <Hash>BD6R0tSL7seIetjCnjPfEQ==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_CaseOverrideEdit_Controller.cls">
+      <PhysicalRelativePath>src\classes\SG_CaseOverrideEdit_Controller.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E00000085WnQAI</Id>
+      <LastModifiedDateUtcTicks>131315666040000000</LastModifiedDateUtcTicks>
+      <Hash>RSnjFQ+ZgzwX9ItlVrPb1A==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_CaseTriggerHandler.cls">
+      <PhysicalRelativePath>src\classes\SG_CaseTriggerHandler.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E00000080wRQAQ</Id>
+      <LastModifiedDateUtcTicks>131340490950000000</LastModifiedDateUtcTicks>
+      <Hash>XgQLsmzzQChmXJcA2vfxwA==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_CaseTrigger_Test.cls">
+      <PhysicalRelativePath>src\classes\SG_CaseTrigger_Test.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E00000082SxQAI</Id>
+      <LastModifiedDateUtcTicks>131340491980000000</LastModifiedDateUtcTicks>
+      <Hash>pfSl5GISATeJBECl3ekhtA==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_ClasseInformazioniNonFunge.cls">
+      <PhysicalRelativePath>src\classes\SG_ClasseInformazioniNonFunge.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006eunQAA</Id>
+      <LastModifiedDateUtcTicks>131311956900000000</LastModifiedDateUtcTicks>
+      <Hash>D7p29vcw69ajS1R+yoUnzQ==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_DispProdController.cls">
+      <PhysicalRelativePath>src\classes\SG_DispProdController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000GvDYQA0</Id>
+      <LastModifiedDateUtcTicks>131340495950000000</LastModifiedDateUtcTicks>
+      <Hash>+xTGfEOc/f7fHonUKsOGvw==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_Force_Test_Controller.cls">
+      <PhysicalRelativePath>src\classes\SG_Force_Test_Controller.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000H5eoQAC</Id>
+      <LastModifiedDateUtcTicks>131345743340000000</LastModifiedDateUtcTicks>
+      <Hash>OCgdrNQD2PP4cCeZTk/Y4Q==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_retrieveFieldVisibility.cls">
+      <PhysicalRelativePath>src\classes\SG_retrieveFieldVisibility.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000007W8gQAE</Id>
+      <LastModifiedDateUtcTicks>131345898660000000</LastModifiedDateUtcTicks>
+      <Hash>J4lZasFxSO2aJUOYCG+O2g==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_retrieveVisibility_AND_PicklistValues.cls">
+      <PhysicalRelativePath>src\classes\SG_retrieveVisibility_AND_PicklistValues.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006vBGQAY</Id>
+      <LastModifiedDateUtcTicks>131336176260000000</LastModifiedDateUtcTicks>
+      <Hash>dYpyxUOBvLNTCEPjzlD65A==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_retrVisibility_AND_PicklistValuesTest.cls">
+      <PhysicalRelativePath>src\classes\SG_retrVisibility_AND_PicklistValuesTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006WRiQAM</Id>
+      <LastModifiedDateUtcTicks>131311960430000000</LastModifiedDateUtcTicks>
+      <Hash>lOKYq0wsbXNZ17IUtEyQYw==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_RichiestaVoucherController.cls">
+      <PhysicalRelativePath>src\classes\SG_RichiestaVoucherController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000H5rsQAC</Id>
+      <LastModifiedDateUtcTicks>131344967650000000</LastModifiedDateUtcTicks>
+      <Hash>5bK/npgwaCjOER5x5xczyg==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_richiestaVoucherTrigger_Test.cls">
+      <PhysicalRelativePath>src\classes\SG_richiestaVoucherTrigger_Test.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000HAyAQAW</Id>
+      <LastModifiedDateUtcTicks>131347408490000000</LastModifiedDateUtcTicks>
+      <Hash>xJNhrY04kiimc1lgAvtD9g==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_richiestaVoucherTrigger_UtilityClass.cls">
+      <PhysicalRelativePath>src\classes\SG_richiestaVoucherTrigger_UtilityClass.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000HAo5QAG</Id>
+      <LastModifiedDateUtcTicks>131347408170000000</LastModifiedDateUtcTicks>
+      <Hash>Hyl+zuL1C5YHn/QSdSja4w==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_Test_Utility.cls">
+      <PhysicalRelativePath>src\classes\SG_Test_Utility.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000HAPtQAO</Id>
+      <LastModifiedDateUtcTicks>131346722350000000</LastModifiedDateUtcTicks>
+      <Hash>+AQJ/VrxZk9ZiFZSoydkng==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_UNIEURO_Utility.cls">
+      <PhysicalRelativePath>src\classes\SG_UNIEURO_Utility.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000H9z7QAC</Id>
+      <LastModifiedDateUtcTicks>131347392120000000</LastModifiedDateUtcTicks>
+      <Hash>/yA6gNmPOYjiM1tVn5Gf8A==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_UNIEURO_Utility_Test.cls">
+      <PhysicalRelativePath>src\classes\SG_UNIEURO_Utility_Test.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000HAPoQAO</Id>
+      <LastModifiedDateUtcTicks>131347356510000000</LastModifiedDateUtcTicks>
+      <Hash>k5f0P8A86fzwghzSp7Pa9g==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_VerificaVoucherController.cls">
+      <PhysicalRelativePath>src\classes\SG_VerificaVoucherController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000H656QAC</Id>
+      <LastModifiedDateUtcTicks>131345801830000000</LastModifiedDateUtcTicks>
+      <Hash>FTHuANieSZIZ1q2J9m7fjw==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_WS_Account.cls">
+      <PhysicalRelativePath>src\classes\SG_WS_Account.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000H9TVQA0</Id>
+      <LastModifiedDateUtcTicks>131345820660000000</LastModifiedDateUtcTicks>
+      <Hash>W9ZrSxBiwDXQ/+Ng23hzsA==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_WS_Barclays.cls">
+      <PhysicalRelativePath>src\classes\SG_WS_Barclays.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000H9TuQAK</Id>
+      <LastModifiedDateUtcTicks>131345830780000000</LastModifiedDateUtcTicks>
+      <Hash>E2m9FAryH5EeVTtUF3MkNw==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_WS_Loyalty.cls">
+      <PhysicalRelativePath>src\classes\SG_WS_Loyalty.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000GwpOQAS</Id>
+      <LastModifiedDateUtcTicks>131346661770000000</LastModifiedDateUtcTicks>
+      <Hash>CbfKu/xzXQABwkOeG4GXeQ==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_WS_Ordini.cls">
+      <PhysicalRelativePath>src\classes\SG_WS_Ordini.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000H9PJQA0</Id>
+      <LastModifiedDateUtcTicks>131345808940000000</LastModifiedDateUtcTicks>
+      <Hash>i43wodzw11uEUevPZIaGMw==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_WS_Paypal.cls">
+      <PhysicalRelativePath>src\classes\SG_WS_Paypal.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000H9TkQAK</Id>
+      <LastModifiedDateUtcTicks>131345826700000000</LastModifiedDateUtcTicks>
+      <Hash>qj/3FiN3A0m/uP3juc5ZWQ==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_WS_Prodotti.cls">
+      <PhysicalRelativePath>src\classes\SG_WS_Prodotti.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000H9SrQAK</Id>
+      <LastModifiedDateUtcTicks>131345814800000000</LastModifiedDateUtcTicks>
+      <Hash>2rrCQEE19W8e7LIPPBAR8Q==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_WS_RestExample.cls">
+      <PhysicalRelativePath>src\classes\SG_WS_RestExample.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000GwaiQAC</Id>
+      <LastModifiedDateUtcTicks>131340497560000000</LastModifiedDateUtcTicks>
+      <Hash>4efloDfUCe50olFYsVJl8Q==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_WS_RMA.cls">
+      <PhysicalRelativePath>src\classes\SG_WS_RMA.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000H9RtQAK</Id>
+      <LastModifiedDateUtcTicks>131345807710000000</LastModifiedDateUtcTicks>
+      <Hash>l78NOl0IUgHinH2YOJ8HFA==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_WS_Tracking.cls">
+      <PhysicalRelativePath>src\classes\SG_WS_Tracking.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000H9U4QAK</Id>
+      <LastModifiedDateUtcTicks>131345834180000000</LastModifiedDateUtcTicks>
+      <Hash>k+Kx4Nb2f8rffsBzOTD/bQ==</Hash>
+    </Compile>
+    <Compile Include="classes\SG_WS_Voucher.cls">
+      <PhysicalRelativePath>src\classes\SG_WS_Voucher.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000H5CpQAK</Id>
+      <LastModifiedDateUtcTicks>131345874620000000</LastModifiedDateUtcTicks>
+      <Hash>ApzvztYErWfSfoeqxn0IRg==</Hash>
+    </Compile>
+    <Compile Include="classes\SiteLoginController.cls">
+      <PhysicalRelativePath>src\classes\SiteLoginController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wRyQAI</Id>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>G1f1bzrQHc0Qq5eU9bpK9w==</Hash>
+    </Compile>
+    <Compile Include="classes\SiteLoginControllerTest.cls">
+      <PhysicalRelativePath>src\classes\SiteLoginControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wRzQAI</Id>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>qcrMXORSzKEt6SStZwXrMQ==</Hash>
+    </Compile>
+    <Compile Include="classes\SiteRegisterController.cls">
+      <PhysicalRelativePath>src\classes\SiteRegisterController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wS0QAI</Id>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>ZnIt5HiBP8JGaUjLi9SqmA==</Hash>
+    </Compile>
+    <Compile Include="classes\SiteRegisterControllerTest.cls">
+      <PhysicalRelativePath>src\classes\SiteRegisterControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000006wS1QAI</Id>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>5CxIb2ft7md2s6P4HpjQ9g==</Hash>
+    </Compile>
+    <Compile Include="classes\SocialRegHandler.cls">
+      <PhysicalRelativePath>src\classes\SocialRegHandler.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E000000799HQAQ</Id>
+      <LastModifiedDateUtcTicks>131269649040000000</LastModifiedDateUtcTicks>
+      <Hash>Oi3Gsef+9OIDGVNqQT4Z3Q==</Hash>
+    </Compile>
+    <Compile Include="classes\superSort.cls">
+      <PhysicalRelativePath>src\classes\superSort.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p58000007TOyoAAG</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>iPWqIDpdEfkcdALQViNGxQ==</Hash>
+    </Compile>
+    <Compile Include="classes\TrialCustomerPortalHomePageController.cls">
+      <PhysicalRelativePath>src\classes\TrialCustomerPortalHomePageController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p58000007TOypAAG</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>7fhRGgLlhyimPfnnJ8zFOQ==</Hash>
+    </Compile>
+    <Compile Include="classes\WSNewCase.cls">
+      <PhysicalRelativePath>src\classes\WSNewCase.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000008GJaQAM</Id>
+      <LastModifiedDateUtcTicks>131329441200000000</LastModifiedDateUtcTicks>
+      <Hash>1JRXCCoNJ1l5b9/pemlfGw==</Hash>
+    </Compile>
+    <Compile Include="classes\WSNewCaseTest.cls">
+      <PhysicalRelativePath>src\classes\WSNewCaseTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+      <Id>01p4E0000008Il2QAE</Id>
+      <LastModifiedDateUtcTicks>131329470460000000</LastModifiedDateUtcTicks>
+      <Hash>Q7Sr7GJi6QW7WJc8Y1YpWQ==</Hash>
+    </Compile>
+    <Compile Include="components\Component1.component">
+      <PhysicalRelativePath>src\components\Component1.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+      <Id>0994E0000008h4bQAA</Id>
+      <LastModifiedDateUtcTicks>131329250500000000</LastModifiedDateUtcTicks>
+      <Hash>GBrvWdYRhPY/hmMt3x34BQ==</Hash>
+    </Compile>
+    <Compile Include="components\search_account.component">
+      <PhysicalRelativePath>src\components\search_account.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+      <Id>0994E0000008bhcQAA</Id>
+      <LastModifiedDateUtcTicks>131268967490000000</LastModifiedDateUtcTicks>
+      <Hash>5TwQ+Ys/yUqnhMlweOo5PA==</Hash>
+    </Compile>
+    <Compile Include="components\SG_CaseComponent.component">
+      <PhysicalRelativePath>src\components\SG_CaseComponent.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+      <Id>0994E0000008iy1QAA</Id>
+      <LastModifiedDateUtcTicks>131346768110000000</LastModifiedDateUtcTicks>
+      <Hash>bKCfTK6v8HiR1OuB9YH2Rw==</Hash>
+    </Compile>
+    <Compile Include="components\SG_Case_Section_1.component">
+      <PhysicalRelativePath>src\components\SG_Case_Section_1.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+      <Id>0994E0000008fqnQAA</Id>
+      <LastModifiedDateUtcTicks>131315591430000000</LastModifiedDateUtcTicks>
+      <Hash>TBpt/omnOdYPTbB3TQYBYg==</Hash>
+    </Compile>
+    <Compile Include="components\SG_Case_Section_2.component">
+      <PhysicalRelativePath>src\components\SG_Case_Section_2.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+      <Id>0994E0000008fqsQAA</Id>
+      <LastModifiedDateUtcTicks>131315591470000000</LastModifiedDateUtcTicks>
+      <Hash>ihob2hCNYvMQRcUUvlJN3Q==</Hash>
+    </Compile>
+    <Compile Include="components\SG_Case_Section_3.component">
+      <PhysicalRelativePath>src\components\SG_Case_Section_3.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+      <Id>0994E0000008fqxQAA</Id>
+      <LastModifiedDateUtcTicks>131315591510000000</LastModifiedDateUtcTicks>
+      <Hash>e67ozGo97VxjFvx0sKahKQ==</Hash>
+    </Compile>
+    <Compile Include="components\SG_InputOutputSectionItem.component">
+      <PhysicalRelativePath>src\components\SG_InputOutputSectionItem.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+      <Id>0994E0000008izEQAQ</Id>
+      <LastModifiedDateUtcTicks>131346767090000000</LastModifiedDateUtcTicks>
+      <Hash>/POT3ixPTUYPLH3Jm5HDSA==</Hash>
+    </Compile>
+    <Compile Include="components\SG_InputOutputWithAction.component">
+      <PhysicalRelativePath>src\components\SG_InputOutputWithAction.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+      <Id>0994E0000008j0CQAQ</Id>
+      <LastModifiedDateUtcTicks>131346766200000000</LastModifiedDateUtcTicks>
+      <Hash>xM9xQhxJuk924EW6oXT0RA==</Hash>
+    </Compile>
+    <Compile Include="components\SiteFooter.component">
+      <PhysicalRelativePath>src\components\SiteFooter.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+      <Id>0994E0000008b3AQAQ</Id>
+      <LastModifiedDateUtcTicks>131262001370000000</LastModifiedDateUtcTicks>
+      <Hash>qEar3k8+0k9iI1+hjrK0kw==</Hash>
+    </Compile>
+    <Compile Include="components\SiteHeader.component">
+      <PhysicalRelativePath>src\components\SiteHeader.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+      <Id>0994E0000008b39QAA</Id>
+      <LastModifiedDateUtcTicks>131262001370000000</LastModifiedDateUtcTicks>
+      <Hash>gpE6wCrzrFxxgzhKRi+ulw==</Hash>
+    </Compile>
+    <Compile Include="components\SiteLogin.component">
+      <PhysicalRelativePath>src\components\SiteLogin.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+      <Id>0994E0000008b3BQAQ</Id>
+      <LastModifiedDateUtcTicks>131262001380000000</LastModifiedDateUtcTicks>
+      <Hash>Psb1EURl8wC/Li7PhLUR9w==</Hash>
+    </Compile>
+    <Compile Include="components\SitePoweredBy.component">
+      <PhysicalRelativePath>src\components\SitePoweredBy.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+      <Id>0994E0000008b38QAA</Id>
+      <LastModifiedDateUtcTicks>131262001370000000</LastModifiedDateUtcTicks>
+      <Hash>+aiFqB8jdf3qKFC82zz8zw==</Hash>
+    </Compile>
+    <Compile Include="email\Case\Assegnazione_Caso.email">
+      <PhysicalRelativePath>src\email\Case\Assegnazione_Caso.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X4E000000QmjMUAS</Id>
+      <LastModifiedDateUtcTicks>131336293430000000</LastModifiedDateUtcTicks>
+      <Hash>qWmqpHWt1MxZ9RcB8aG4Hg==</Hash>
+    </Compile>
+    <Compile Include="email\Case\Diritto_Recesso.email">
+      <PhysicalRelativePath>src\email\Case\Diritto_Recesso.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X4E000000QmzKUAS</Id>
+      <LastModifiedDateUtcTicks>131338747890000000</LastModifiedDateUtcTicks>
+      <Hash>7f06X7bYZIkrrDpGGlsEIg==</Hash>
+    </Compile>
+    <Compile Include="email\Case\Notifica_Apertura_Caso_con_Foto.email">
+      <PhysicalRelativePath>src\email\Case\Notifica_Apertura_Caso_con_Foto.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X4E000000Qn4AUAS</Id>
+      <LastModifiedDateUtcTicks>131338765460000000</LastModifiedDateUtcTicks>
+      <Hash>FIXsjLp5hmqJjSeAMBggsA==</Hash>
+    </Compile>
+    <Compile Include="email\Case\Notifica_Consegna_Corriere.email">
+      <PhysicalRelativePath>src\email\Case\Notifica_Consegna_Corriere.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X4E000000QfSqUAK</Id>
+      <LastModifiedDateUtcTicks>131338765970000000</LastModifiedDateUtcTicks>
+      <Hash>UotwvoquSNK0e7UqAafpWg==</Hash>
+    </Compile>
+    <Compile Include="email\Case\Notifica_Creazione_Caso.email">
+      <PhysicalRelativePath>src\email\Case\Notifica_Creazione_Caso.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X4E000000Qn3MUAS</Id>
+      <LastModifiedDateUtcTicks>131338763210000000</LastModifiedDateUtcTicks>
+      <Hash>iCuwar0OtLwLDEqHYNx8wg==</Hash>
+    </Compile>
+    <Compile Include="email\Case\Notifica_di_Approvazione_Priorit_Alta.email">
+      <PhysicalRelativePath>src\email\Case\Notifica_di_Approvazione_Priorit_Alta.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X4E000000QkKAUA0</Id>
+      <LastModifiedDateUtcTicks>131338767990000000</LastModifiedDateUtcTicks>
+      <Hash>Aob+K1bIH5LrDZG2iNUB/w==</Hash>
+    </Compile>
+    <Compile Include="email\Case\Notifica_Modifica_Stato.email">
+      <PhysicalRelativePath>src\email\Case\Notifica_Modifica_Stato.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X4E000000Qn3qUAC</Id>
+      <LastModifiedDateUtcTicks>131338769110000000</LastModifiedDateUtcTicks>
+      <Hash>EisWLH9p7+GjHccI5sxeDw==</Hash>
+    </Compile>
+    <Compile Include="email\Case\Notifica_Owner_Approvazione.email">
+      <PhysicalRelativePath>src\email\Case\Notifica_Owner_Approvazione.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X4E000000QkTMUA0</Id>
+      <LastModifiedDateUtcTicks>131338726980000000</LastModifiedDateUtcTicks>
+      <Hash>Sp6YjBEC4XjLcw1T5Y511Q==</Hash>
+    </Compile>
+    <Compile Include="email\Case\Notifica_Servizio_Reso.email">
+      <PhysicalRelativePath>src\email\Case\Notifica_Servizio_Reso.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X4E000000QmH8UAK</Id>
+      <LastModifiedDateUtcTicks>131338746320000000</LastModifiedDateUtcTicks>
+      <Hash>T3Eb2QpwFp0kHsuTWxeDuQ==</Hash>
+    </Compile>
+    <Compile Include="email\Case\Notifica_Stato_Caso_Chiuso.email">
+      <PhysicalRelativePath>src\email\Case\Notifica_Stato_Caso_Chiuso.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X4E000000QfSvUAK</Id>
+      <LastModifiedDateUtcTicks>131338769450000000</LastModifiedDateUtcTicks>
+      <Hash>RiuqjNBOpbqOyDDsat2zdQ==</Hash>
+    </Compile>
+    <Compile Include="email\unfiled$public\CommunityChangePasswordEmailTemplate.email">
+      <PhysicalRelativePath>src\email\unfiled$public\CommunityChangePasswordEmailTemplate.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X4E000000QfIkUAK</Id>
+      <LastModifiedDateUtcTicks>131262000290000000</LastModifiedDateUtcTicks>
+      <Hash>8iYOU0/dHROUQc1Cmw2nMQ==</Hash>
+    </Compile>
+    <Compile Include="email\unfiled$public\CommunityForgotPasswordEmailTemplate.email">
+      <PhysicalRelativePath>src\email\unfiled$public\CommunityForgotPasswordEmailTemplate.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X4E000000QfIlUAK</Id>
+      <LastModifiedDateUtcTicks>131262000290000000</LastModifiedDateUtcTicks>
+      <Hash>8iYOU0/dHROUQc1Cmw2nMQ==</Hash>
+    </Compile>
+    <Compile Include="email\unfiled$public\CommunityWelcomeEmailTemplate.email">
+      <PhysicalRelativePath>src\email\unfiled$public\CommunityWelcomeEmailTemplate.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X4E000000QfIjUAK</Id>
+      <LastModifiedDateUtcTicks>131262000280000000</LastModifiedDateUtcTicks>
+      <Hash>WPihyRTtv2x7hIGHEuEEtg==</Hash>
+    </Compile>
+    <Compile Include="email\unfiled$public\ContactFollowUpSAMPLE.email">
+      <PhysicalRelativePath>src\email\unfiled$public\ContactFollowUpSAMPLE.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X58000000zVikEAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>mkiCXL8oZ3EkkmfSz3ByKA==</Hash>
+    </Compile>
+    <Compile Include="email\unfiled$public\CustomerPortalChangePwdEmail.email">
+      <PhysicalRelativePath>src\email\unfiled$public\CustomerPortalChangePwdEmail.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X58000000zVihEAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>ilP/3E820oUkuf9fKxpVBg==</Hash>
+    </Compile>
+    <Compile Include="email\unfiled$public\CustomerPortalNewUserEmail.email">
+      <PhysicalRelativePath>src\email\unfiled$public\CustomerPortalNewUserEmail.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X58000000zVigEAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>gfKuKd/92XZ9xFzfUqG+5A==</Hash>
+    </Compile>
+    <Compile Include="email\unfiled$public\CustomerPortalSelfRegUserEmail.email">
+      <PhysicalRelativePath>src\email\unfiled$public\CustomerPortalSelfRegUserEmail.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X58000000zViiEAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>kV+kKUUSbqVg814/LhpJxg==</Hash>
+    </Compile>
+    <Compile Include="email\unfiled$public\LeadsNewassignmentnotificationSAMPLE.email">
+      <PhysicalRelativePath>src\email\unfiled$public\LeadsNewassignmentnotificationSAMPLE.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X58000000zVilEAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>WGHvQmjFjNvF6orsqoWwiQ==</Hash>
+    </Compile>
+    <Compile Include="email\unfiled$public\LeadsWebtoLeademailresponseSAMPLE.email">
+      <PhysicalRelativePath>src\email\unfiled$public\LeadsWebtoLeademailresponseSAMPLE.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X58000000zVijEAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>LmS5/LQNsdrv3EichQ++KQ==</Hash>
+    </Compile>
+    <Compile Include="email\unfiled$public\SUPPORTCaseescalationnotificationSAMPLE.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTCaseescalationnotificationSAMPLE.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X58000000zVimEAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>UG2/KPuDgohpyWbLU/DUHw==</Hash>
+    </Compile>
+    <Compile Include="email\unfiled$public\SUPPORTCaseResponsewithSolutionSAMPLE.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTCaseResponsewithSolutionSAMPLE.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X58000000zVipEAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>aOwH3Pjbt4rR8Gzz5aNskQ==</Hash>
+    </Compile>
+    <Compile Include="email\unfiled$public\SUPPORTNewassignmentnotificationSAMPLE.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTNewassignmentnotificationSAMPLE.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X58000000zVioEAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>zamwwY03svE3ms/nQt6Jug==</Hash>
+    </Compile>
+    <Compile Include="email\unfiled$public\SUPPORTSelfServiceNewCommentNotificationSAMPLE.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTSelfServiceNewCommentNotificationSAMPLE.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X58000000zVidEAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>FNEj1JEt8/inyXGEmbS1jQ==</Hash>
+    </Compile>
+    <Compile Include="email\unfiled$public\SUPPORTSelfServiceNewUserLoginInformationSAMPLE.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTSelfServiceNewUserLoginInformationSAMPLE.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X58000000zVifEAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>Zb3MtuPnTO2PAMrxG4MboQ==</Hash>
+    </Compile>
+    <Compile Include="email\unfiled$public\SUPPORTSelfServiceResetPasswordSAMPLE.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTSelfServiceResetPasswordSAMPLE.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X58000000zVieEAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>C0obmpplvWrfGwryPY02Ug==</Hash>
+    </Compile>
+    <Compile Include="email\unfiled$public\SUPPORTWebtoCaseemailresponseSAMPLE.email">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTWebtoCaseemailresponseSAMPLE.email</PhysicalRelativePath>
+      <SubType>EmailTemplate</SubType>
+      <Id>00X58000000zVinEAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>cdznWCH/ru8Y5WVXq7EBpg==</Hash>
+    </Compile>
+    <Compile Include="objects\Account.object">
+      <PhysicalRelativePath>src\objects\Account.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>cbOL/dHxlhR+PnqhsXHknQ==</Hash>
+    </Compile>
+    <Compile Include="objects\AccountContactRole.object">
+      <PhysicalRelativePath>src\objects\AccountContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>g3YBxAMWYuOKCbV8ywuIQg==</Hash>
+    </Compile>
+    <Compile Include="objects\Account_Loyalty__c.object">
+      <PhysicalRelativePath>src\objects\Account_Loyalty__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>01I4E0000001ECGUA2</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>rHr10O9SOArs2q7tWO69+w==</Hash>
+    </Compile>
+    <Compile Include="objects\Activity.object">
+      <PhysicalRelativePath>src\objects\Activity.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>bNALPKANGH8GM1zNJ/xZiA==</Hash>
+    </Compile>
+    <Compile Include="objects\Asset.object">
+      <PhysicalRelativePath>src\objects\Asset.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>TZQg52jOFs6UmSJwzH9Kzw==</Hash>
+    </Compile>
+    <Compile Include="objects\AssistantProgress.object">
+      <PhysicalRelativePath>src\objects\AssistantProgress.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405857359</LastModifiedDateUtcTicks>
+      <Hash>lhT1FxNnkk0itU1ZBqougw==</Hash>
+    </Compile>
+    <Compile Include="objects\Campaign.object">
+      <PhysicalRelativePath>src\objects\Campaign.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>G+JUwdpsweYnoHDG4vJC/g==</Hash>
+    </Compile>
+    <Compile Include="objects\CampaignMember.object">
+      <PhysicalRelativePath>src\objects\CampaignMember.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>cDUseNX5ffwqtbFp0SeCog==</Hash>
+    </Compile>
+    <Compile Include="objects\Case.object">
+      <PhysicalRelativePath>src\objects\Case.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>a9o9g2xLE+D1Ix9wkq4J9g==</Hash>
+    </Compile>
+    <Compile Include="objects\CaseContactRole.object">
+      <PhysicalRelativePath>src\objects\CaseContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>zgRn6AROIa8KlNqrNcUd6A==</Hash>
+    </Compile>
+    <Compile Include="objects\CaseMilestone.object">
+      <PhysicalRelativePath>src\objects\CaseMilestone.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>wNQSxvi/Ny5gAcitw8ZlvA==</Hash>
+    </Compile>
+    <Compile Include="objects\Case_Field_Visibility_cs__c.object">
+      <PhysicalRelativePath>src\objects\Case_Field_Visibility_cs__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>01I4E0000000zzcUAA</Id>
+      <LastModifiedDateUtcTicks>131347410405857359</LastModifiedDateUtcTicks>
+      <Hash>+onrgigxSLYBpsflGOgJJA==</Hash>
+    </Compile>
+    <Compile Include="objects\Config_cs_caseFieldVisibility__c.object">
+      <PhysicalRelativePath>src\objects\Config_cs_caseFieldVisibility__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>01I4E0000000pGmUAI</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>VNU50sAogMQxb7uZnD5hWA==</Hash>
+    </Compile>
+    <Compile Include="objects\Config_cs_casePicklistValues__c.object">
+      <PhysicalRelativePath>src\objects\Config_cs_casePicklistValues__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>01I4E0000000p47UAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>J3955Bes79rpCUR3OD9ILg==</Hash>
+    </Compile>
+    <Compile Include="objects\Contact.object">
+      <PhysicalRelativePath>src\objects\Contact.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>X9BvhyCGalkfNFWggPbyyg==</Hash>
+    </Compile>
+    <Compile Include="objects\ContentVersion.object">
+      <PhysicalRelativePath>src\objects\ContentVersion.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>4NCxaqifDKJxUULx9Q7+Jg==</Hash>
+    </Compile>
+    <Compile Include="objects\Contract.object">
+      <PhysicalRelativePath>src\objects\Contract.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>OBRaGFY9yc6bc1fqVueBeg==</Hash>
+    </Compile>
+    <Compile Include="objects\ContractContactRole.object">
+      <PhysicalRelativePath>src\objects\ContractContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>XvxbTR1nH2lX6Ccc7NO3sg==</Hash>
+    </Compile>
+    <Compile Include="objects\ContractLineItem.object">
+      <PhysicalRelativePath>src\objects\ContractLineItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>MrQmtmAfc5EJb60YcAkRsA==</Hash>
+    </Compile>
+    <Compile Include="objects\Dettaglio_Contestazione__c.object">
+      <PhysicalRelativePath>src\objects\Dettaglio_Contestazione__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>01I4E00000012gJUAQ</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>TuPwHuS3dRSLsfY0Mlefnw==</Hash>
+    </Compile>
+    <Compile Include="objects\Dettaglio_Ordini__c.object">
+      <PhysicalRelativePath>src\objects\Dettaglio_Ordini__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>01I4E00000018TkUAI</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>128bOHgkmxXRAWx47t9klA==</Hash>
+    </Compile>
+    <Compile Include="objects\Dettaglio_Transazione__c.object">
+      <PhysicalRelativePath>src\objects\Dettaglio_Transazione__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>01I4E0000001G6KUAU</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>4dfqFzjs/Q/OvcCfxMUcAg==</Hash>
+    </Compile>
+    <Compile Include="objects\DuplicateRecordItem.object">
+      <PhysicalRelativePath>src\objects\DuplicateRecordItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>M+FV2bXiciSWu4jj9ROPkQ==</Hash>
+    </Compile>
+    <Compile Include="objects\DuplicateRecordSet.object">
+      <PhysicalRelativePath>src\objects\DuplicateRecordSet.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>aWghiv1kgI9sMryYZAC4uw==</Hash>
+    </Compile>
+    <Compile Include="objects\EmailMessage.object">
+      <PhysicalRelativePath>src\objects\EmailMessage.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>fEfQ8CyonkPv+5dm9I5o9g==</Hash>
+    </Compile>
+    <Compile Include="objects\Entitlement.object">
+      <PhysicalRelativePath>src\objects\Entitlement.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405857359</LastModifiedDateUtcTicks>
+      <Hash>rDmqCH8OEfZAH89srizcQw==</Hash>
+    </Compile>
+    <Compile Include="objects\EntitlementContact.object">
+      <PhysicalRelativePath>src\objects\EntitlementContact.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>wapiJvEbhvUpaJ3Y1FPo1A==</Hash>
+    </Compile>
+    <Compile Include="objects\Event.object">
+      <PhysicalRelativePath>src\objects\Event.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405857359</LastModifiedDateUtcTicks>
+      <Hash>dtJ+hm7yYyTg0WHkNinUBQ==</Hash>
+    </Compile>
+    <Compile Include="objects\ExchangeUserMapping.object">
+      <PhysicalRelativePath>src\objects\ExchangeUserMapping.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>lhT1FxNnkk0itU1ZBqougw==</Hash>
+    </Compile>
+    <Compile Include="objects\FAQ__kav.object">
+      <PhysicalRelativePath>src\objects\FAQ__kav.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>01I580000012cqzEAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>Z+weS9RW1N4zoQmiAzPRMg==</Hash>
+    </Compile>
+    <Compile Include="objects\FeedItem.object">
+      <PhysicalRelativePath>src\objects\FeedItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>eYvFHqaKX0nla9q9pl6/0g==</Hash>
+    </Compile>
+    <Compile Include="objects\ForecastingCategoryMapping.object">
+      <PhysicalRelativePath>src\objects\ForecastingCategoryMapping.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>QcdL/dv3BYOeOlPQImw9dg==</Hash>
+    </Compile>
+    <Compile Include="objects\Idea.object">
+      <PhysicalRelativePath>src\objects\Idea.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>NCFue4ITwMAa2ouQ4qCknw==</Hash>
+    </Compile>
+    <Compile Include="objects\Lead.object">
+      <PhysicalRelativePath>src\objects\Lead.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>o9IJK51ENHpYdh2/eBJQWA==</Hash>
+    </Compile>
+    <Compile Include="objects\LinkedArticle.object">
+      <PhysicalRelativePath>src\objects\LinkedArticle.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>2fxlnts4zjA+NPeQlR6tFA==</Hash>
+    </Compile>
+    <Compile Include="objects\LiveAgentSession.object">
+      <PhysicalRelativePath>src\objects\LiveAgentSession.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>bN3joNboobmse13RYMhmWA==</Hash>
+    </Compile>
+    <Compile Include="objects\LiveChatTranscript.object">
+      <PhysicalRelativePath>src\objects\LiveChatTranscript.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>vRka7CLhHvrn0nC5xhUEIg==</Hash>
+    </Compile>
+    <Compile Include="objects\LiveChatTranscriptEvent.object">
+      <PhysicalRelativePath>src\objects\LiveChatTranscriptEvent.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>aoOvViIA3MrN5v/MqwT/kQ==</Hash>
+    </Compile>
+    <Compile Include="objects\LiveChatTranscriptSkill.object">
+      <PhysicalRelativePath>src\objects\LiveChatTranscriptSkill.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>Rzhbax0RuOH5fRQNBguf6w==</Hash>
+    </Compile>
+    <Compile Include="objects\LiveChatVisitor.object">
+      <PhysicalRelativePath>src\objects\LiveChatVisitor.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>9vuncci7WuQu4k7O454Hfg==</Hash>
+    </Compile>
+    <Compile Include="objects\Log_Errori__c.object">
+      <PhysicalRelativePath>src\objects\Log_Errori__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>01I4E0000001HJeUAM</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>9wtMbHV3HpCJeBD9VzHdOA==</Hash>
+    </Compile>
+    <Compile Include="objects\Loyalty__c.object">
+      <PhysicalRelativePath>src\objects\Loyalty__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>01I4E0000001ECLUA2</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>0woRZx4ohDWJmQg07k5DkQ==</Hash>
+    </Compile>
+    <Compile Include="objects\Macro.object">
+      <PhysicalRelativePath>src\objects\Macro.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>8HcmNojp4udhAbkhiu76jA==</Hash>
+    </Compile>
+    <Compile Include="objects\MacroAction.object">
+      <PhysicalRelativePath>src\objects\MacroAction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>Rzhbax0RuOH5fRQNBguf6w==</Hash>
+    </Compile>
+    <Compile Include="objects\MacroInstruction.object">
+      <PhysicalRelativePath>src\objects\MacroInstruction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>Rzhbax0RuOH5fRQNBguf6w==</Hash>
+    </Compile>
+    <Compile Include="objects\Opportunity.object">
+      <PhysicalRelativePath>src\objects\Opportunity.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>M1FsxmTVtkrjBdsI0D2tJA==</Hash>
+    </Compile>
+    <Compile Include="objects\OpportunityCompetitor.object">
+      <PhysicalRelativePath>src\objects\OpportunityCompetitor.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>int9uNh+JqnwNmPf2/MQDA==</Hash>
+    </Compile>
+    <Compile Include="objects\OpportunityContactRole.object">
+      <PhysicalRelativePath>src\objects\OpportunityContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>XvxbTR1nH2lX6Ccc7NO3sg==</Hash>
+    </Compile>
+    <Compile Include="objects\OpportunityLineItem.object">
+      <PhysicalRelativePath>src\objects\OpportunityLineItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>GGcwJdkUTrQE+5pdk/Ki1g==</Hash>
+    </Compile>
+    <Compile Include="objects\Order.object">
+      <PhysicalRelativePath>src\objects\Order.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>miYJlwH1FW1ij7SGKJVgrA==</Hash>
+    </Compile>
+    <Compile Include="objects\OrderItem.object">
+      <PhysicalRelativePath>src\objects\OrderItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>1pMF0yWmFwleLX8xGwOtIA==</Hash>
+    </Compile>
+    <Compile Include="objects\PartnerRole.object">
+      <PhysicalRelativePath>src\objects\PartnerRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>deqMzHwVGwecSsKfv0e5mg==</Hash>
+    </Compile>
+    <Compile Include="objects\Pricebook2.object">
+      <PhysicalRelativePath>src\objects\Pricebook2.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>Lbe4DZ2TQjuHbcYhQw91Ag==</Hash>
+    </Compile>
+    <Compile Include="objects\PricebookEntry.object">
+      <PhysicalRelativePath>src\objects\PricebookEntry.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>JHoQMeExyjK355gh0aGVIw==</Hash>
+    </Compile>
+    <Compile Include="objects\Product2.object">
+      <PhysicalRelativePath>src\objects\Product2.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>pvBvO4/YUvIzfvSaW1OvMA==</Hash>
+    </Compile>
+    <Compile Include="objects\QuickText.object">
+      <PhysicalRelativePath>src\objects\QuickText.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>4dCjQGBVUoEE7UmMpgeJrQ==</Hash>
+    </Compile>
+    <Compile Include="objects\Restrizioni_Voucher__c.object">
+      <PhysicalRelativePath>src\objects\Restrizioni_Voucher__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>01I4E0000001H4AUAU</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>tVDXJc2UJ3wBVBchAcPGsQ==</Hash>
+    </Compile>
+    <Compile Include="objects\Richiesta_Voucher__c.object">
+      <PhysicalRelativePath>src\objects\Richiesta_Voucher__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>01I4E00000011PMUAY</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>bMWZdDny6ZZBvv+2V9Udbg==</Hash>
+    </Compile>
+    <Compile Include="objects\ServiceContract.object">
+      <PhysicalRelativePath>src\objects\ServiceContract.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>sh477AkEbaQ8kyi96Yz7dQ==</Hash>
+    </Compile>
+    <Compile Include="objects\SG_Endpoint_Web_Service__c.object">
+      <PhysicalRelativePath>src\objects\SG_Endpoint_Web_Service__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>01I4E0000001GAMUA2</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>nRlAbJp4e64nbfPqm15PBw==</Hash>
+    </Compile>
+    <Compile Include="objects\Site.object">
+      <PhysicalRelativePath>src\objects\Site.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>sPEqkemQYCtI5k8gA3Y2Dg==</Hash>
+    </Compile>
+    <Compile Include="objects\SocialPersona.object">
+      <PhysicalRelativePath>src\objects\SocialPersona.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>BLVaodusezB9pkdfMrZ5rg==</Hash>
+    </Compile>
+    <Compile Include="objects\Solution.object">
+      <PhysicalRelativePath>src\objects\Solution.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>vgZJXrId26tebkQFIU0K0Q==</Hash>
+    </Compile>
+    <Compile Include="objects\StreamingChannel.object">
+      <PhysicalRelativePath>src\objects\StreamingChannel.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>Aq2Iad8VhQktQuH/oEK3QQ==</Hash>
+    </Compile>
+    <Compile Include="objects\Task.object">
+      <PhysicalRelativePath>src\objects\Task.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>HyBx19P9QDOF0IrYECX+9A==</Hash>
+    </Compile>
+    <Compile Include="objects\test2__kav.object">
+      <PhysicalRelativePath>src\objects\test2__kav.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>01I4E00000019quUAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>VigTk/zJgnjOjJT/sD8fQA==</Hash>
+    </Compile>
+    <Compile Include="objects\Transazione__c.object">
+      <PhysicalRelativePath>src\objects\Transazione__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>01I4E0000001G6AUAU</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>yxMGhS2Huo9N2bKERvDGDA==</Hash>
+    </Compile>
+    <Compile Include="objects\User.object">
+      <PhysicalRelativePath>src\objects\User.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>9wIO9F00hmCI17nRlyoFvQ==</Hash>
+    </Compile>
+    <Compile Include="objects\UserProvisioningRequest.object">
+      <PhysicalRelativePath>src\objects\UserProvisioningRequest.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>000000000000000AAA</Id>
+      <LastModifiedDateUtcTicks>131347410405837510</LastModifiedDateUtcTicks>
+      <Hash>rxs6XqecddZ7uiaDke45IA==</Hash>
+    </Compile>
+    <Compile Include="objects\Voucher__c.object">
+      <PhysicalRelativePath>src\objects\Voucher__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+      <Id>01I4E0000001H45UAE</Id>
+      <LastModifiedDateUtcTicks>131347410405847500</LastModifiedDateUtcTicks>
+      <Hash>x28k+ktm6l2CrkXLS4Sy6Q==</Hash>
+    </Compile>
+    <Compile Include="pages\AnswersHome.page">
+      <PhysicalRelativePath>src\pages\AnswersHome.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXaQAM</Id>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>653XuCTu8PrjdjwPS/bJEw==</Hash>
+    </Compile>
+    <Compile Include="pages\BandwidthExceeded.page">
+      <PhysicalRelativePath>src\pages\BandwidthExceeded.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXUQA2</Id>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>XM9N6jdkVGUhPBSwqunRcw==</Hash>
+    </Compile>
+    <Compile Include="pages\ca_tour_main.page">
+      <PhysicalRelativePath>src\pages\ca_tour_main.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>06658000002mXawAAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>J4ebQbW8vIwp9dIlumQv8g==</Hash>
+    </Compile>
+    <Compile Include="pages\ca_tour_style.page">
+      <PhysicalRelativePath>src\pages\ca_tour_style.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>06658000002mXaxAAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>egWEh2a2nEwYa/63PnlwbA==</Hash>
+    </Compile>
+    <Compile Include="pages\ChangePassword.page">
+      <PhysicalRelativePath>src\pages\ChangePassword.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXLQA2</Id>
+      <LastModifiedDateUtcTicks>131262001400000000</LastModifiedDateUtcTicks>
+      <Hash>1QSGOL/Lckrz+w1E3f1u9Q==</Hash>
+    </Compile>
+    <Compile Include="pages\ChatterAnswersAgentView.page">
+      <PhysicalRelativePath>src\pages\ChatterAnswersAgentView.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>06658000002mXarAAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>8sExbMRrCGJbS3baHs16ZA==</Hash>
+    </Compile>
+    <Compile Include="pages\ChatterAnswersChangePassword.page">
+      <PhysicalRelativePath>src\pages\ChatterAnswersChangePassword.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>06658000002mXaqAAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>vHVHts+FfTaNeA6G2EuQOQ==</Hash>
+    </Compile>
+    <Compile Include="pages\ChatterAnswersForgotPassword.page">
+      <PhysicalRelativePath>src\pages\ChatterAnswersForgotPassword.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>06658000002mXaoAAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>f4aOIQ+EPZ3mqf5tuEBBBg==</Hash>
+    </Compile>
+    <Compile Include="pages\ChatterAnswersForgotPasswordConfirm.page">
+      <PhysicalRelativePath>src\pages\ChatterAnswersForgotPasswordConfirm.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>06658000002mXapAAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>FdaBFKJWJz2SAZ50y4ALYQ==</Hash>
+    </Compile>
+    <Compile Include="pages\ChatterAnswersHelp.page">
+      <PhysicalRelativePath>src\pages\ChatterAnswersHelp.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>06658000002mXasAAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>W1Vf/P9kF5eKKUhk9DQ0yg==</Hash>
+    </Compile>
+    <Compile Include="pages\ChatterAnswersLogin.page">
+      <PhysicalRelativePath>src\pages\ChatterAnswersLogin.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>06658000002mXamAAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>FO31HLcQognfq5TSfW0EHw==</Hash>
+    </Compile>
+    <Compile Include="pages\ChatterAnswersRegistration.page">
+      <PhysicalRelativePath>src\pages\ChatterAnswersRegistration.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>06658000002mXanAAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>mcggpkqJEAjmBJtzkV42Aw==</Hash>
+    </Compile>
+    <Compile Include="pages\CommunitiesLanding.page">
+      <PhysicalRelativePath>src\pages\CommunitiesLanding.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXdQAM</Id>
+      <LastModifiedDateUtcTicks>131262001400000000</LastModifiedDateUtcTicks>
+      <Hash>nNDxOaLNiKtAwH5hxTZAAQ==</Hash>
+    </Compile>
+    <Compile Include="pages\CommunitiesLogin.page">
+      <PhysicalRelativePath>src\pages\CommunitiesLogin.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXcQAM</Id>
+      <LastModifiedDateUtcTicks>131262001400000000</LastModifiedDateUtcTicks>
+      <Hash>BF0sUu2WP/fy9PrUmBW3aw==</Hash>
+    </Compile>
+    <Compile Include="pages\CommunitiesSelfReg.page">
+      <PhysicalRelativePath>src\pages\CommunitiesSelfReg.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXeQAM</Id>
+      <LastModifiedDateUtcTicks>131262001400000000</LastModifiedDateUtcTicks>
+      <Hash>H/1MsUqfVcD6NPXIQmqflw==</Hash>
+    </Compile>
+    <Compile Include="pages\CommunitiesSelfRegConfirm.page">
+      <PhysicalRelativePath>src\pages\CommunitiesSelfRegConfirm.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXfQAM</Id>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>huNjDwjJ4U4oEDwjz/qIKQ==</Hash>
+    </Compile>
+    <Compile Include="pages\CommunitiesTemplate.page">
+      <PhysicalRelativePath>src\pages\CommunitiesTemplate.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXbQAM</Id>
+      <LastModifiedDateUtcTicks>131262001400000000</LastModifiedDateUtcTicks>
+      <Hash>f/BccDIopEdTXqHmNeRNrw==</Hash>
+    </Compile>
+    <Compile Include="pages\embeddedTest.page">
+      <PhysicalRelativePath>src\pages\embeddedTest.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009aRYQAY</Id>
+      <LastModifiedDateUtcTicks>131333999480000000</LastModifiedDateUtcTicks>
+      <Hash>kQNOH/A+wdwpIZdAi54c3A==</Hash>
+    </Compile>
+    <Compile Include="pages\Exception.page">
+      <PhysicalRelativePath>src\pages\Exception.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXVQA2</Id>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>LsFMk+yyH2/bcVC7edjlWA==</Hash>
+    </Compile>
+    <Compile Include="pages\FileNotFound.page">
+      <PhysicalRelativePath>src\pages\FileNotFound.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXTQA2</Id>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>3WAxMTvAdydVWY3hf6RMKA==</Hash>
+    </Compile>
+    <Compile Include="pages\ForgotPassword.page">
+      <PhysicalRelativePath>src\pages\ForgotPassword.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXMQA2</Id>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>P2Ub10qcy6mN2UyISksKfg==</Hash>
+    </Compile>
+    <Compile Include="pages\ForgotPasswordConfirm.page">
+      <PhysicalRelativePath>src\pages\ForgotPasswordConfirm.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXOQA2</Id>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>yMxkd7XDZ3zfnVGtGDqNhg==</Hash>
+    </Compile>
+    <Compile Include="pages\IdeasHome.page">
+      <PhysicalRelativePath>src\pages\IdeasHome.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXZQA2</Id>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>IN/KSDJp4C/rjf7t5ke5TQ==</Hash>
+    </Compile>
+    <Compile Include="pages\InMaintenance.page">
+      <PhysicalRelativePath>src\pages\InMaintenance.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXWQA2</Id>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>0hhA5ijc+aOQT08oD9EVnA==</Hash>
+    </Compile>
+    <Compile Include="pages\MyProfilePage.page">
+      <PhysicalRelativePath>src\pages\MyProfilePage.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXQQA2</Id>
+      <LastModifiedDateUtcTicks>131262001380000000</LastModifiedDateUtcTicks>
+      <Hash>Hm4x3kERtUa+UFLW0HoCWw==</Hash>
+    </Compile>
+    <Compile Include="pages\scc_tour_main.page">
+      <PhysicalRelativePath>src\pages\scc_tour_main.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>06658000002mXatAAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>nyKbIKzEIIcpYftoems0Jg==</Hash>
+    </Compile>
+    <Compile Include="pages\scc_tour_style.page">
+      <PhysicalRelativePath>src\pages\scc_tour_style.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>06658000002mXauAAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>upLu2idbl/MGAeQO3UBi6A==</Hash>
+    </Compile>
+    <Compile Include="pages\SG_CaseEdit.page">
+      <PhysicalRelativePath>src\pages\SG_CaseEdit.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009e23QAA</Id>
+      <LastModifiedDateUtcTicks>131346771840000000</LastModifiedDateUtcTicks>
+      <Hash>h3PT1i7+a5hrY67X/OP4/Q==</Hash>
+    </Compile>
+    <Compile Include="pages\SG_CaseFeedDynamicSubpage.page">
+      <PhysicalRelativePath>src\pages\SG_CaseFeedDynamicSubpage.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009dgCQAQ</Id>
+      <LastModifiedDateUtcTicks>131345772670000000</LastModifiedDateUtcTicks>
+      <Hash>sX3mMzZWvHePBfbxWrJvfw==</Hash>
+    </Compile>
+    <Compile Include="pages\SG_CaseView.page">
+      <PhysicalRelativePath>src\pages\SG_CaseView.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009dy1QAA</Id>
+      <LastModifiedDateUtcTicks>131346771840000000</LastModifiedDateUtcTicks>
+      <Hash>ZAfs7mS7jCRH1+3o7H/2gg==</Hash>
+    </Compile>
+    <Compile Include="pages\SG_Case_DynamicComponent.page">
+      <PhysicalRelativePath>src\pages\SG_Case_DynamicComponent.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009D5qQAE</Id>
+      <LastModifiedDateUtcTicks>131311994080000000</LastModifiedDateUtcTicks>
+      <Hash>v+9oFmDRT4blHTvCae1OOQ==</Hash>
+    </Compile>
+    <Compile Include="pages\SG_Case_Motivo_di_contatto.page">
+      <PhysicalRelativePath>src\pages\SG_Case_Motivo_di_contatto.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E00000093peQAA</Id>
+      <LastModifiedDateUtcTicks>131333839770000000</LastModifiedDateUtcTicks>
+      <Hash>Tz+874TPzLUeQTqdwttcuQ==</Hash>
+    </Compile>
+    <Compile Include="pages\SG_Case_OverrideEdit.page">
+      <PhysicalRelativePath>src\pages\SG_Case_OverrideEdit.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E000000978AQAQ</Id>
+      <LastModifiedDateUtcTicks>131345898660000000</LastModifiedDateUtcTicks>
+      <Hash>9fw6WQ6BTT5Vx3Exn6MlbA==</Hash>
+    </Compile>
+    <Compile Include="pages\SG_Case_OverrideEdit_v2.page">
+      <PhysicalRelativePath>src\pages\SG_Case_OverrideEdit_v2.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009Tl2QAE</Id>
+      <LastModifiedDateUtcTicks>131329245390000000</LastModifiedDateUtcTicks>
+      <Hash>tKwL4NQ4iMVO8FwOT15Mpg==</Hash>
+    </Compile>
+    <Compile Include="pages\SG_Diritto_Recesso.page">
+      <PhysicalRelativePath>src\pages\SG_Diritto_Recesso.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009XfwQAE</Id>
+      <LastModifiedDateUtcTicks>131328391580000000</LastModifiedDateUtcTicks>
+      <Hash>gtdtEYYPKukdyRjKVsRPSA==</Hash>
+    </Compile>
+    <Compile Include="pages\SG_DisponibilitaProdotto.page">
+      <PhysicalRelativePath>src\pages\SG_DisponibilitaProdotto.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009aJUQAY</Id>
+      <LastModifiedDateUtcTicks>131340496200000000</LastModifiedDateUtcTicks>
+      <Hash>V4kl6luuqEacGRLrZF9LwA==</Hash>
+    </Compile>
+    <Compile Include="pages\SG_Force_Test.page">
+      <PhysicalRelativePath>src\pages\SG_Force_Test.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009dBJQAY</Id>
+      <LastModifiedDateUtcTicks>131345743340000000</LastModifiedDateUtcTicks>
+      <Hash>8DlR8F5OQBANoL5ldMYKyQ==</Hash>
+    </Compile>
+    <Compile Include="pages\SG_FTCaseRead.page">
+      <PhysicalRelativePath>src\pages\SG_FTCaseRead.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009dhPQAQ</Id>
+      <LastModifiedDateUtcTicks>131342431600000000</LastModifiedDateUtcTicks>
+      <Hash>Z+zfrAZKS4tpwcpQW70AhA==</Hash>
+    </Compile>
+    <Compile Include="pages\SG_RichiestaVoucher.page">
+      <PhysicalRelativePath>src\pages\SG_RichiestaVoucher.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009dIeQAI</Id>
+      <LastModifiedDateUtcTicks>131344820400000000</LastModifiedDateUtcTicks>
+      <Hash>kNXT7/lTQJ/IM82MXKiHjQ==</Hash>
+    </Compile>
+    <Compile Include="pages\SG_Stampa_Etichetta.page">
+      <PhysicalRelativePath>src\pages\SG_Stampa_Etichetta.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009TceQAE</Id>
+      <LastModifiedDateUtcTicks>131332681090000000</LastModifiedDateUtcTicks>
+      <Hash>Ol9WLHIyzDhLYsov36ZTjg==</Hash>
+    </Compile>
+    <Compile Include="pages\SG_VerificaVoucher.page">
+      <PhysicalRelativePath>src\pages\SG_VerificaVoucher.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009dOXQAY</Id>
+      <LastModifiedDateUtcTicks>131345877840000000</LastModifiedDateUtcTicks>
+      <Hash>u+H6vFpr8qlMW4eRfQmkoQ==</Hash>
+    </Compile>
+    <Compile Include="pages\SiteLogin.page">
+      <PhysicalRelativePath>src\pages\SiteLogin.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXNQA2</Id>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>xJmdCuiT++edNj4o0LaOWw==</Hash>
+    </Compile>
+    <Compile Include="pages\SiteRegister.page">
+      <PhysicalRelativePath>src\pages\SiteRegister.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXKQA2</Id>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>ZwZTxW/04oMWwr7xORWJlg==</Hash>
+    </Compile>
+    <Compile Include="pages\SiteRegisterConfirm.page">
+      <PhysicalRelativePath>src\pages\SiteRegisterConfirm.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXPQA2</Id>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>VzVBvF/M7OJOHPXExpwTTg==</Hash>
+    </Compile>
+    <Compile Include="pages\SiteTemplate.page">
+      <PhysicalRelativePath>src\pages\SiteTemplate.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXSQA2</Id>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>sgbgvETPQbkla0rJLJpr4A==</Hash>
+    </Compile>
+    <Compile Include="pages\StdExceptionTemplate.page">
+      <PhysicalRelativePath>src\pages\StdExceptionTemplate.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXRQA2</Id>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>UyOtEvmO5wA/fFmKSEF+kg==</Hash>
+    </Compile>
+    <Compile Include="pages\subpage.page">
+      <PhysicalRelativePath>src\pages\subpage.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009ajNQAQ</Id>
+      <LastModifiedDateUtcTicks>131334693840000000</LastModifiedDateUtcTicks>
+      <Hash>FrnSz+S9h7tGVf9JcFjsew==</Hash>
+    </Compile>
+    <Compile Include="pages\TrialCustomerPortalHomePage.page">
+      <PhysicalRelativePath>src\pages\TrialCustomerPortalHomePage.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>06658000002mXalAAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>0g3hGaLlrnB2gPZ7cpI0Yw==</Hash>
+    </Compile>
+    <Compile Include="pages\Trial_Tour.page">
+      <PhysicalRelativePath>src\pages\Trial_Tour.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>06658000002mXavAAE</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>KuMisXtLnQJ5FF/M/4xVsw==</Hash>
+    </Compile>
+    <Compile Include="pages\Unauthorized.page">
+      <PhysicalRelativePath>src\pages\Unauthorized.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXXQA2</Id>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>bdPQgWb4D7ztiWOhSCl7Yg==</Hash>
+    </Compile>
+    <Compile Include="pages\UnderConstruction.page">
+      <PhysicalRelativePath>src\pages\UnderConstruction.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+      <Id>0664E0000009CXYQA2</Id>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>T0deBgM1R6S7MspZPdYVeg==</Hash>
+    </Compile>
+    <Compile Include="triggers\chatter_answers_question_escalation_to_case_trigger.trigger">
+      <PhysicalRelativePath>src\triggers\chatter_answers_question_escalation_to_case_trigger.trigger</PhysicalRelativePath>
+      <SubType>Trigger</SubType>
+      <Id>01q58000000hEtNAAU</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>CWO0okMmXUd1AlG2I9OHpQ==</Hash>
+    </Compile>
+    <Compile Include="triggers\SG_CaseTrigger.trigger">
+      <PhysicalRelativePath>src\triggers\SG_CaseTrigger.trigger</PhysicalRelativePath>
+      <SubType>Trigger</SubType>
+      <Id>01q4E0000004ghtQAA</Id>
+      <LastModifiedDateUtcTicks>131340491150000000</LastModifiedDateUtcTicks>
+      <Hash>CAnbS2g9RkayA8j/riD9Qw==</Hash>
+    </Compile>
+    <Compile Include="triggers\SG_Contact.trigger">
+      <PhysicalRelativePath>src\triggers\SG_Contact.trigger</PhysicalRelativePath>
+      <SubType>Trigger</SubType>
+      <Id>01q4E0000004i0hQAA</Id>
+      <LastModifiedDateUtcTicks>131340485860000000</LastModifiedDateUtcTicks>
+      <Hash>hjPAYvT25/ndV95TxvDs3Q==</Hash>
+    </Compile>
+    <Compile Include="triggers\SG_OverridePageEdit.trigger">
+      <PhysicalRelativePath>src\triggers\SG_OverridePageEdit.trigger</PhysicalRelativePath>
+      <SubType>Trigger</SubType>
+      <Id>01q4E0000004VlpQAE</Id>
+      <LastModifiedDateUtcTicks>131340487540000000</LastModifiedDateUtcTicks>
+      <Hash>jXoKtPAyLR8j86b4ais0Vw==</Hash>
+    </Compile>
+    <Compile Include="triggers\SG_richiestaVoucherTrigger_AfterInsertUpdate.trigger">
+      <PhysicalRelativePath>src\triggers\SG_richiestaVoucherTrigger_AfterInsertUpdate.trigger</PhysicalRelativePath>
+      <SubType>Trigger</SubType>
+      <Id>01q4E0000004ozMQAQ</Id>
+      <LastModifiedDateUtcTicks>131347406920000000</LastModifiedDateUtcTicks>
+      <Hash>H5COk4nkQJ92HibEhavtBw==</Hash>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <StaticZip Include="staticresources\scc_tour_images">
+      <SubType>StaticResourceZip</SubType>
+      <Id>08158000000gdeNAAQ</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>JtE6Aie771EdWDOGWavp8A==</Hash>
+    </StaticZip>
+    <StaticZip Include="staticresources\SiteSamples">
+      <SubType>StaticResourceZip</SubType>
+      <Id>0814E0000004rhLQAQ</Id>
+      <LastModifiedDateUtcTicks>131262001370000000</LastModifiedDateUtcTicks>
+      <Hash>naH889I010lQx7/hTgdQ3g==</Hash>
+    </StaticZip>
+  </ItemGroup>
+  <ItemGroup>
+    <Static Include="staticresources\CaseInteraction.css">
+      <PhysicalRelativePath>resource-bundles\CaseInteraction.css</PhysicalRelativePath>
+      <SubType>StaticResource</SubType>
+      <Id>0814E0000005qcvQAA</Id>
+      <LastModifiedDateUtcTicks>131341605000000000</LastModifiedDateUtcTicks>
+      <Hash>3pikWFzNo8Yra0piOg/Dhw==</Hash>
+    </Static>
+    <Static Include="staticresources\customCSS.css">
+      <PhysicalRelativePath>resource-bundles\customCSS.css</PhysicalRelativePath>
+      <SubType>StaticResource</SubType>
+      <Id>0814E0000005qcqQAA</Id>
+      <LastModifiedDateUtcTicks>131341603790000000</LastModifiedDateUtcTicks>
+      <Hash>LH+7ibzyAkIsZlagcCKxYg==</Hash>
+    </Static>
+    <Static Include="staticresources\ServiceCloudLogo.png">
+      <PhysicalRelativePath>resource-bundles\ServiceCloudLogo.png</PhysicalRelativePath>
+      <SubType>StaticResource</SubType>
+      <Id>08158000000gdeOAAQ</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>HOjxZGPpsNZ2KPKdr4KIXA==</Hash>
+    </Static>
+    <Static Include="staticresources\SG_HelloWorld.resource">
+      <PhysicalRelativePath>resource-bundles\SG_HelloWorld.resource</PhysicalRelativePath>
+      <SubType>StaticResource</SubType>
+      <Id>0814E0000005p4EQAQ</Id>
+      <LastModifiedDateUtcTicks>131338730380000000</LastModifiedDateUtcTicks>
+      <Hash>BOrhzOO9YBGr8yoTBj8AuQ==</Hash>
+    </Static>
+    <Static Include="staticresources\TrialPortalBanner.png">
+      <PhysicalRelativePath>resource-bundles\TrialPortalBanner.png</PhysicalRelativePath>
+      <SubType>StaticResource</SubType>
+      <Id>08158000000gdeMAAQ</Id>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>OoOQw2AKzXOaUTt3aYWbTw==</Hash>
+    </Static>
+    <Static Include="staticresources\TWS_Sync_Data.resource">
+      <PhysicalRelativePath>resource-bundles\TWS_Sync_Data.resource</PhysicalRelativePath>
+      <SubType>StaticResource</SubType>
+      <Id>0814E0000004hYdQAI</Id>
+      <LastModifiedDateUtcTicks>131327458050000000</LastModifiedDateUtcTicks>
+      <Hash>wtjGlUPCDcSOjdLXGX5/EQ==</Hash>
+    </Static>
+    <Static Include="staticresources\VFinConsole.js">
+      <PhysicalRelativePath>resource-bundles\VFinConsole.js</PhysicalRelativePath>
+      <SubType>StaticResource</SubType>
+      <Id>0814E0000005LxTQAU</Id>
+      <LastModifiedDateUtcTicks>131292286550000000</LastModifiedDateUtcTicks>
+      <Hash>jqzG98hXNMr/nvA4KVSuuA==</Hash>
+    </Static>
+  </ItemGroup>
+  <ItemGroup>
+    <StaticZipItem Include="staticresources\scc_tour_images\Tour_Images\bg_tour.png">
+      <PhysicalRelativePath>resource-bundles\scc_tour_images\Tour_Images\bg_tour.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>scc_tour_images</StaticResource>
+      <StaticResourcePath>staticresources\scc_tour_images\Tour_Images\bg_tour.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\scc_tour_images\Tour_Images\chatter-answers-950.png">
+      <PhysicalRelativePath>resource-bundles\scc_tour_images\Tour_Images\chatter-answers-950.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>scc_tour_images</StaticResource>
+      <StaticResourcePath>staticresources\scc_tour_images\Tour_Images\chatter-answers-950.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\scc_tour_images\Tour_Images\console-950.png">
+      <PhysicalRelativePath>resource-bundles\scc_tour_images\Tour_Images\console-950.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>scc_tour_images</StaticResource>
+      <StaticResourcePath>staticresources\scc_tour_images\Tour_Images\console-950.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\scc_tour_images\Tour_Images\icon_sprite_serviceSupport.png">
+      <PhysicalRelativePath>resource-bundles\scc_tour_images\Tour_Images\icon_sprite_serviceSupport.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>scc_tour_images</StaticResource>
+      <StaticResourcePath>staticresources\scc_tour_images\Tour_Images\icon_sprite_serviceSupport.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\scc_tour_images\Tour_Images\tourArrows.png">
+      <PhysicalRelativePath>resource-bundles\scc_tour_images\Tour_Images\tourArrows.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>scc_tour_images</StaticResource>
+      <StaticResourcePath>staticresources\scc_tour_images\Tour_Images\tourArrows.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\clock.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\clock.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\clock.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\construction.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\construction.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\construction.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\force_logo.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\force_logo.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\force_logo.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\maintenance.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\maintenance.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\maintenance.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\poweredby.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\poweredby.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\poweredby.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\tools.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\tools.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\tools.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\unauthorized.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\unauthorized.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\unauthorized.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\warning.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\warning.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\warning.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\SiteStyles.css">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\SiteStyles.css</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\SiteStyles.css</StaticResourcePath>
+    </StaticZipItem>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="classes\Case_OverridePageEdit.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\Case_OverridePageEdit.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131336175190000000</LastModifiedDateUtcTicks>
+      <Hash>chSpUW6sUNTEfXRjwHBJgg==</Hash>
+      <DependentUpon>classes\Case_OverridePageEdit.cls</DependentUpon>
+    </None>
+    <None Include="classes\ChangePasswordController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ChangePasswordController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\ChangePasswordController.cls</DependentUpon>
+    </None>
+    <None Include="classes\ChangePasswordControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ChangePasswordControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\ChangePasswordControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\ChatterAnswers.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ChatterAnswers.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>TMETz/3/ila+CW1Kfh+71g==</Hash>
+      <DependentUpon>classes\ChatterAnswers.cls</DependentUpon>
+    </None>
+    <None Include="classes\ChatterAnswersEscalationTriggerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ChatterAnswersEscalationTriggerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>TMETz/3/ila+CW1Kfh+71g==</Hash>
+      <DependentUpon>classes\ChatterAnswersEscalationTriggerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesLandingController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesLandingController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\CommunitiesLandingController.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesLandingControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesLandingControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\CommunitiesLandingControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesLoginController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesLoginController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\CommunitiesLoginController.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesLoginControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesLoginControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\CommunitiesLoginControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesSelfRegConfirmController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegConfirmController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\CommunitiesSelfRegConfirmController.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesSelfRegConfirmControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegConfirmControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001400000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\CommunitiesSelfRegConfirmControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesSelfRegController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\CommunitiesSelfRegController.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesSelfRegControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\CommunitiesSelfRegControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\ForgotPasswordController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ForgotPasswordController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\ForgotPasswordController.cls</DependentUpon>
+    </None>
+    <None Include="classes\ForgotPasswordControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ForgotPasswordControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\ForgotPasswordControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\GoogleEnterpriseSignOn.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\GoogleEnterpriseSignOn.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131269633750000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\GoogleEnterpriseSignOn.cls</DependentUpon>
+    </None>
+    <None Include="classes\LightningForgotPasswordController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\LightningForgotPasswordController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001400000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\LightningForgotPasswordController.cls</DependentUpon>
+    </None>
+    <None Include="classes\LightningForgotPasswordControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\LightningForgotPasswordControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\LightningForgotPasswordControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\LightningLoginFormController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\LightningLoginFormController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\LightningLoginFormController.cls</DependentUpon>
+    </None>
+    <None Include="classes\LightningLoginFormControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\LightningLoginFormControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\LightningLoginFormControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\LightningSelfRegisterController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\LightningSelfRegisterController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001400000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\LightningSelfRegisterController.cls</DependentUpon>
+    </None>
+    <None Include="classes\LightningSelfRegisterControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\LightningSelfRegisterControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\LightningSelfRegisterControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\MyProfilePageController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\MyProfilePageController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\MyProfilePageController.cls</DependentUpon>
+    </None>
+    <None Include="classes\MyProfilePageControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\MyProfilePageControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\MyProfilePageControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\ProcessJobApplicantEmail.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ProcessJobApplicantEmail.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131233338030000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\ProcessJobApplicantEmail.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_AvoidRecursion.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_AvoidRecursion.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131340488640000000</LastModifiedDateUtcTicks>
+      <Hash>uusv40XDo7W7TGVJTExSOQ==</Hash>
+      <DependentUpon>classes\SG_AvoidRecursion.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_CaseExtendedController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_CaseExtendedController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131346771840000000</LastModifiedDateUtcTicks>
+      <Hash>uusv40XDo7W7TGVJTExSOQ==</Hash>
+      <DependentUpon>classes\SG_CaseExtendedController.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_CaseOverrideEdit_Controller.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_CaseOverrideEdit_Controller.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131315666040000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\SG_CaseOverrideEdit_Controller.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_CaseTriggerHandler.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_CaseTriggerHandler.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131340490950000000</LastModifiedDateUtcTicks>
+      <Hash>uusv40XDo7W7TGVJTExSOQ==</Hash>
+      <DependentUpon>classes\SG_CaseTriggerHandler.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_CaseTrigger_Test.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_CaseTrigger_Test.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131340491980000000</LastModifiedDateUtcTicks>
+      <Hash>qPYxbthsTjFyWy7IXTGaXw==</Hash>
+      <DependentUpon>classes\SG_CaseTrigger_Test.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_ClasseInformazioniNonFunge.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_ClasseInformazioniNonFunge.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131311956900000000</LastModifiedDateUtcTicks>
+      <Hash>chSpUW6sUNTEfXRjwHBJgg==</Hash>
+      <DependentUpon>classes\SG_ClasseInformazioniNonFunge.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_DispProdController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_DispProdController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131340495950000000</LastModifiedDateUtcTicks>
+      <Hash>qPYxbthsTjFyWy7IXTGaXw==</Hash>
+      <DependentUpon>classes\SG_DispProdController.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_Force_Test_Controller.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_Force_Test_Controller.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131345743340000000</LastModifiedDateUtcTicks>
+      <Hash>qPYxbthsTjFyWy7IXTGaXw==</Hash>
+      <DependentUpon>classes\SG_Force_Test_Controller.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_retrieveFieldVisibility.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_retrieveFieldVisibility.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131345898660000000</LastModifiedDateUtcTicks>
+      <Hash>chSpUW6sUNTEfXRjwHBJgg==</Hash>
+      <DependentUpon>classes\SG_retrieveFieldVisibility.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_retrieveVisibility_AND_PicklistValues.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_retrieveVisibility_AND_PicklistValues.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131336176260000000</LastModifiedDateUtcTicks>
+      <Hash>chSpUW6sUNTEfXRjwHBJgg==</Hash>
+      <DependentUpon>classes\SG_retrieveVisibility_AND_PicklistValues.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_retrVisibility_AND_PicklistValuesTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_retrVisibility_AND_PicklistValuesTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131311960430000000</LastModifiedDateUtcTicks>
+      <Hash>chSpUW6sUNTEfXRjwHBJgg==</Hash>
+      <DependentUpon>classes\SG_retrVisibility_AND_PicklistValuesTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_RichiestaVoucherController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_RichiestaVoucherController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131344967650000000</LastModifiedDateUtcTicks>
+      <Hash>uusv40XDo7W7TGVJTExSOQ==</Hash>
+      <DependentUpon>classes\SG_RichiestaVoucherController.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_richiestaVoucherTrigger_Test.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_richiestaVoucherTrigger_Test.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131347408490000000</LastModifiedDateUtcTicks>
+      <Hash>uusv40XDo7W7TGVJTExSOQ==</Hash>
+      <DependentUpon>classes\SG_richiestaVoucherTrigger_Test.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_richiestaVoucherTrigger_UtilityClass.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_richiestaVoucherTrigger_UtilityClass.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131347408170000000</LastModifiedDateUtcTicks>
+      <Hash>uusv40XDo7W7TGVJTExSOQ==</Hash>
+      <DependentUpon>classes\SG_richiestaVoucherTrigger_UtilityClass.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_Test_Utility.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_Test_Utility.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131346722350000000</LastModifiedDateUtcTicks>
+      <Hash>uusv40XDo7W7TGVJTExSOQ==</Hash>
+      <DependentUpon>classes\SG_Test_Utility.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_UNIEURO_Utility.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_UNIEURO_Utility.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131347392120000000</LastModifiedDateUtcTicks>
+      <Hash>uusv40XDo7W7TGVJTExSOQ==</Hash>
+      <DependentUpon>classes\SG_UNIEURO_Utility.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_UNIEURO_Utility_Test.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_UNIEURO_Utility_Test.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131347356510000000</LastModifiedDateUtcTicks>
+      <Hash>uusv40XDo7W7TGVJTExSOQ==</Hash>
+      <DependentUpon>classes\SG_UNIEURO_Utility_Test.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_VerificaVoucherController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_VerificaVoucherController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131345801830000000</LastModifiedDateUtcTicks>
+      <Hash>uusv40XDo7W7TGVJTExSOQ==</Hash>
+      <DependentUpon>classes\SG_VerificaVoucherController.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_WS_Account.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_WS_Account.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131345820660000000</LastModifiedDateUtcTicks>
+      <Hash>qPYxbthsTjFyWy7IXTGaXw==</Hash>
+      <DependentUpon>classes\SG_WS_Account.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_WS_Barclays.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_WS_Barclays.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131345830780000000</LastModifiedDateUtcTicks>
+      <Hash>qPYxbthsTjFyWy7IXTGaXw==</Hash>
+      <DependentUpon>classes\SG_WS_Barclays.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_WS_Loyalty.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_WS_Loyalty.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131346661770000000</LastModifiedDateUtcTicks>
+      <Hash>chSpUW6sUNTEfXRjwHBJgg==</Hash>
+      <DependentUpon>classes\SG_WS_Loyalty.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_WS_Ordini.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_WS_Ordini.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131345808940000000</LastModifiedDateUtcTicks>
+      <Hash>qPYxbthsTjFyWy7IXTGaXw==</Hash>
+      <DependentUpon>classes\SG_WS_Ordini.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_WS_Paypal.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_WS_Paypal.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131345826700000000</LastModifiedDateUtcTicks>
+      <Hash>qPYxbthsTjFyWy7IXTGaXw==</Hash>
+      <DependentUpon>classes\SG_WS_Paypal.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_WS_Prodotti.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_WS_Prodotti.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131345814800000000</LastModifiedDateUtcTicks>
+      <Hash>qPYxbthsTjFyWy7IXTGaXw==</Hash>
+      <DependentUpon>classes\SG_WS_Prodotti.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_WS_RestExample.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_WS_RestExample.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131340497560000000</LastModifiedDateUtcTicks>
+      <Hash>uusv40XDo7W7TGVJTExSOQ==</Hash>
+      <DependentUpon>classes\SG_WS_RestExample.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_WS_RMA.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_WS_RMA.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131345807710000000</LastModifiedDateUtcTicks>
+      <Hash>qPYxbthsTjFyWy7IXTGaXw==</Hash>
+      <DependentUpon>classes\SG_WS_RMA.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_WS_Tracking.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_WS_Tracking.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131345834180000000</LastModifiedDateUtcTicks>
+      <Hash>qPYxbthsTjFyWy7IXTGaXw==</Hash>
+      <DependentUpon>classes\SG_WS_Tracking.cls</DependentUpon>
+    </None>
+    <None Include="classes\SG_WS_Voucher.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SG_WS_Voucher.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131345874620000000</LastModifiedDateUtcTicks>
+      <Hash>uusv40XDo7W7TGVJTExSOQ==</Hash>
+      <DependentUpon>classes\SG_WS_Voucher.cls</DependentUpon>
+    </None>
+    <None Include="classes\SiteLoginController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SiteLoginController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\SiteLoginController.cls</DependentUpon>
+    </None>
+    <None Include="classes\SiteLoginControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SiteLoginControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\SiteLoginControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\SiteRegisterController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SiteRegisterController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\SiteRegisterController.cls</DependentUpon>
+    </None>
+    <None Include="classes\SiteRegisterControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SiteRegisterControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001360000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\SiteRegisterControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\SocialRegHandler.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SocialRegHandler.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131269649040000000</LastModifiedDateUtcTicks>
+      <Hash>EgCeu7ARPz0IstXMwDtbMA==</Hash>
+      <DependentUpon>classes\SocialRegHandler.cls</DependentUpon>
+    </None>
+    <None Include="classes\superSort.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\superSort.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>TMETz/3/ila+CW1Kfh+71g==</Hash>
+      <DependentUpon>classes\superSort.cls</DependentUpon>
+    </None>
+    <None Include="classes\TrialCustomerPortalHomePageController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\TrialCustomerPortalHomePageController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>TMETz/3/ila+CW1Kfh+71g==</Hash>
+      <DependentUpon>classes\TrialCustomerPortalHomePageController.cls</DependentUpon>
+    </None>
+    <None Include="classes\WSNewCase.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\WSNewCase.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131329441200000000</LastModifiedDateUtcTicks>
+      <Hash>chSpUW6sUNTEfXRjwHBJgg==</Hash>
+      <DependentUpon>classes\WSNewCase.cls</DependentUpon>
+    </None>
+    <None Include="classes\WSNewCaseTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\WSNewCaseTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131329470460000000</LastModifiedDateUtcTicks>
+      <Hash>chSpUW6sUNTEfXRjwHBJgg==</Hash>
+      <DependentUpon>classes\WSNewCaseTest.cls</DependentUpon>
+    </None>
+    <None Include="components\Component1.component-meta.xml">
+      <PhysicalRelativePath>src\components\Component1.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131329250500000000</LastModifiedDateUtcTicks>
+      <Hash>TX+wjU6CFtevh+kMjhWwSg==</Hash>
+      <DependentUpon>components\Component1.component</DependentUpon>
+    </None>
+    <None Include="components\search_account.component-meta.xml">
+      <PhysicalRelativePath>src\components\search_account.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131268967490000000</LastModifiedDateUtcTicks>
+      <Hash>s/GdQFVXQxunAxoiAJzn8w==</Hash>
+      <DependentUpon>components\search_account.component</DependentUpon>
+    </None>
+    <None Include="components\SG_CaseComponent.component-meta.xml">
+      <PhysicalRelativePath>src\components\SG_CaseComponent.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131346768110000000</LastModifiedDateUtcTicks>
+      <Hash>gMrc4m6lwL4dicOiEy+yzg==</Hash>
+      <DependentUpon>components\SG_CaseComponent.component</DependentUpon>
+    </None>
+    <None Include="components\SG_Case_Section_1.component-meta.xml">
+      <PhysicalRelativePath>src\components\SG_Case_Section_1.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131315591430000000</LastModifiedDateUtcTicks>
+      <Hash>xMOZ+T8ySgg8JDdB3Za4ag==</Hash>
+      <DependentUpon>components\SG_Case_Section_1.component</DependentUpon>
+    </None>
+    <None Include="components\SG_Case_Section_2.component-meta.xml">
+      <PhysicalRelativePath>src\components\SG_Case_Section_2.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131315591470000000</LastModifiedDateUtcTicks>
+      <Hash>mHBAlJRPkHMCpik+fNoDgQ==</Hash>
+      <DependentUpon>components\SG_Case_Section_2.component</DependentUpon>
+    </None>
+    <None Include="components\SG_Case_Section_3.component-meta.xml">
+      <PhysicalRelativePath>src\components\SG_Case_Section_3.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131315591510000000</LastModifiedDateUtcTicks>
+      <Hash>Nawjp7Pxnfesy6btM55CMw==</Hash>
+      <DependentUpon>components\SG_Case_Section_3.component</DependentUpon>
+    </None>
+    <None Include="components\SG_InputOutputSectionItem.component-meta.xml">
+      <PhysicalRelativePath>src\components\SG_InputOutputSectionItem.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131346767090000000</LastModifiedDateUtcTicks>
+      <Hash>ER4Nt/Jy7XiJ1xl7KVfiQw==</Hash>
+      <DependentUpon>components\SG_InputOutputSectionItem.component</DependentUpon>
+    </None>
+    <None Include="components\SG_InputOutputWithAction.component-meta.xml">
+      <PhysicalRelativePath>src\components\SG_InputOutputWithAction.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131346766200000000</LastModifiedDateUtcTicks>
+      <Hash>a+9We1b8b4oAv16bM0e2AA==</Hash>
+      <DependentUpon>components\SG_InputOutputWithAction.component</DependentUpon>
+    </None>
+    <None Include="components\SiteFooter.component-meta.xml">
+      <PhysicalRelativePath>src\components\SiteFooter.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001370000000</LastModifiedDateUtcTicks>
+      <Hash>DQ5+G7WD79ZCjx/UPUP4Dw==</Hash>
+      <DependentUpon>components\SiteFooter.component</DependentUpon>
+    </None>
+    <None Include="components\SiteHeader.component-meta.xml">
+      <PhysicalRelativePath>src\components\SiteHeader.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001370000000</LastModifiedDateUtcTicks>
+      <Hash>q6JUm3XitOd78zgJXJk+vg==</Hash>
+      <DependentUpon>components\SiteHeader.component</DependentUpon>
+    </None>
+    <None Include="components\SiteLogin.component-meta.xml">
+      <PhysicalRelativePath>src\components\SiteLogin.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001380000000</LastModifiedDateUtcTicks>
+      <Hash>fB+JAkkcelHWmG+3J7ZJrw==</Hash>
+      <DependentUpon>components\SiteLogin.component</DependentUpon>
+    </None>
+    <None Include="components\SitePoweredBy.component-meta.xml">
+      <PhysicalRelativePath>src\components\SitePoweredBy.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001370000000</LastModifiedDateUtcTicks>
+      <Hash>1GEuifjMjNu4ptv/Bl+RcA==</Hash>
+      <DependentUpon>components\SitePoweredBy.component</DependentUpon>
+    </None>
+    <None Include="email\Case\Assegnazione_Caso.email-meta.xml">
+      <PhysicalRelativePath>src\email\Case\Assegnazione_Caso.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131336293430000000</LastModifiedDateUtcTicks>
+      <Hash>JPY3I2GbODraDVowtzVw/A==</Hash>
+      <DependentUpon>email\Case\Assegnazione_Caso.email</DependentUpon>
+    </None>
+    <None Include="email\Case\Diritto_Recesso.email-meta.xml">
+      <PhysicalRelativePath>src\email\Case\Diritto_Recesso.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131338747890000000</LastModifiedDateUtcTicks>
+      <Hash>BSeaPqQ42Jo3YFSYOM/PXw==</Hash>
+      <DependentUpon>email\Case\Diritto_Recesso.email</DependentUpon>
+    </None>
+    <None Include="email\Case\Notifica_Apertura_Caso_con_Foto.email-meta.xml">
+      <PhysicalRelativePath>src\email\Case\Notifica_Apertura_Caso_con_Foto.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131338765460000000</LastModifiedDateUtcTicks>
+      <Hash>blwjfNOoOhxX8EUo5qhQ6Q==</Hash>
+      <DependentUpon>email\Case\Notifica_Apertura_Caso_con_Foto.email</DependentUpon>
+    </None>
+    <None Include="email\Case\Notifica_Consegna_Corriere.email-meta.xml">
+      <PhysicalRelativePath>src\email\Case\Notifica_Consegna_Corriere.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131338765970000000</LastModifiedDateUtcTicks>
+      <Hash>aJbvlUsQI5zXgMNr/NJxCg==</Hash>
+      <DependentUpon>email\Case\Notifica_Consegna_Corriere.email</DependentUpon>
+    </None>
+    <None Include="email\Case\Notifica_Creazione_Caso.email-meta.xml">
+      <PhysicalRelativePath>src\email\Case\Notifica_Creazione_Caso.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131338763210000000</LastModifiedDateUtcTicks>
+      <Hash>16rP6PJwFqaunRjqNLB8pw==</Hash>
+      <DependentUpon>email\Case\Notifica_Creazione_Caso.email</DependentUpon>
+    </None>
+    <None Include="email\Case\Notifica_di_Approvazione_Priorit_Alta.email-meta.xml">
+      <PhysicalRelativePath>src\email\Case\Notifica_di_Approvazione_Priorit_Alta.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131338767990000000</LastModifiedDateUtcTicks>
+      <Hash>BmwQRo4Jav/i7drgznWK3g==</Hash>
+      <DependentUpon>email\Case\Notifica_di_Approvazione_Priorit_Alta.email</DependentUpon>
+    </None>
+    <None Include="email\Case\Notifica_Modifica_Stato.email-meta.xml">
+      <PhysicalRelativePath>src\email\Case\Notifica_Modifica_Stato.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131338769110000000</LastModifiedDateUtcTicks>
+      <Hash>BYaUxBK4HHtWkH2/xP0+Uw==</Hash>
+      <DependentUpon>email\Case\Notifica_Modifica_Stato.email</DependentUpon>
+    </None>
+    <None Include="email\Case\Notifica_Owner_Approvazione.email-meta.xml">
+      <PhysicalRelativePath>src\email\Case\Notifica_Owner_Approvazione.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131338726980000000</LastModifiedDateUtcTicks>
+      <Hash>5mlNsqh62syZ8FyvGIIWBw==</Hash>
+      <DependentUpon>email\Case\Notifica_Owner_Approvazione.email</DependentUpon>
+    </None>
+    <None Include="email\Case\Notifica_Servizio_Reso.email-meta.xml">
+      <PhysicalRelativePath>src\email\Case\Notifica_Servizio_Reso.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131338746320000000</LastModifiedDateUtcTicks>
+      <Hash>/nnQIGL+Qfut+5xLPWD6iA==</Hash>
+      <DependentUpon>email\Case\Notifica_Servizio_Reso.email</DependentUpon>
+    </None>
+    <None Include="email\Case\Notifica_Stato_Caso_Chiuso.email-meta.xml">
+      <PhysicalRelativePath>src\email\Case\Notifica_Stato_Caso_Chiuso.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131338769450000000</LastModifiedDateUtcTicks>
+      <Hash>20vepVrRNalxs1cAg3Ufjw==</Hash>
+      <DependentUpon>email\Case\Notifica_Stato_Caso_Chiuso.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\CommunityChangePasswordEmailTemplate.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\CommunityChangePasswordEmailTemplate.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262000290000000</LastModifiedDateUtcTicks>
+      <Hash>fp+KusHQuxXv3VnKlFGp6w==</Hash>
+      <DependentUpon>email\unfiled$public\CommunityChangePasswordEmailTemplate.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\CommunityForgotPasswordEmailTemplate.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\CommunityForgotPasswordEmailTemplate.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262000290000000</LastModifiedDateUtcTicks>
+      <Hash>OljXaIUxn2U+f88KM2ixsQ==</Hash>
+      <DependentUpon>email\unfiled$public\CommunityForgotPasswordEmailTemplate.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\CommunityWelcomeEmailTemplate.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\CommunityWelcomeEmailTemplate.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262000280000000</LastModifiedDateUtcTicks>
+      <Hash>Obr03bSAFszf8wblq1mCgg==</Hash>
+      <DependentUpon>email\unfiled$public\CommunityWelcomeEmailTemplate.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\ContactFollowUpSAMPLE.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\ContactFollowUpSAMPLE.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>gyDQke+8yKZGpZNEN5sgsA==</Hash>
+      <DependentUpon>email\unfiled$public\ContactFollowUpSAMPLE.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\CustomerPortalChangePwdEmail.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\CustomerPortalChangePwdEmail.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>G9CbNz5ppXC1ogW5NpNCdg==</Hash>
+      <DependentUpon>email\unfiled$public\CustomerPortalChangePwdEmail.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\CustomerPortalNewUserEmail.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\CustomerPortalNewUserEmail.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>M+/brR4a2xmNaYXj23KqWA==</Hash>
+      <DependentUpon>email\unfiled$public\CustomerPortalNewUserEmail.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\CustomerPortalSelfRegUserEmail.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\CustomerPortalSelfRegUserEmail.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>wvAfth/Xn+yS4PxwOAmZ6w==</Hash>
+      <DependentUpon>email\unfiled$public\CustomerPortalSelfRegUserEmail.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\LeadsNewassignmentnotificationSAMPLE.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\LeadsNewassignmentnotificationSAMPLE.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>61aQHy6OO3necFRzpLum3g==</Hash>
+      <DependentUpon>email\unfiled$public\LeadsNewassignmentnotificationSAMPLE.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\LeadsWebtoLeademailresponseSAMPLE.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\LeadsWebtoLeademailresponseSAMPLE.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>JguxLRoH4NQd2wOLjYO6Mw==</Hash>
+      <DependentUpon>email\unfiled$public\LeadsWebtoLeademailresponseSAMPLE.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SUPPORTCaseescalationnotificationSAMPLE.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTCaseescalationnotificationSAMPLE.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>ZAi2P6ho4g6+vAFiKqC69g==</Hash>
+      <DependentUpon>email\unfiled$public\SUPPORTCaseescalationnotificationSAMPLE.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SUPPORTCaseResponsewithSolutionSAMPLE.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTCaseResponsewithSolutionSAMPLE.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>+Y3PxmssSQIp/oovMF1XRQ==</Hash>
+      <DependentUpon>email\unfiled$public\SUPPORTCaseResponsewithSolutionSAMPLE.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SUPPORTNewassignmentnotificationSAMPLE.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTNewassignmentnotificationSAMPLE.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>72PglkzLPQlRxmYiwGmd4A==</Hash>
+      <DependentUpon>email\unfiled$public\SUPPORTNewassignmentnotificationSAMPLE.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SUPPORTSelfServiceNewCommentNotificationSAMPLE.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTSelfServiceNewCommentNotificationSAMPLE.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>TTtDn/wusn0lWjRQq3GmKg==</Hash>
+      <DependentUpon>email\unfiled$public\SUPPORTSelfServiceNewCommentNotificationSAMPLE.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SUPPORTSelfServiceNewUserLoginInformationSAMPLE.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTSelfServiceNewUserLoginInformationSAMPLE.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>SB6WrIp5Y+EtGFMQeRmO/g==</Hash>
+      <DependentUpon>email\unfiled$public\SUPPORTSelfServiceNewUserLoginInformationSAMPLE.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SUPPORTSelfServiceResetPasswordSAMPLE.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTSelfServiceResetPasswordSAMPLE.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>Pp3X3yFPIG8qDbKEj6SLkg==</Hash>
+      <DependentUpon>email\unfiled$public\SUPPORTSelfServiceResetPasswordSAMPLE.email</DependentUpon>
+    </None>
+    <None Include="email\unfiled$public\SUPPORTWebtoCaseemailresponseSAMPLE.email-meta.xml">
+      <PhysicalRelativePath>src\email\unfiled$public\SUPPORTWebtoCaseemailresponseSAMPLE.email-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>BVAT15dMsGxvBkTdzXEGeg==</Hash>
+      <DependentUpon>email\unfiled$public\SUPPORTWebtoCaseemailresponseSAMPLE.email</DependentUpon>
+    </None>
+    <None Include="pages\AnswersHome.page-meta.xml">
+      <PhysicalRelativePath>src\pages\AnswersHome.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>2ulB4oO1XxNu87cSW5Vp+w==</Hash>
+      <DependentUpon>pages\AnswersHome.page</DependentUpon>
+    </None>
+    <None Include="pages\BandwidthExceeded.page-meta.xml">
+      <PhysicalRelativePath>src\pages\BandwidthExceeded.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>cJ85G37XL+MnrjJ+01zWoA==</Hash>
+      <DependentUpon>pages\BandwidthExceeded.page</DependentUpon>
+    </None>
+    <None Include="pages\ca_tour_main.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ca_tour_main.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>n8W8a9InuSEZQbABuOI5xw==</Hash>
+      <DependentUpon>pages\ca_tour_main.page</DependentUpon>
+    </None>
+    <None Include="pages\ca_tour_style.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ca_tour_style.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>BY5p//1cMzG+8aQWK2WwHg==</Hash>
+      <DependentUpon>pages\ca_tour_style.page</DependentUpon>
+    </None>
+    <None Include="pages\ChangePassword.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ChangePassword.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001400000000</LastModifiedDateUtcTicks>
+      <Hash>TMCPkXuUlMXomlGX8B+7cg==</Hash>
+      <DependentUpon>pages\ChangePassword.page</DependentUpon>
+    </None>
+    <None Include="pages\ChatterAnswersAgentView.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ChatterAnswersAgentView.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>CgogJKZO/tsVxZRG0dduNQ==</Hash>
+      <DependentUpon>pages\ChatterAnswersAgentView.page</DependentUpon>
+    </None>
+    <None Include="pages\ChatterAnswersChangePassword.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ChatterAnswersChangePassword.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>JGfnrXyGA+oKmlP0eIVxbw==</Hash>
+      <DependentUpon>pages\ChatterAnswersChangePassword.page</DependentUpon>
+    </None>
+    <None Include="pages\ChatterAnswersForgotPassword.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ChatterAnswersForgotPassword.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>NtlKKMtzsg9e/joCgspWcQ==</Hash>
+      <DependentUpon>pages\ChatterAnswersForgotPassword.page</DependentUpon>
+    </None>
+    <None Include="pages\ChatterAnswersForgotPasswordConfirm.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ChatterAnswersForgotPasswordConfirm.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>c0KQ/xsqlMmB5qSpSxeBdA==</Hash>
+      <DependentUpon>pages\ChatterAnswersForgotPasswordConfirm.page</DependentUpon>
+    </None>
+    <None Include="pages\ChatterAnswersHelp.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ChatterAnswersHelp.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>aKtc5DYYNmejCrBXoBmyww==</Hash>
+      <DependentUpon>pages\ChatterAnswersHelp.page</DependentUpon>
+    </None>
+    <None Include="pages\ChatterAnswersLogin.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ChatterAnswersLogin.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>P8yQYB+ufX3iCTdt5E+q5g==</Hash>
+      <DependentUpon>pages\ChatterAnswersLogin.page</DependentUpon>
+    </None>
+    <None Include="pages\ChatterAnswersRegistration.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ChatterAnswersRegistration.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>ymfVQGe9AnQWQM4+zI8S1Q==</Hash>
+      <DependentUpon>pages\ChatterAnswersRegistration.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesLanding.page-meta.xml">
+      <PhysicalRelativePath>src\pages\CommunitiesLanding.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001400000000</LastModifiedDateUtcTicks>
+      <Hash>IHGVS9d0ZtIqFXjHW/HmIw==</Hash>
+      <DependentUpon>pages\CommunitiesLanding.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesLogin.page-meta.xml">
+      <PhysicalRelativePath>src\pages\CommunitiesLogin.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001400000000</LastModifiedDateUtcTicks>
+      <Hash>oNMFaOufQRpCSlt0ClxfZw==</Hash>
+      <DependentUpon>pages\CommunitiesLogin.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesSelfReg.page-meta.xml">
+      <PhysicalRelativePath>src\pages\CommunitiesSelfReg.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001400000000</LastModifiedDateUtcTicks>
+      <Hash>xSwmLwztvCnXidbYyV3Sog==</Hash>
+      <DependentUpon>pages\CommunitiesSelfReg.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesSelfRegConfirm.page-meta.xml">
+      <PhysicalRelativePath>src\pages\CommunitiesSelfRegConfirm.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>EK4gMZQmkFH5IjVQtMI8Iw==</Hash>
+      <DependentUpon>pages\CommunitiesSelfRegConfirm.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesTemplate.page-meta.xml">
+      <PhysicalRelativePath>src\pages\CommunitiesTemplate.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001400000000</LastModifiedDateUtcTicks>
+      <Hash>ZhX9Gsvecu6B4z+pu1pg/A==</Hash>
+      <DependentUpon>pages\CommunitiesTemplate.page</DependentUpon>
+    </None>
+    <None Include="pages\embeddedTest.page-meta.xml">
+      <PhysicalRelativePath>src\pages\embeddedTest.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131333999480000000</LastModifiedDateUtcTicks>
+      <Hash>ZSd49+bpXbGSduB5nveFHQ==</Hash>
+      <DependentUpon>pages\embeddedTest.page</DependentUpon>
+    </None>
+    <None Include="pages\Exception.page-meta.xml">
+      <PhysicalRelativePath>src\pages\Exception.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>0wWKTXpW875Sbd0Hi7o6kQ==</Hash>
+      <DependentUpon>pages\Exception.page</DependentUpon>
+    </None>
+    <None Include="pages\FileNotFound.page-meta.xml">
+      <PhysicalRelativePath>src\pages\FileNotFound.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>T+BRGJavNSDWjqwbJh0zAg==</Hash>
+      <DependentUpon>pages\FileNotFound.page</DependentUpon>
+    </None>
+    <None Include="pages\ForgotPassword.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ForgotPassword.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>AsNCHubxPBLdMuWkQ/eUug==</Hash>
+      <DependentUpon>pages\ForgotPassword.page</DependentUpon>
+    </None>
+    <None Include="pages\ForgotPasswordConfirm.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ForgotPasswordConfirm.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>3ag+A9ggnOW967EMqcPf7Q==</Hash>
+      <DependentUpon>pages\ForgotPasswordConfirm.page</DependentUpon>
+    </None>
+    <None Include="pages\IdeasHome.page-meta.xml">
+      <PhysicalRelativePath>src\pages\IdeasHome.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>ZnVktlXhXfiINRqkX++29w==</Hash>
+      <DependentUpon>pages\IdeasHome.page</DependentUpon>
+    </None>
+    <None Include="pages\InMaintenance.page-meta.xml">
+      <PhysicalRelativePath>src\pages\InMaintenance.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>Cq/+C7XA7ggFdCvu+HXc2w==</Hash>
+      <DependentUpon>pages\InMaintenance.page</DependentUpon>
+    </None>
+    <None Include="pages\MyProfilePage.page-meta.xml">
+      <PhysicalRelativePath>src\pages\MyProfilePage.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001380000000</LastModifiedDateUtcTicks>
+      <Hash>qWFn6FA9EApJpJDc9uhRmg==</Hash>
+      <DependentUpon>pages\MyProfilePage.page</DependentUpon>
+    </None>
+    <None Include="pages\scc_tour_main.page-meta.xml">
+      <PhysicalRelativePath>src\pages\scc_tour_main.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>Y+/tRKrSZh9kGgiusoRUoA==</Hash>
+      <DependentUpon>pages\scc_tour_main.page</DependentUpon>
+    </None>
+    <None Include="pages\scc_tour_style.page-meta.xml">
+      <PhysicalRelativePath>src\pages\scc_tour_style.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>tagdGKaZg1EZSjqq+i/P6g==</Hash>
+      <DependentUpon>pages\scc_tour_style.page</DependentUpon>
+    </None>
+    <None Include="pages\SG_CaseEdit.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SG_CaseEdit.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131346771840000000</LastModifiedDateUtcTicks>
+      <Hash>sdN/MAORfOdQXc8VBlynGg==</Hash>
+      <DependentUpon>pages\SG_CaseEdit.page</DependentUpon>
+    </None>
+    <None Include="pages\SG_CaseFeedDynamicSubpage.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SG_CaseFeedDynamicSubpage.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131345772670000000</LastModifiedDateUtcTicks>
+      <Hash>9uyz71XKFHHSH1F/BPMosw==</Hash>
+      <DependentUpon>pages\SG_CaseFeedDynamicSubpage.page</DependentUpon>
+    </None>
+    <None Include="pages\SG_CaseView.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SG_CaseView.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131346771840000000</LastModifiedDateUtcTicks>
+      <Hash>1apup1W9y1/Z/mEIOI+BMg==</Hash>
+      <DependentUpon>pages\SG_CaseView.page</DependentUpon>
+    </None>
+    <None Include="pages\SG_Case_DynamicComponent.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SG_Case_DynamicComponent.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131311994080000000</LastModifiedDateUtcTicks>
+      <Hash>iWiNiRRsCD+ZraHez5bpbA==</Hash>
+      <DependentUpon>pages\SG_Case_DynamicComponent.page</DependentUpon>
+    </None>
+    <None Include="pages\SG_Case_Motivo_di_contatto.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SG_Case_Motivo_di_contatto.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131333839770000000</LastModifiedDateUtcTicks>
+      <Hash>o7cnHdFdGLg5PCPvujYCng==</Hash>
+      <DependentUpon>pages\SG_Case_Motivo_di_contatto.page</DependentUpon>
+    </None>
+    <None Include="pages\SG_Case_OverrideEdit.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SG_Case_OverrideEdit.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131345898660000000</LastModifiedDateUtcTicks>
+      <Hash>J2zKmbf2T23cCB15LO9czA==</Hash>
+      <DependentUpon>pages\SG_Case_OverrideEdit.page</DependentUpon>
+    </None>
+    <None Include="pages\SG_Case_OverrideEdit_v2.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SG_Case_OverrideEdit_v2.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131329245390000000</LastModifiedDateUtcTicks>
+      <Hash>0m+QJbkWJjgSozLP0++SMw==</Hash>
+      <DependentUpon>pages\SG_Case_OverrideEdit_v2.page</DependentUpon>
+    </None>
+    <None Include="pages\SG_Diritto_Recesso.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SG_Diritto_Recesso.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131328391580000000</LastModifiedDateUtcTicks>
+      <Hash>AMbnamJYuMn2GgYSU3/F5g==</Hash>
+      <DependentUpon>pages\SG_Diritto_Recesso.page</DependentUpon>
+    </None>
+    <None Include="pages\SG_DisponibilitaProdotto.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SG_DisponibilitaProdotto.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131340496200000000</LastModifiedDateUtcTicks>
+      <Hash>Ug/03hijBRu4e2EdP3F+Qg==</Hash>
+      <DependentUpon>pages\SG_DisponibilitaProdotto.page</DependentUpon>
+    </None>
+    <None Include="pages\SG_Force_Test.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SG_Force_Test.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131345743340000000</LastModifiedDateUtcTicks>
+      <Hash>oWwRGQ62vs/KMzAku5vIsA==</Hash>
+      <DependentUpon>pages\SG_Force_Test.page</DependentUpon>
+    </None>
+    <None Include="pages\SG_FTCaseRead.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SG_FTCaseRead.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131342431600000000</LastModifiedDateUtcTicks>
+      <Hash>sIXp2c+RCJZQo31JgqffeQ==</Hash>
+      <DependentUpon>pages\SG_FTCaseRead.page</DependentUpon>
+    </None>
+    <None Include="pages\SG_RichiestaVoucher.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SG_RichiestaVoucher.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131344820400000000</LastModifiedDateUtcTicks>
+      <Hash>x5BU2ywZCH0RtBDlheOf5g==</Hash>
+      <DependentUpon>pages\SG_RichiestaVoucher.page</DependentUpon>
+    </None>
+    <None Include="pages\SG_Stampa_Etichetta.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SG_Stampa_Etichetta.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131332681090000000</LastModifiedDateUtcTicks>
+      <Hash>RsN540YzWh/ou3mF2/1ViA==</Hash>
+      <DependentUpon>pages\SG_Stampa_Etichetta.page</DependentUpon>
+    </None>
+    <None Include="pages\SG_VerificaVoucher.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SG_VerificaVoucher.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131345877840000000</LastModifiedDateUtcTicks>
+      <Hash>tzD62JZkB6kFvdA8UVbs5A==</Hash>
+      <DependentUpon>pages\SG_VerificaVoucher.page</DependentUpon>
+    </None>
+    <None Include="pages\SiteLogin.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SiteLogin.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>7GBnl42sOkwhBbSnjjLiAQ==</Hash>
+      <DependentUpon>pages\SiteLogin.page</DependentUpon>
+    </None>
+    <None Include="pages\SiteRegister.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SiteRegister.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>HrBxeLM/1aVgDSPdIIX5bw==</Hash>
+      <DependentUpon>pages\SiteRegister.page</DependentUpon>
+    </None>
+    <None Include="pages\SiteRegisterConfirm.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SiteRegisterConfirm.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>6RQf8GQvMIK+q4W4uvnlKg==</Hash>
+      <DependentUpon>pages\SiteRegisterConfirm.page</DependentUpon>
+    </None>
+    <None Include="pages\SiteTemplate.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SiteTemplate.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>iBZeq63DL16QauiaIBJVPg==</Hash>
+      <DependentUpon>pages\SiteTemplate.page</DependentUpon>
+    </None>
+    <None Include="pages\StdExceptionTemplate.page-meta.xml">
+      <PhysicalRelativePath>src\pages\StdExceptionTemplate.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>v2QM7BgMmJetqxUlu5+hrw==</Hash>
+      <DependentUpon>pages\StdExceptionTemplate.page</DependentUpon>
+    </None>
+    <None Include="pages\subpage.page-meta.xml">
+      <PhysicalRelativePath>src\pages\subpage.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131334693840000000</LastModifiedDateUtcTicks>
+      <Hash>sUyd4tDKGsunmtlZYeZMGQ==</Hash>
+      <DependentUpon>pages\subpage.page</DependentUpon>
+    </None>
+    <None Include="pages\TrialCustomerPortalHomePage.page-meta.xml">
+      <PhysicalRelativePath>src\pages\TrialCustomerPortalHomePage.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>YvmzBHXfx7KWtkO1Ye706g==</Hash>
+      <DependentUpon>pages\TrialCustomerPortalHomePage.page</DependentUpon>
+    </None>
+    <None Include="pages\Trial_Tour.page-meta.xml">
+      <PhysicalRelativePath>src\pages\Trial_Tour.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>TlcjigKAYQsfvI2tT+N1cg==</Hash>
+      <DependentUpon>pages\Trial_Tour.page</DependentUpon>
+    </None>
+    <None Include="pages\Unauthorized.page-meta.xml">
+      <PhysicalRelativePath>src\pages\Unauthorized.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001410000000</LastModifiedDateUtcTicks>
+      <Hash>cOg2CIDrmkZnj19xY4hWDA==</Hash>
+      <DependentUpon>pages\Unauthorized.page</DependentUpon>
+    </None>
+    <None Include="pages\UnderConstruction.page-meta.xml">
+      <PhysicalRelativePath>src\pages\UnderConstruction.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131262001390000000</LastModifiedDateUtcTicks>
+      <Hash>3UZXRuv4qz1R1QgufSRoVA==</Hash>
+      <DependentUpon>pages\UnderConstruction.page</DependentUpon>
+    </None>
+    <None Include="triggers\chatter_answers_question_escalation_to_case_trigger.trigger-meta.xml">
+      <PhysicalRelativePath>src\triggers\chatter_answers_question_escalation_to_case_trigger.trigger-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131134782090000000</LastModifiedDateUtcTicks>
+      <Hash>JbiS/7EjZdVODwT1o1UYHw==</Hash>
+      <DependentUpon>triggers\chatter_answers_question_escalation_to_case_trigger.trigger</DependentUpon>
+    </None>
+    <None Include="triggers\SG_CaseTrigger.trigger-meta.xml">
+      <PhysicalRelativePath>src\triggers\SG_CaseTrigger.trigger-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131340491150000000</LastModifiedDateUtcTicks>
+      <Hash>zLjFDeBzwhkzS7Zig+qYZg==</Hash>
+      <DependentUpon>triggers\SG_CaseTrigger.trigger</DependentUpon>
+    </None>
+    <None Include="triggers\SG_Contact.trigger-meta.xml">
+      <PhysicalRelativePath>src\triggers\SG_Contact.trigger-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131340485860000000</LastModifiedDateUtcTicks>
+      <Hash>zLjFDeBzwhkzS7Zig+qYZg==</Hash>
+      <DependentUpon>triggers\SG_Contact.trigger</DependentUpon>
+    </None>
+    <None Include="triggers\SG_OverridePageEdit.trigger-meta.xml">
+      <PhysicalRelativePath>src\triggers\SG_OverridePageEdit.trigger-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131340487540000000</LastModifiedDateUtcTicks>
+      <Hash>2G9A3/+ztc7DRQdcm78ifA==</Hash>
+      <DependentUpon>triggers\SG_OverridePageEdit.trigger</DependentUpon>
+    </None>
+    <None Include="triggers\SG_richiestaVoucherTrigger_AfterInsertUpdate.trigger-meta.xml">
+      <PhysicalRelativePath>src\triggers\SG_richiestaVoucherTrigger_AfterInsertUpdate.trigger-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <LastModifiedDateUtcTicks>131347406920000000</LastModifiedDateUtcTicks>
+      <Hash>zLjFDeBzwhkzS7Zig+qYZg==</Hash>
+      <DependentUpon>triggers\SG_richiestaVoucherTrigger_AfterInsertUpdate.trigger</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Build.targets" />
+</Project>

@@ -1,0 +1,72 @@
+<apex:page standardcontroller="Case" showheader="true" renderas="pdf">
+    <!---->
+
+    <center>
+        <apex:image url="https://unieuro--dev1--c.cs83.content.force.com/servlet/servlet.FileDownload?file=0154E000000EMSV" />
+    </center>
+    <apex:pageblock >
+        &emsp;
+        <th></th>
+        <center>
+            <apex:outputtext style="font-family:'Arial Unicode MS'; color: #002d62; font-size: x-large; font-weight: bold" value="Servizio di Reso"></apex:outputtext>
+        </center>
+        &emsp;
+        <th></th>
+        <apex:pageblocksection columns="1">
+            <apex:outputtext style="font-style:italic" value="Gentile {!case.contact.name},"></apex:outputtext>
+        </apex:pageblocksection>
+        <br />
+        <apex:pageblocksection >
+            <apex:outputtext value="{!$Label.Reso_Sostituzione}" escape="false" />
+        </apex:pageblocksection>
+        <hr />
+        <apex:pageblocksection >
+            <apex:outputtext style="font-family:Arial; color:#002d62" value="Incolli-applichi all'esterno dell'imballo l'etichetta posta sotto la linea tratteggiata inserendo il numero di rma. laddove non conforme, la merce verra respinta.">
+            </apex:outputtext>
+        </apex:pageblocksection>
+        <div style="float:left">
+            <apex:image url="https://unieuro--dev1--c.cs83.content.force.com/servlet/servlet.FileDownload?file=0154E000000ESrl" width="25" height="10" ></apex:image>
+        </div>
+        <hr style="border-top:dashed 1px" />
+        <center>
+            <apex:outputtext style="color:#002d62; font-weight:bold" value="(etichetta da applicare all'esterno del collo, non direttamente sull'imballo originale del prodotto)" />
+        </center>
+        <center>
+            &emsp;
+            <table style=" border: ridge; border-color: #002d62; width: 680px; height:445px; ">
+                <td style="align-content: center; font-size: 20px; color: #002d62; font-family:'Arial Unicode MS'; font-weight:bold" rowspan="2" colspan="2">RESO PRODOTTO UNIEURO</td>
+                <tr><td><br /></td></tr>
+                <td style="font-family:'Arial Unicode MS'; font-size:15px; text-align:left; padding-left:2em"> MITTENTE <br />
+               {!Case.Nome_Contatto__c}<br />
+
+               {!Case.Contact.Indirizzo__c}<br />
+
+               {!Case.Contact.Citt__c} {!Case.Contact.CAP__c}
+                </td>
+                <tr><td><br /></td></tr>
+                <td style="font-family: 'Arial Unicode MS';  font-weight: bold;border:thick; font-size: 20px; text-align:left; padding-right:3em; padding-left:20em" colspan="2">DESTINATARIO:<br />
+                                Unieuro srl,<br />   Via Schiaparelli, 31<br />   47122- Forl&igrave;
+                </td>
+                <tr><td><br /></td></tr>
+                 <td style="font-size:15px; font-weight:bold; font-family:'Arial Unicode MS'; padding-left:3em; text-align:left"> Codice Ordine: {!Case.Ordine__c}</td>
+                 <tr><td><br /></td></tr> 
+            <td style="padding-top:2em" width="20px" colspan="2">
+                    <apex:image url="https://www.barcodesinc.com/generator_files/image.php?code={!Case.Codice_RMA__c}&style=325&type=C128B&width=200&height=50&xres=1&font=3">
+                    </apex:image><br />
+                    Codice RMA: {!Case.Codice_RMA__c}
+                </td> 
+            </table>
+        
+        </center>
+ 
+      
+        <!-- <apex:pageblocktable value="{!Case}" var="ca" width="100%" cellpadding="20" border="2">
+                <apex:column > <apex:outputtext value="DESTINATARIO" style="color: #002d62; font-size:large" /></apex:column>
+        <apex:column >
+            <apex:outputtext style="color: #002d62; font-weight: bold" value="UNIERO srl. Via Schiaparelli, 31, 47122-Forl" />
+        </apex:column>
+            <apex:column value="Codice RMA: {!ca.Codice_RMA__c}" style=" color: #002d62" />
+                </apex:pageblocktable>-->
+        <!--<apex:outputtext style="font-size: 35px; border:thick; font-weight:bold; border-width:5px; border-color:#002d62" height="20px" width="30px">-->
+    </apex:pageblock>
+</apex:page>

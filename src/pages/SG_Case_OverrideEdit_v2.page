@@ -1,0 +1,209 @@
+<apex:page standardcontroller="Case" extensions="SG_CaseOverrideEdit_Controller" showheader="false" >
+    <apex:includescript value="/support/console/38.0/integration.js" />
+  
+
+ <apex:includescript value="/support/console/38.0/integration.js" />
+    <script type='text/javascript'>
+
+        /*
+        * Definition of the functions
+        */
+        function afterSave(caseID){ 
+
+            // basic XSS protection: removing '<', '.' and '/' characters.
+            if((caseID.length != 15 && caseID.length != 18) || caseID.search(/[<./]/gi) != 0){
+                return 'NEIN!';
+            }
+
+            //If we are not in the salesforce console, then we simply refresh the page loading the new case ID
+            if(!sforce.console.isInConsole()){
+                console.log('WE ARE NOT IN THE SALESFORCE CONSOLE FOR SERVICE. LOADING CASE DETAIL WEBPAGE');
+                window.open('/' + caseID, '_self');
+            }
+
+            // If we are in the salesforce console, then we refresh or recreate the primary tab along with its subtabs
+            console.log('WE ARE IN THE SALESFORCE CONSOLE FOR SERVICE. RETRIEVING PRIMARY TAB ID.');
+            sforce.console.getEnclosingPrimaryTabId(getSubTabList);
+
+            // retrieving the list of the open subtab ids in the current primary tab
+            function getSubTabList(PrimaryTabRequestResult){
+                console.log('PRIMARY TAB ID RETRIEVED. RETRIEVING SUBTAB ID LIST');
+                PrimaryTabID = PrimaryTabRequestResult.id;
+                sforce.console.getSubtabIds(PrimaryTabRequestResult.id, getCurrentSubTab);
+            }
+
+            // retrieving the current subtab id, that is the subtab containing the Save button
+            function getCurrentSubTab(SubTabListRequestResult){
+                console.log('SUBTAB ID LIST RETRIEVED. RETRIEVING ID OF THE CURRENT SUBTAB');
+                SubTabList = SubTabListRequestResult.ids;
+                console.log('CCCC: ' + SubTabList);
+                sforce.console.getFocusedSubtabId(getFirstSubtabInfo);
+            }
+
+            // retrieving first subtab information
+            function getFirstSubtabInfo(FocusedSubTabResult){
+                console.log('CURRENT SUBTAB ID RETRIEVED. RETRIEVING WEBPAGE INFORMATION');
+                FocusedSubtabID = FocusedSubTabResult.id;
+
+                sforce.console.getPageInfo(FocusedSubTabResult.id,
+                    function(PageInfoResult){
+                        console.log('WEBPAGE INFORMATION RETRIEVED. ');
+
+                        // retrieving the salesforce URL of the first subtab as a global variable
+                        var FirstSubtabInfo = JSON.parse(PageInfoResult.pageInfo);
+                        FirstSubtabSForceURL = FirstSubtabInfo.url;
+                        var FirstSubtabPartialURL = FirstSubtabSForceURL.slice(FirstSubtabSForceURL.indexOf('/500/e'));
+
+                        // If we are in Edit mode, then the FirstSubtabSForceURL == '/' + caseID and we need to refresh the page
+                        // Else we are in New Case mode and we need to proceed
+                        if(FirstSubtabSForceURL == '/500/e'){
+                            console.log('YOU ARE CREATING A NEW CASE. PROCEEDING.');
+                            CleanSubTabList(FocusedSubTabResult);
+                        }
+                        else{
+                            console.log('YOU ARE EDITING AN EXISTING CASE. THE CONTROLLER EXTENSION DOES EVERYTHING FROM NOW ON.');
+                        }
+                    });
+            }
+
+            // removing the current subtab id from the subtab list and opening a new primary tab pointing to the case detail page
+            function CleanSubTabList(CurrentSubTabRequestResult){
+                console.log('REMOVING EDIT SUBTAB FROM SUBTAB LIST');
+
+                // removing current subtab id from the list
+                var indexToRemove = SubTabList.indexOf(FocusedSubtabID);
+                SubTabList.splice(indexToRemove,1);
+                Length = SubTabList.length;
+                index = 0;
+                sforce.console.disableTabClose(false, PrimaryTabID);
+                // If we have at least another subtab we open a new primary tab and we reopen each subtab in it, then we close the old primary tab
+                if(Length != 0){
+                    console.log('RRRRRR: ' + Length);
+                    sforce.console.openPrimaryTab(null, '/' + caseID, true, undefined, openSubTabs);
+                }
+                // else, we reload (refreshing it is not enough) the current primary tab
+                else{
+                    console.log('RRRRRR: ' + Length);
+                    sforce.console.openPrimaryTab(PrimaryTabID, '/' + caseID, true, undefined);
+                }
+
+
+            }
+
+            // function that loops on the subtab list to reopen each subtab in the new primary tab
+            // at the end of the execution, the starting primary tab is closed
+            function openSubTabs(PrimaryTabResponse){
+
+                if(index < Length){
+                    // page info structure containing information about the subtab urls
+                    sforce.console.getPageInfo(SubTabList[index],
+                        function reOpenSubTab(result){
+                            var pInfo = JSON.parse(result.pageInfo);
+
+                            if(pInfo.objectId != undefined){
+                                sforce.console.openSubtab(PrimaryTabResponse.id, '/' + pInfo.objectId, true, undefined, null);
+                            }
+                            else{
+                                var urlString = pInfo.url;
+                                var urlSubString = urlString.slice(urlString.indexOf('com') + 3);
+                                sforce.console.openSubtab(PrimaryTabResponse.id, urlSubString , true, undefined, null);
+                            }
+
+                            index = index + 1;
+                            return openSubTabs(PrimaryTabResponse);
+                        });
+                }else{
+                    sforce.console.disableTabClose(false, PrimaryTabID, undefined);
+                    sforce.console.closeTab(PrimaryTabID);
+                }
+            }
+        }
+
+        function afterCancel(){
+            // If we are in the console, then we close the tab containing the VF page
+            if(sforce.console.isInConsole()){
+                sforce.console.disableTabClose(false);
+
+                sforce.console.getEnclosingTabId(
+                function(result){
+                    sforce.console.closeTab(result.id);
+                });
+
+            }//If we are not in the salesforce console, then we return to the previous page
+            else{
+                window.history.back();
+            }
+        }
+
+        /*
+         *Starting code execution
+         */
+        // Disabling the close tab
+        if(sforce.console.isInConsole())
+            sforce.console.disableTabClose(true);
+
+    </script>
+
+
+   
+<!--     <apex:sectionheader title="Case Edit" subtitle="{!Case.CaseNumber}" help="https://help.salesforce.com/articleView?id=cases_edit.htm&siteLang=en_US&type=0" /> -->
+    <apex:messages />
+
+    <apex:form >
+        <apex:pageblock title="Case {!Case.CaseNumber}" mode="edit" id="theMainPageBlock">
+
+            <apex:pageblockbuttons >
+                <apex:commandbutton value="Save" action="{!SaveInConsole}" oncomplete="afterSave();"/>
+                <apex:commandbutton value="Cancel" onclick="afterCancel();" />
+            </apex:pageblockbuttons>
+            <!-- CASE INFORMATION SECTION -->
+            <apex:pageblocksection title="{!$Label.SG_Case_information_section}" collapsible="false" columns="2">
+                <apex:outputtext value="{!Case.CaseNumber}" />
+                <apex:inputfield value="{!Case.Status}"         required="true" />
+                <apex:inputfield value="{!Case.Type}" />
+                <apex:inputfield value="{!Case.Priority}" />
+                <apex:inputfield value="{!Case.Categoria__c}" />
+                <apex:outputtext value="" />
+                <apex:inputfield value="{!Case.Dettaglio__c}" >
+                	<apex:actionsupport event="onchange" rerender="theDependentOutputPanel" />
+                </apex:inputfield>
+                                      
+                <apex:inputfield value="{!Case.AccountId}" />
+                <apex:outputtext value="" />
+                <apex:inputfield value="{!Case.ContactId}" />
+                <apex:outputtext value="" />
+                <apex:outputtext value="{!Case.Owner.Name}" />
+                <apex:outputtext value="" />
+                <apex:inputfield value="{!Case.Origin}" required="true" />
+                <apex:outputtext value="" />             
+            </apex:pageblocksection>
+            <apex:pageblocksection columns="1" id="theDependentOutputPanel">
+                <c:SG_Case_Section_1 rendered="{!Case.Dettaglio__c = '111' || Case.Dettaglio__c = '211'}"/>
+                <c:SG_Case_Section_2 rendered="{!Case.Dettaglio__c = '211'}" />
+                <c:SG_Case_Section_3 rendered="{!Case.Dettaglio__c = '311'}" />
+                <apex:dynamiccomponent componentvalue="{!PrintInputFields}" invokeafteraction="true" />
+            </apex:pageblocksection>
+            <apex:pageblocksection columns="1">
+                <apex:inputtext value="{!Case.Subject}"     size="50" />
+                <apex:inputtextarea value="{!Case.Description}" cols="60" rows="6" />
+                <apex:inputtextarea value="{!Case.Internal_Comments__c}" cols="60" rows="6" />
+            </apex:pageblocksection>
+            <!--FIELDS VARYING BASED ON USER PROFILE-->
+            
+            
+
+        </apex:pageblock>
+<!--         <apex:pageblock mode="edit"> -->
+<!--             DESCRIPTION INFORMATION SECTION -->
+<!--             <apex:pageblocksection title="Description Information" collapsible="false" columns="1"> -->
+<!--                 <apex:inputtext value="{!Case.Subject}" size="50" /> -->
+<!--                 <apex:inputtextarea value="{!Case.Description}" cols="60" rows="6" /> -->
+<!--                 <apex:inputtextarea value="{!Case.Internal_Comments__c}" cols="60" rows="6" /> -->
+<!--             </apex:pageblocksection> -->
+<!--             <apex:pageblockbuttons location="bottom"> -->
+<!--                 <apex:commandbutton value="Save" action="{!SaveInConsole}" oncomplete="afterSave();"/> -->
+<!--                 <apex:commandbutton value="Cancel" onclick="afterCancel();" /> -->
+<!--             </apex:pageblockbuttons> -->
+<!--         </apex:pageblock> -->
+    </apex:form>
+</apex:page>

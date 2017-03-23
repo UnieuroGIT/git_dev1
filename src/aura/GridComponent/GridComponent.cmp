@@ -1,0 +1,27 @@
+<aura:component >
+    
+    <div class="slds-align--absolute-center slds-m-top--small">
+        <div class="slds-box slds-box--x-small slds-size--1-of-2">
+            <!--Creating grid-->
+            <!--grid width = 1/2 page width-->
+            <div class="slds-grid slds-grid--vertical-align-top slds-align--absolute-center slds-size--1-of-1 slds-p-around--small">
+                <!--first row-->
+                <div class="slds-col slds-size--1-of-2">
+                    <ui:button label="Garanzia" aura:id="Garanzia" class="slds-button slds-button--brand slds-align--absolute-center slds-size--1-of-2" press="{!c.buttonPressed}" />
+                </div>
+                <div class="slds-col slds-size--1-of-2">
+                    <ui:button label="Web" aura:id="Web" class="slds-button slds-button--brand slds-align--absolute-center slds-size--1-of-2" press="{!c.buttonPressed}" />
+                </div>
+            </div>
+            <div class="slds-grid slds-grid--vertical-align-bottom slds-align--absolute-center slds-size--1-of-1 slds-p-around--small">
+                <div class="slds-col slds-size--1-of-2">
+                    <ui:button label="Contestazione" aura:id="Contestazione" class="slds-button slds-button--brand slds-align--absolute-center slds-size--1-of-2" press="{!c.buttonPressed}" />
+                </div>
+                <div class="slds-col slds-size--1-of-2">
+                    <ui:button label="Altro" aura:id="Altro" class="slds-button slds-button--brand slds-align--absolute-center slds-size--1-of-2" press="{!c.buttonPressed}" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</aura:component>

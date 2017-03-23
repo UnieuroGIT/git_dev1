@@ -1,0 +1,37 @@
+<apex:page standardcontroller="case">
+    <script type="text/javascript">
+        var __sfdcSessionId = '{!GETSESSIONID()}';
+    </script>
+    <script src="../../soap/ajax/27.0/connection.js" type="text/javascript"></script>
+    <script type="text/javascript">
+     var result = sforce.connection.query("select Id, Motivo_di_Contatto__c, RecordTypeId, Note__c from      Case WHERE Id='{!Case.Id}' LIMIT 1");
+		var records = result.getArray('records');
+		
+		var objCase = records[0];
+		objCase.Motivo_di_Contatto__c = '11';
+		
+		objCase.Note__c += 'Case Escalated';
+		
+		
+		
+		
+		function testUpdatecase(){
+			
+		var result = sforce.connection.update([objCase]);
+		if(result[0].success=='true'){
+		    alert('The Case was Updated Successfully');
+		    var myTitle = document.getElementById("demo")
+		location.reload(true);
+		} else if(result[0].success=='true'){
+		    alert('There was an issue updating the case');
+		}
+		
+		
+		}
+    </script>    
+    
+     <A HREF="#" onClick="testUpdatecase();return false">
+           Click here to close this tab</A>
+ 
+    
+</apex:page>

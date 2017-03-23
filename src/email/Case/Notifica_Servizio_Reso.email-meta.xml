@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email di conferma reso per il cliente</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Notifica Servizio Reso</name>
+    <style>none</style>
+    <subject>Conferma reso cliente</subject>
+    <textOnly>Servizio di Reso      Gentile {!Contact.Name},
+{!Label.Reso_Sostituzione}
+Incolli-applichi all&apos;esterno dell&apos;imballo l&apos;etichetta posta sotto la linea tratteggiata inserendo il numero di rma. laddove non conforme, la merce verra respinta.
+(etichetta da applicare all&apos;esterno del collo, non direttamente sull&apos;imballo originale del prodotto)&quot;    
+
+RESO PRODOTTO UNIEURO
+
+MITTENTE
+{!Case.Nome_Contatto__c}
+{!Contact.Indirizzo__c}
+{!Contact.Citt__c}{!Contact.CAP__c}
+
+DESTINATARIO:
+Unieuro srl,
+Via Schiaparelli, 31
+47122- Forlì
+
+Codice Ordine: {!Case.Ordine__c}
+
+
+Codice RMA: {!Case.Codice_RMA__c}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

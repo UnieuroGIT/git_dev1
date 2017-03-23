@@ -1,0 +1,56 @@
+<apex:component >
+    <apex:attribute name="SObjectAPIname" description="SObject related with the field" type="Case" required="true"/>
+    <apex:attribute name="EditMode" description="Boolean flag used to identify EditMode" type="Boolean" required="true"/>
+
+    <apex:pageblock mode="maindetail" >
+        <!--<apex:repeat value="{!allCaseFields}" var="CaseField">
+        <apex:inputHidden value="{!Case[CaseField]}"/>
+        </apex:repeat>-->
+        <apex:inputHidden value="{!SObjectAPIname.CaseNumber}"/>
+        <apex:inputHidden value="{!SObjectAPIname.AccountId}"/>
+        <apex:inputHidden value="{!SObjectAPIname.Status}"/>
+        <apex:inputHidden value="{!SObjectAPIname.ContactId}"/>
+        <apex:inputHidden value="{!SObjectAPIname.ParentId}"/>
+        <apex:inputHidden value="{!SObjectAPIname.Categoria__c}"/>
+        <apex:inputHidden value="{!SObjectAPIname.Priority}"/>
+        <apex:inputHidden value="{!SObjectAPIname.Dettaglio__c}"/>
+        <apex:inputHidden value="{!SObjectAPIname.Subject}"/>
+        <apex:inputHidden value="{!SObjectAPIname.CaseNumber}"/>
+        <apex:inputHidden value="{!SObjectAPIname.Type}"/>
+        <apex:inputHidden value="{!SObjectAPIname.Description}"/>
+        <apex:inputHidden value="{!SObjectAPIname.Order__c}"/>
+        <apex:inputHidden value="{!SObjectAPIname.Codice_Garanzia__c}"/>
+
+        <apex:actionregion >
+            <apex:pageblocksection title="Case Information">
+
+                <c:SG_InputOutputSectionItem SObjectAPIname="{!SObjectAPIname}" fieldAPIname="CaseNumber" isInputField="{!EditMode}" />
+                <c:SG_InputOutputSectionItem SObjectAPIname="{!SObjectAPIname}" fieldAPIname="AccountId" isInputField="{!EditMode}"/>
+                <c:SG_InputOutputSectionItem SObjectAPIname="{!SObjectAPIname}" fieldAPIname="Status" isInputField="{!EditMode}"/>
+                <c:SG_InputOutputSectionItem SObjectAPIname="{!SObjectAPIname}" fieldAPIname="ContactId" isInputField="{!EditMode}"/>
+                <c:SG_InputOutputWithAction SObjectAPIname="{!SObjectAPIname}" fieldAPIname="Type" isInputField="{!EditMode}" rerenderObjectName="theDependentOutputPanel"/>
+                <c:SG_InputOutputSectionItem SObjectAPIname="{!SObjectAPIname}" fieldAPIname="ParentId" isInputField="{!EditMode}"/>
+                <c:SG_InputOutputSectionItem SObjectAPIname="{!SObjectAPIname}" fieldAPIname="Categoria__c" isInputField="{!EditMode}"/>
+                <c:SG_InputOutputSectionItem SObjectAPIname="{!SObjectAPIname}" fieldAPIname="Priority" isInputField="{!EditMode}"/>
+                <c:SG_InputOutputSectionItem SObjectAPIname="{!SObjectAPIname}" fieldAPIname="Dettaglio__c" isInputField="{!EditMode}"/>
+                <apex:pageblocksectionitem ></apex:pageblocksectionitem>
+                <c:SG_InputOutputSectionItem SObjectAPIname="{!SObjectAPIname}" fieldAPIname="Subject" isInputField="{!EditMode}"/>
+                <apex:pageblocksectionitem ></apex:pageblocksectionitem>
+                <c:SG_InputOutputSectionItem SObjectAPIname="{!SObjectAPIname}" fieldAPIname="Description" isInputField="{!EditMode}"/>
+
+            </apex:pageblocksection>
+
+            <apex:pageblocksection title="Order Information">
+                <c:SG_InputOutputSectionItem SObjectAPIname="{!SObjectAPIname}" fieldAPIname="Order__c" isInputField="{!EditMode}"/>
+            </apex:pageblocksection>
+
+            <apex:outputpanel id="theDependentOutputPanel">
+                <apex:pageblocksection title="Garanzie" rendered="{!SObjectAPIname.Type == '100'}">
+                    <c:SG_InputOutputSectionItem SObjectAPIname="{!SObjectAPIname}" fieldAPIname="Codice_Garanzia__c" isInputField="{!EditMode}"/>
+                </apex:pageblocksection>
+            </apex:outputpanel>
+
+        </apex:actionregion>    
+    </apex:pageblock>
+
+</apex:component>

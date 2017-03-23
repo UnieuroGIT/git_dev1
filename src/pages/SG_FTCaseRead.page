@@ -1,0 +1,12 @@
+<apex:page id="SG_FTCaseRead" standardcontroller="Case" showheader="false" extensions="SG_Force_Test_Controller">
+    <apex:pageblock >
+        <apex:pageblocktable value="{!listacasi}" var="C">
+            <apex:column value="{!C.CaseNumber}"></apex:column>
+            <apex:column value="{!C.Subject}"></apex:column>
+            <apex:column value="{!C.Status}"></apex:column>
+            <apex:column value="{!C.CreatedDate}"></apex:column>
+            <apex:column value="{!C.OwnerId}"></apex:column>
+            <apex:column value="{!C.Numero_Case__c}"></apex:column></apex:pageblocktable>
+    </apex:pageblock>
+
+</apex:page>

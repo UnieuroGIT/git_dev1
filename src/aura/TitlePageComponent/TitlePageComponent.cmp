@@ -1,0 +1,13 @@
+<aura:component >
+	<!--This component accepts a string from the above component and displays it with fancy-->
+    <aura:attribute name="Title" type="String" default="Hello World!" />
+    
+    <div class="slds-page-header" role="banner">
+        <div class="slds-text-align--center">
+            <h1 class="slds-text-heading--large">
+                <aura:text value="{!v.Title}" />
+            </h1>
+        </div>
+    </div>
+
+</aura:component>

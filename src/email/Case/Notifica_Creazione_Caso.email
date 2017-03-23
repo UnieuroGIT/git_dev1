@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<span style="background-color: rgb(255, 255, 255);">Gentile {!Contact.Name}</span>]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<div style="font-size: 12pt; background-color: rgb(255, 255, 255);">Abbiamo ricevuto la sua richiesta di supporto.</div><div style="font-size: 12pt; background-color: rgb(255, 255, 255);"><br></div><div style="font-size: 12pt; background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;">La contatteremo il prima possibile.</span></div><div style="font-size: 12pt; background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;"><br></span></div><div style="font-size: 12pt; background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;">Per qualsiasi problema non esisti a contattarci.</span></div><div style="font-size: 12pt; background-color: rgb(255, 255, 255);"><span style="font-size: 12pt;"><br></span></div><div style="font-size: 12pt; background-color: rgb(255, 255, 255);">Team Unieuro,</div><div style="background-color: rgb(255, 255, 255);"><br></div><div><font face="arial"><br></font></div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[<span style="color: rgb(80, 71, 94); font-family: &quot;Segoe UI&quot;, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">Per qualsiasi richiesta di assistenza, Unieuro S.p.A. può essere contatta telefonicamente al numero 02-61317291 (Lunedì – Domenica ore 9.00 – 20.00)</span>]]></td>
+</tr>
+</table>

@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>ActivateOrder</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Approve</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Deactivate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewReduction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ReduceOrder</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AccountNumber</fullName>
+    </fields>
+    <fields>
+        <fullName>ActivatedById</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ActivatedDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>BillToContactId</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Canale__c</fullName>
+        <description>canale (Web, WebMobile, Ebay, ModoModoApp)</description>
+        <externalId>false</externalId>
+        <label>Canale</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Carta_Fedelta__c</fullName>
+        <description>codice carta</description>
+        <externalId>false</externalId>
+        <label>Carta Fedelta</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Citta_Contatto__c</fullName>
+        <externalId>false</externalId>
+        <label>Citta Contatto</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Citta_Fatturazione__c</fullName>
+        <description>città di fatturazione</description>
+        <externalId>false</externalId>
+        <label>Citta Fatturazione</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Citta_Spedizione__c</fullName>
+        <description>città di spedizione</description>
+        <externalId>false</externalId>
+        <label>Citta Spedizione</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cod_Negozio_Consegna__c</fullName>
+        <description>codice negozio di consegna</description>
+        <externalId>false</externalId>
+        <label>Cod Negozio Consegna</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Codice_Fiscale_Contatto__c</fullName>
+        <description>codice fiscale del contatto</description>
+        <externalId>false</externalId>
+        <label>Codice Fiscale Contatto</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Codice_Fiscale_Fatturazione__c</fullName>
+        <description>codice fiscale di fatturazione</description>
+        <externalId>false</externalId>
+        <label>Codice Fiscale Fatturazione</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Codici_Voucher__c</fullName>
+        <description>codice voucher</description>
+        <externalId>false</externalId>
+        <label>Codici Voucher</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cognome_Contatto__c</fullName>
+        <description>cognome del contatto</description>
+        <externalId>false</externalId>
+        <label>Cognome Contatto</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CompanyAuthorizedById</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CompanyAuthorizedDate</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Consenso_Recesso__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Consenso Recesso</label>
+        <referenceTo>OrderItem</referenceTo>
+        <relationshipLabel>Orders</relationshipLabel>
+        <relationshipName>Orders</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContractEndDate</fullName>
+    </fields>
+    <fields>
+        <fullName>ContractId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContractName</fullName>
+    </fields>
+    <fields>
+        <fullName>Costo_Consegna_Prod__c</fullName>
+        <description>costo totale di consegna prodotti</description>
+        <externalId>false</externalId>
+        <label>Costo Consegna Prod</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Costo_Consegna_Serv__c</fullName>
+        <description>costo totale di consegna servizi</description>
+        <externalId>false</externalId>
+        <label>Costo Consegna Serv</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Costo_Consegna__c</fullName>
+        <description>costo totale di consegna (consegna prodotti + consegna servizi)</description>
+        <externalId>false</externalId>
+        <label>Costo Consegna</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Costo_Pagamento__c</fullName>
+        <description>Costo pagamento</description>
+        <externalId>false</externalId>
+        <label>Costo Pagamento</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CustomerAuthorizedById</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CustomerAuthorizedDate</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Customer_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Creazione__c</fullName>
+        <description>data creazione ordine</description>
+        <externalId>false</externalId>
+        <label>Data Creazione</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Data_Nascita_Contatto__c</fullName>
+        <description>dato anagrafico del contatto</description>
+        <externalId>false</externalId>
+        <label>Data Nascita Contatto</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Data_Nascita_Fatturazione__c</fullName>
+        <description>dato anagrafico di fatturazione</description>
+        <externalId>false</externalId>
+        <label>Data Nascita Fatturazione</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Data_Nascita_Spedizione__c</fullName>
+        <description>dato anagrafico di spedizione</description>
+        <externalId>false</externalId>
+        <label>Data Nascita Spedizione</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>EffectiveDate</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Email_Contatto__c</fullName>
+        <description>email del contatto</description>
+        <externalId>false</externalId>
+        <label>Email Contatto</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Fatturazione__c</fullName>
+        <description>email per la fatturazione</description>
+        <externalId>false</externalId>
+        <label>Email Fatturazione</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Spedizione__c</fullName>
+        <description>email per la spedizione</description>
+        <externalId>false</externalId>
+        <label>Email Spedizione</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <description>Indirizzo mail del cliente</description>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsReductionOrder</fullName>
+    </fields>
+    <fields>
+        <fullName>Linea1_Contatto__c</fullName>
+        <description>indirizzo del contatto</description>
+        <externalId>false</externalId>
+        <label>Linea1 Contatto</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Linea1_Fatturazione__c</fullName>
+        <description>indirizzo di fatturazione</description>
+        <externalId>false</externalId>
+        <label>Linea1 Fatturazione</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Linea1_Spedizione__c</fullName>
+        <description>indirizzo di spedizione</description>
+        <externalId>false</externalId>
+        <label>Linea1 Spedizione</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Linea2_Contatto__c</fullName>
+        <description>numero civico del contatto</description>
+        <externalId>false</externalId>
+        <label>Linea2 Contatto</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Linea2_Fatturazione__c</fullName>
+        <description>numero civico di fatturazione</description>
+        <externalId>false</externalId>
+        <label>Linea2 Fatturazione</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Linea2_Spedizione__c</fullName>
+        <description>numero civico di spedizione</description>
+        <externalId>false</externalId>
+        <label>Linea2 Spedizione</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Metodo_Pagamento__c</fullName>
+        <description>metodo di pagamento</description>
+        <externalId>false</externalId>
+        <label>Metodo Pagamento</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Metodo_Spedizione__c</fullName>
+        <description>metodo di spedizione</description>
+        <externalId>false</externalId>
+        <label>Metodo Spedizione</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Nome_Contatto__c</fullName>
+        <description>nome del contatto</description>
+        <externalId>false</externalId>
+        <label>Nome Contatto</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Nome_Negozio_Consegna__c</fullName>
+        <description>nome negozio di consegna</description>
+        <externalId>false</externalId>
+        <label>Nome Negozio Consegna</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Numero_Ordine__c</fullName>
+        <description>numero d&apos;ordine</description>
+        <externalId>false</externalId>
+        <label>Numero Ordine</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OrderReferenceNumber</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OriginalOrderId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Partita_Iva_Contatto__c</fullName>
+        <description>partita iva del contatto</description>
+        <externalId>false</externalId>
+        <label>Partita Iva Contatto</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partita_Iva_Fatturazione__c</fullName>
+        <description>partita iva di fatturazione</description>
+        <externalId>false</externalId>
+        <label>Partita Iva Fatturazione</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PoDate</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PoNumber</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Prenotazione__c</fullName>
+        <description>codice di prenotazione</description>
+        <externalId>false</externalId>
+        <label>Prenotazione</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prezzo_Totale__c</fullName>
+        <description>importo totale ordine</description>
+        <externalId>false</externalId>
+        <label>Prezzo Totale</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Promozioni_Applicate__c</fullName>
+        <description>Elenco delle promozioni applicate all&apos;ordine</description>
+        <externalId>false</externalId>
+        <label>Promozioni Applicate</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Provincia_Contatto__c</fullName>
+        <description>provincia di provenienza del contatto</description>
+        <externalId>false</externalId>
+        <label>Provincia Contatto</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Provincia_Fatturazione__c</fullName>
+        <description>provincia di fatturazione</description>
+        <externalId>false</externalId>
+        <label>Provincia Fatturazione</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Provincia_Spedizione__c</fullName>
+        <description>Provincia di Spedizione</description>
+        <externalId>false</externalId>
+        <label>Provincia Spedizione</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Punti_Guadagnati__c</fullName>
+        <description>punti guadagnati con l&apos;ordine</description>
+        <externalId>false</externalId>
+        <label>Punti Guadagnati</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Punti_Spesi__c</fullName>
+        <description>punti spesi con l&apos;ordine</description>
+        <externalId>false</externalId>
+        <label>Punti Spesi</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sconto_Loyalty__c</fullName>
+        <description>importo sconto legato alla carta loyalty</description>
+        <externalId>false</externalId>
+        <label>Sconto Loyalty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Sesso_Contatto__c</fullName>
+        <description>dato anagrafico del contatto</description>
+        <externalId>false</externalId>
+        <label>Sesso Contatto</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sesso_Fatturazione__c</fullName>
+        <description>dato anagrafico di fatturazione</description>
+        <externalId>false</externalId>
+        <label>Sesso Fatturazione</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sesso_Spedizione__c</fullName>
+        <description>Dato anagrafico di spedizione</description>
+        <externalId>false</externalId>
+        <label>Sesso Spedizione</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShipToContactId</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Stato_Ordine__c</fullName>
+        <description>stato dell&apos;ordine</description>
+        <externalId>false</externalId>
+        <label>Stato Ordine</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Subtotale_Prodotti__c</fullName>
+        <description>importo totale ordine relativo ai prodotti</description>
+        <externalId>false</externalId>
+        <label>Subtotale Prodotti</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Subtotale_Servizi__c</fullName>
+        <description>importo totale ordine relativo ai servizi</description>
+        <externalId>false</externalId>
+        <label>Subtotale Servizi</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Subtotale__c</fullName>
+        <description>importo totale ordine per prodotti e servizi</description>
+        <externalId>false</externalId>
+        <label>Subtotale</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Telefono_Contatto__c</fullName>
+        <description>telefono di riferimento del contatto</description>
+        <externalId>false</externalId>
+        <label>Telefono Contatto</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Telefono_Fatturazione__c</fullName>
+        <description>telefono di riferimento per la fatturazione</description>
+        <externalId>false</externalId>
+        <label>Telefono Fatturazione</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Telefono_Spedizione__c</fullName>
+        <description>Telefono di riferimento per la spedizione</description>
+        <externalId>false</externalId>
+        <label>Telefono Spedizione</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>Totale_Sconti__c</fullName>
+        <description>importo totale sconti applicati all&apos;ordine</description>
+        <externalId>false</externalId>
+        <label>Totale Sconti</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Totale_da_Pagare__c</fullName>
+        <description>Importo totale ordine da pagare</description>
+        <externalId>false</externalId>
+        <label>Totale da Pagare</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Ultima_Modifica__c</fullName>
+        <description>data ultima modifica</description>
+        <externalId>false</externalId>
+        <label>Ultima Modifica</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <listViews>
+        <fullName>AllActivatedOrders</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ORDERS.STATUS_CODE</field>
+            <operation>equals</operation>
+            <value>A</value>
+        </filters>
+        <label>All Activated Orders</label>
+    </listViews>
+    <listViews>
+        <fullName>AllDraftOrders</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ORDERS.STATUS_CODE</field>
+            <operation>equals</operation>
+            <value>D</value>
+        </filters>
+        <label>All Draft Orders</label>
+    </listViews>
+    <listViews>
+        <fullName>AllOrders</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Orders</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>ORDERS.ORDER_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SALES.ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ORDERS.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ORDERS.TOTAL_AMOUNT</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ORDERS.ORDER_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTRACT.OWNERALIAS</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ORDERS.ORDER_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTRACT.OWNERALIAS</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>ORDERS.ORDER_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SALES.ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ORDERS.TOTAL_AMOUNT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ORDERS.EFFECTIVE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ORDERS.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTRACT.CONTRACT_NUMBER</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

@@ -1,0 +1,3 @@
+<apex:page controller="SG_RichiestaVoucherController" action="{!RichiestaVoucher}">
+ 
+</apex:page>

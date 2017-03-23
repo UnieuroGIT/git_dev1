@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notifica diritto di recesso</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Diritto Recesso</name>
+    <style>none</style>
+    <subject>Diritto di Recesso</subject>
+    <textOnly>{!$Label.Titolo_Informazioni_Unieuro}
+{!$Label.Informazioni_Unieuro}
+
+
+{!$Label.Titolo_Diritto_Recesso}
+
+RESO SU PUNTO VENDITA UNIEURO
+{!$Label.Reso_Punto_Vendita_0}
+{!$Label.Reso_Punto_Vendita}
+
+{!$Label.Reso_Punto_Vendita_2}
+
+RESO CON SPEDIZIONE SUL MAGAZZINO UNIEURO
+
+{!$Label.Reso_con_Spedizione}
+
+ 
+{!$Label.Titolo_Modulo_di_Recesso}
+
+{!$Label.Corpo_Modulo_Recesso}
+
+ 
+{!$Label.Titolo_Etichetta}
+
+
+MITTENTE:
+{!Contact.Name}
+{!Contact.Indirizzo__c}
+{!Contact.Citt__c}{!Contact.CAP__c}    {!$Label.Destinatario_Unieuro}
+
+
+Codice Ordine: {!Case.Ordine__c}
+Codice RMA: {!Case.Codice_RMA__c}
+
+
+
+
+
+{!$Label.Condizioni_Recesso_Titolo}
+
+{!$Label.Condizioni_Recesso_1}
+{!$Label.Condizioni_Recesso_2}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

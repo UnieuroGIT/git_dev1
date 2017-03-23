@@ -1,0 +1,20 @@
+<apex:component >
+    <apex:attribute name="SObjectAPIname" description="SObject related with the field" type="SObject" required="true"/>
+    <apex:attribute name="SObjectType" required="false" default="Case" description="SObject type" type="String"/>
+    <apex:attribute name="fieldAPIname" description="Field API name" type="String" required="true"/>
+    <apex:attribute name="isInputField" description="Boolean flag used to identify the kind of field to construct" type="Boolean" required="true"/>    
+
+    <apex:pageblocksection columns="1">
+
+        <apex:pageblocksectionitem rendered="{!isInputField}">
+            <apex:outputlabel for="InField" value="{!$ObjectType[SObjectType].fields[fieldAPIname].Label}" />
+            <apex:inputField id="InField" value="{!SObjectAPIname[fieldAPIname]}"/>
+        </apex:pageblocksectionitem>
+
+        <apex:pageblocksectionitem rendered="{!NOT(isInputField)}">
+            <apex:outputlabel for="OutField" value="{!$ObjectType[SObjectType].fields[fieldAPIname].Label}" />
+            <apex:outputField id="OutField" value="{!SObjectAPIname[fieldAPIname]}" />
+        </apex:pageblocksectionitem>
+
+    </apex:pageblocksection>
+</apex:component>

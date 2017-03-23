@@ -1,0 +1,12 @@
+<apex:page standardcontroller="Case" extensions="SG_CaseExtendedController" doctype="html-5.0">
+
+    <apex:form >
+        <apex:pageblock mode="maindetail" title="Case Details">
+            <apex:pageblockbuttons location="top">
+                <apex:commandbutton value="Edit" action="{!edit}"/>
+            </apex:pageblockbuttons>
+        </apex:pageblock>
+
+        <c:SG_CaseComponent SObjectAPIname="{!Case}" EditMode="false"/>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,32 @@
+<apex:page standardcontroller="Case" showheader="false" extensions="SG_Force_Test_Controller">
+    <script src="/soap/ajax/33.0/connection.js"></script>
+    <script src="/soap/ajax/33.0/apex.js"></script>
+    <script type="text/javascript">
+  function openVF()
+  {
+  window.open("https://unieuro--dev1--c.cs83.visual.force.com/?startURL=https://unieuro--dev1--c.cs83.visual.force.com/apex/SG_FTCaseRead");
+         }
+    function SetId(){
+        document.getElementById('{!$Component.f.p.s.idn}').value="{!idNegozio}";
+        alert(document.getElementById('{!$Component.f.p.s.idn}').value);
+        }
+    </script>
+    <apex:form id="f">
+        <apex:pageblock id="p" title="Nuovo Caso">
+           <apex:outputtext value="ID Negozio {!idNegozio}" style="font-weight:bold"></apex:outputtext>
+            <apex:pageblocksection id="s" >
+                <apex:inputtext value="{!Case.Subject}"></apex:inputtext>
+                <apex:inputtext value="{!Case.Description}"></apex:inputtext>
+                <apex:inputfield value="{!Case.Data_Consegna__c}" showdatepicker="true"></apex:inputfield>
+                <apex:inputtext value="{!Case.RMA_Codice_Fornitore__c}"></apex:inputtext>
+                <apex:inputtext value="{!Case.RMA_Descrizione_Articolo__c}"></apex:inputtext>
+                <apex:inputtext value="{!Case.Fornitore__c}"></apex:inputtext>
+                <apex:inputfield value="{!Case.Reason}" />
+                <apex:inputfield value="{!Case.IdNegozio__c}" id="idn"/>
+            </apex:pageblocksection>
+                 <apex:pageblockbuttons >
+                    <apex:commandbutton action="{!save}" onclick="SetId(),openVF()" value="Salva"></apex:commandbutton> 
+                 </apex:pageblockbuttons>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

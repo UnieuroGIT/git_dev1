@@ -1,0 +1,64 @@
+<apex:page standardcontroller="Product2" extensions="SG_DispProdController" showheader="false" >
+    <script>
+        function selectAllCheckboxes(obj,receivedInputID){
+        var inputCheckBox = document.getElementsByTagName("input");
+        for(var i=0; i<inputCheckBox.length; i++){
+            if(inputCheckBox[i].id.indexOf(receivedInputID)!=-1) {
+                inputCheckBox[i].checked = obj.checked;
+            }
+        }
+    }
+    </script>
+    <apex:form >
+        <apex:pageblock > 
+
+            <apex:pageblocksection columns="1">
+                <apex:inputtext value="{!Prod_Name}"> Nome Prodotto </apex:inputtext>
+                <apex:inputtext value="{!Prod_Code}"> Codice Prodotto </apex:inputtext>
+                <apex:inputtext value="{!Prod_Descr}">Descrizione Prodotto </apex:inputtext>
+            </apex:pageblocksection>
+            <br />
+                <apex:pageblocksection >
+                    <apex:commandbutton value="Verifica" action="{!Search_Product}" />
+                </apex:pageblocksection>
+           <br />
+
+            <apex:pageblocksection >
+
+                <apex:pageblocktable value="{!products_list}" var="p" id="ptable">
+                    <apex:column headervalue="Disponibilita">
+                        <apex:facet name="header">
+                            <apex:inputcheckbox onclick="selectAllCheckboxes(this,'inputId')">
+                                <apex:actionsupport event="onchange" rerender="ptable"/>
+                            </apex:inputcheckbox>
+                        </apex:facet>
+                            <apex:inputcheckbox id="inputId" value="{!p.id}">
+                                <apex:actionsupport event="onchange" />
+                            </apex:inputcheckbox>
+                     </apex:column>
+                        <apex:column headervalue="Nome" value="{!p.Name}"></apex:column>
+                        <apex:column headervalue="Codice" value="{!p.ProductCode}"></apex:column>
+                        <apex:column headervalue="Descrizione" value="{!p.Description}"></apex:column>
+                        <apex:column headervalue="Disponibilita' " value="{!var}"></apex:column>
+                </apex:pageblocktable>
+
+            </apex:pageblocksection>
+
+        </apex:pageblock>
+    </apex:form>
+</apex:page>
+<!--<apex:pageblock >
+    <apex:pageblocksection >
+            <apex:outputtext value="{!var}"></apex:outputtext><br />
+            <apex:outputtext value="{!Product2.Name}"></apex:outputtext><br />
+            <apex:outputtext value="{!Product2.ProductCode}"></apex:outputtext><br />
+            <apex:outputtext value="{!Product2.Prezzo_Prodotto__c}"></apex:outputtext>
+
+        </apex:pageblocksection>
+    </apex:pageblock>  
+    
+    
+    <apex:pageblockbuttons >
+                <apex:commandbutton action="{!Search_Product}" value="Verifica" rerender="product-table" />
+            </apex:pageblockbuttons>
+    -->

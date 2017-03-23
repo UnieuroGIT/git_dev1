@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Gentile {!Contact.Name},]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-size: 12pt;">La informiamo che il caso&nbsp;{!Case.Id} aperto il giorno {!Case.CreatedDate} relativamente al prodotto&nbsp;{!Case.Product}, è stato chiuso in data {!Case.ClosedDate} con il seguente esito:&nbsp;</span></font><font face="arial">{!Case.Stato_Pratica__c}.</font><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">La ringraziamo per averci contattato.</div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-size: 12pt;">Cordiali Saluti</span></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-size: 12pt;">Team Unieuro</span></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[<div><span style="color: rgb(80, 71, 94); font-family: Montserrat, sans-serif; font-size: 14px; text-align: justify; background-color: rgb(255, 255, 255);">Per qualsiasi richiesta di assistenza, Unieuro S.p.A. può essere contatta telefonicamente al numero 02-61317291 (Lunedì – Domenica ore 9.00 – 20.00) o via email.</span></div>]]></td>
+</tr>
+</table>

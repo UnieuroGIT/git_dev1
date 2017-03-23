@@ -1,0 +1,75 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" docType="html-5.0" standardController="Case" applyBodyTag="False" applyHtmlTag="False">
+<head>
+  <title>{! Case.CaseNumber }</title>
+  <apex:slds /> 
+</head>
+
+<body class="slds-scope">
+    <!-- MASTHEAD -->
+    <p class="slds-text-heading--label slds-m-bottom--small">
+      Using the Lightning Design System in Visualforce
+    </p>
+    <!-- / MASTHEAD -->
+
+    <!-- PAGE HEADER -->
+    <div class="slds-page-header" role="banner">
+      <div class="slds-grid">
+        <div class="slds-col slds-has-flexi-truncate">
+          <!-- HEADING AREA -->
+            <p class="slds-text-title--caps slds-line-height--reset">Case Type</p>
+            <h1 class="slds-page-header__title slds-truncate" title="My Case Type">{! Case.Type }</h1>
+          <!-- / HEADING AREA -->
+        </div>
+      </div>
+    </div>
+    <!-- / PAGE HEADER -->
+
+    <!-- ACCOUNT DETAIL CARD -->
+    <apex:form >
+        <apex:pageblock title="Case Edit" mode="edit" id="theMainPageBlock">
+            <apex:pageblocksection title="Case Information" collapsible="false" columns="2">
+                <apex:inlineEditSupport >
+                    <apex:inputfield value="{!Case.Status}" required="true" />
+                    <apex:inputfield value="{!Case.AccountId}" />
+                    <apex:inputfield value="{!Case.Priority}" />
+                    <apex:inputfield value="{!Case.ContactId}" />
+                </apex:inlineEditSupport>
+            </apex:pageblocksection>
+        </apex:pageblock>
+    </apex:form>
+    <div class="slds-panel slds-grid slds-grid--vertical slds-nowrap">
+      <div class="slds-form--stacked slds-grow slds-scrollable--y">
+
+        <div class="slds-panel__section">
+          <h3 class="slds-text-heading--small slds-m-bottom--medium">Case Detail</h3>
+          <div class="slds-form-element slds-hint-parent slds-has-divider--bottom">
+            <span class="slds-form-element__label">CreatedDate</span>
+            <div class="slds-form-element__control">
+              <span class="slds-form-element__static">{! Case.CreatedDate }</span>
+            </div>
+          </div>
+          <div class="slds-form-element slds-hint-parent slds-has-divider--bottom">
+            <span class="slds-form-element__label">Categoria</span>
+            <div class="slds-form-element__control">
+              <span class="slds-form-element__static">{! Case.Categoria__c }</span>
+            </div>
+          </div>
+        </div>
+        <!--
+        <div class="slds-panel__section slds-has-divider--bottom">
+          <div class="slds-media">
+            <div class="slds-media__body">
+              <div class="slds-button-group slds-m-top--small" role="group">
+                <button class="slds-button slds-button--neutral slds-grow">Edit</button>
+                <button class="slds-button slds-button--neutral slds-grow">Save</button>
+                 <button class="slds-button slds-button--neutral slds-grow">New Case</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
+    <!-- / ACCOUNT DETAIL CARD -->
+</body>
+</apex:page>

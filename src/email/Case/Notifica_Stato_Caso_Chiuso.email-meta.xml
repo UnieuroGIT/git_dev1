@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notifica della chiusura del caso</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Letterhead_1</letterhead>
+    <name>Notifica Stato Caso Chiuso</name>
+    <style>formalLetter</style>
+    <subject>Chiusura del caso</subject>
+    <textOnly>Gentile {!Contact.Name},
+La informiamo che il caso {!Case.Id} aperto il giorno {!Case.CreatedDate} relativamente al prodotto {!Case.Product}, è stato chiuso in data {!Case.ClosedDate} con il seguente esito: {!Case.Stato_Pratica__c}.
+
+La ringraziamo per averci contattato.
+
+Cordiali Saluti
+Team Unieuro
+{!Case.OwnerFirstName}
+Per qualsiasi richiesta di assistenza, Unieuro S.p.A. può essere contatta telefonicamente al numero 02-61317291 (Lunedì – Domenica ore 9.00 – 20.00) o via email.</textOnly>
+    <type>html</type>
+</EmailTemplate>

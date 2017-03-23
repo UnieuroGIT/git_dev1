@@ -1,0 +1,6 @@
+<apex:component >
+<form action="/test2/search/SmartSearch" method="get">
+  <input id="phSearchInput" type="text" name="str"/>
+  <input type="submit" value="Search"/>
+</form>
+</apex:component>

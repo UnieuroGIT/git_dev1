@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Restrizioni applicabili alla richiesta di voucher verso Hybris</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>false</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>false</enableSharing>
+    <enableStreamingApi>false</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Categorie_prodotto__c</fullName>
+        <description>lista codici categorie (separati da ,)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>lista codici categorie (separati da ,)</inlineHelpText>
+        <label>Categorie prodotto</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Descrizione__c</fullName>
+        <externalId>false</externalId>
+        <label>Descrizione</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Escludi_IVA__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Escludi IVA</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Esclusi_costi_spedizione__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Esclusi costi spedizione</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Fine__c</fullName>
+        <externalId>false</externalId>
+        <label>Fine</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Inizio__c</fullName>
+        <externalId>false</externalId>
+        <label>Inizio</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Numero_minimo_di_ordini__c</fullName>
+        <externalId>false</externalId>
+        <label>Numero minimo di ordini</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prodotti__c</fullName>
+        <description>lista codici prodotti (separati da ,)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>lista codici prodotti (separati da ,)</inlineHelpText>
+        <label>Prodotti</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Quantit_ordinata__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantità ordinata</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Richiesta_Voucher__c</fullName>
+        <externalId>false</externalId>
+        <label>Richiesta Voucher</label>
+        <referenceTo>Richiesta_Voucher__c</referenceTo>
+        <relationshipLabel>Restrizioni Vouchers</relationshipLabel>
+        <relationshipName>Restrizioni_Vouchers</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Spesa_minima__c</fullName>
+        <externalId>false</externalId>
+        <label>Spesa minima</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Testo__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Specificare il testo da mostrare nel caso il voucher non possa essere riscattato a causa di questa restrizione</inlineHelpText>
+        <label>Testo</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Unit_di_misura__c</fullName>
+        <externalId>false</externalId>
+        <label>Unità di misura</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>unità 1</fullName>
+                    <default>false</default>
+                    <label>unità 1</label>
+                </value>
+                <value>
+                    <fullName>unità 2</fullName>
+                    <default>false</default>
+                    <label>unità 2</label>
+                </value>
+                <value>
+                    <fullName>unità 3</fullName>
+                    <default>false</default>
+                    <label>unità 3</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Utenti__c</fullName>
+        <description>lista codici users (separati da ,)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>lista codici users (separati da ,)</inlineHelpText>
+        <label>Utenti</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Validit__c</fullName>
+        <description>ABOVE - al di sopra del valore totale dell&apos;ordine specificato
+UPTO - fino al valore totale dell&apos;ordine specificato
+SELECTED - per le categorie selezionate
+EXCEPT - per tutte le categorie eccetto quelle selezionate</description>
+        <externalId>false</externalId>
+        <label>Validità</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ABOVE</fullName>
+                    <default>false</default>
+                    <label>ABOVE</label>
+                </value>
+                <value>
+                    <fullName>UPTO</fullName>
+                    <default>false</default>
+                    <label>UPTO</label>
+                </value>
+                <value>
+                    <fullName>SELECTED</fullName>
+                    <default>false</default>
+                    <label>SELECTED</label>
+                </value>
+                <value>
+                    <fullName>EXCEPT</fullName>
+                    <default>false</default>
+                    <label>EXCEPT</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Valore_ordine__c</fullName>
+        <externalId>false</externalId>
+        <label>Valore ordine</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Restrizione Voucher</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Restrizioni Vouchers</pluralLabel>
+    <recordTypes>
+        <fullName>Restrizione_10</fullName>
+        <active>true</active>
+        <description>10-Restrizione per numero di Ordini (per clienti regolari)</description>
+        <label>Restrizione per numero di Ordini</label>
+        <picklistValues>
+            <picklist>Unit_di_misura__c</picklist>
+            <values>
+                <fullName>unità 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unità 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unità 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Validit__c</picklist>
+            <values>
+                <fullName>ABOVE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPTO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Restrizione_20</fullName>
+        <active>true</active>
+        <description>20-Restrizione per revenue (per clienti regolari)</description>
+        <label>Restrizione per revenue (per clienti regolari)</label>
+        <picklistValues>
+            <picklist>Unit_di_misura__c</picklist>
+            <values>
+                <fullName>unità 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unità 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unità 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Validit__c</picklist>
+            <values>
+                <fullName>ABOVE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPTO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Restrizione_30</fullName>
+        <active>true</active>
+        <description>30-Restrizione per nuovi clienti</description>
+        <label>Restrizione per nuovi clienti</label>
+        <picklistValues>
+            <picklist>Unit_di_misura__c</picklist>
+            <values>
+                <fullName>unità 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unità 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unità 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Validit__c</picklist>
+            <values>
+                <fullName>ABOVE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPTO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Restrizione_40</fullName>
+        <active>true</active>
+        <description>40-Restrizione per valore dell&apos;ordine</description>
+        <label>Restrizione per valore dell&apos;ordine</label>
+        <picklistValues>
+            <picklist>Unit_di_misura__c</picklist>
+            <values>
+                <fullName>unità 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unità 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unità 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Validit__c</picklist>
+            <values>
+                <fullName>ABOVE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPTO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Restrizione_50</fullName>
+        <active>true</active>
+        <description>50-Restrizione per prodotto</description>
+        <label>Restrizione per prodotto</label>
+        <picklistValues>
+            <picklist>Unit_di_misura__c</picklist>
+            <values>
+                <fullName>unità 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unità 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unità 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Validit__c</picklist>
+            <values>
+                <fullName>ABOVE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPTO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Restrizione_60</fullName>
+        <active>true</active>
+        <description>60-Restrizione per categoria prodotto</description>
+        <label>Restrizione per categoria prodotto</label>
+        <picklistValues>
+            <picklist>Unit_di_misura__c</picklist>
+            <values>
+                <fullName>unità 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unità 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unità 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Validit__c</picklist>
+            <values>
+                <fullName>ABOVE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EXCEPT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SELECTED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPTO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Restrizione_70</fullName>
+        <active>true</active>
+        <description>70-Restrizione per quantità ordinata</description>
+        <label>Restrizione per quantità ordinata</label>
+        <picklistValues>
+            <picklist>Unit_di_misura__c</picklist>
+            <values>
+                <fullName>unità 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unità 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unità 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Validit__c</picklist>
+            <values>
+                <fullName>ABOVE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPTO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Restrizione_80</fullName>
+        <active>true</active>
+        <description>80-Restrizione per utente</description>
+        <label>Restrizione per utente</label>
+        <picklistValues>
+            <picklist>Unit_di_misura__c</picklist>
+            <values>
+                <fullName>unità 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unità 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unità 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Validit__c</picklist>
+            <values>
+                <fullName>ABOVE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPTO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Restrizione_90</fullName>
+        <active>true</active>
+        <description>90-Restrizione temporanea</description>
+        <label>Restrizione temporanea</label>
+        <picklistValues>
+            <picklist>Unit_di_misura__c</picklist>
+            <values>
+                <fullName>unità 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unità 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unità 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Validit__c</picklist>
+            <values>
+                <fullName>ABOVE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPTO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

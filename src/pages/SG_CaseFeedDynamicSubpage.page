@@ -1,0 +1,20 @@
+<!--<apex:page standardStylesheets="false" showheader="false" docType="html-5.0" standardController="Case">-->
+<apex:page showheader="false" docType="html-5.0" standardController="Case">
+    
+    <apex:slds />
+
+    <!--<apex:stylesheet value="/sCSS/39.0/sprites/1397513778000/Theme3/default/base/CaseInteraction.css"/>-->
+    <apex:stylesheet value="/sCSS/sprites/Theme3/default/base/CaseInteraction.css"/>
+    <!--<apex:stylesheet value="{!$Resource.CaseInteraction}" />-->
+    <div class="slds-scope">
+
+    <apex:pageBlock mode="maindetail">
+        <apex:pageBlockSection title="Visualforce Info">
+            <apex:outputField value="{!case.Categoria__c}"/>
+            <apex:outputField value="{!case.Dettaglio__c}"/>
+            <apex:outputField value="{!case.CaseNumber}"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+        <button class="slds-button slds-button--brand slds-m-top--medium" type="submit">Test Button</button>
+    </div>
+</apex:page>

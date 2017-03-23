@@ -1,0 +1,108 @@
+<html>
+	<body style="padding: 30px">
+
+		<center>
+			<img src="https://unieuro--dev1--c.cs83.content.force.com/servlet/servlet.ImageServer?id=0154E000000EVPV&oid=00D4E0000000UcF&lastMod=1488902424000" >
+<br/>
+<font face="Arial Unicode MS" color= "#000000" font size= "+3"  >{!$Label.Oggetto_Mail}</font>
+
+		</center>
+		<th></th>
+		<br/>
+		<th></th>
+		<font face="Arial" > {!$Label.Incipit_Mail} {!Contact.Name},</font>
+		<br />
+
+		<font face="Arial" >{!$Label.Reso_Sostituzione}</font>
+		<br />
+        <br/>
+		<center>
+		<font face="Arial" color="#000000"> 
+			{!$Label.Reso_Zona_Ritaglio}<br/>
+		</font>
+		</center>
+		<br/>
+		 <center>
+			<strong><font color="#000000" > {!$Label.Reso_Etichetta_Imbalaggio} </font></strong>
+		</center>
+		<br/>
+		
+		<table width="100%">
+		  <tr>
+			<td width="4%"><img src="https://unieuro--dev1--c.cs83.content.force.com/servlet/servlet.ImageServer?id=0154E000000EYAn&oid=00D4E0000000UcF&lastMod=1488904337000" width="32" height="20" ></td>
+			<td style="padding-top:5px">
+				<table width="100%" style="border-top: dashed 1px #000000">
+					<tr>
+						<td>
+						</td>
+					</tr>					
+				</table>
+			</tr>
+		</table>  
+
+
+
+		
+		&emsp;
+		<center>
+		<table style=" border: ridge; border-color: #000000; width: 680px; height:445px; ">
+            <tr>
+			<td>
+				<table width="100%">
+					<tr>
+					<td>
+						<img src="https://unieuro--dev1--c.cs83.content.force.com/servlet/servlet.ImageServer?id=0154E000000EVPV&oid=00D4E0000000UcF&lastMod=1488902424000" width="60%">
+					</td>
+						<td style="font-family: 'Arial Unicode MS';  font-weight: bold;  font-size: 20px; color: #000000; padding-right:100px">{!$Label.Titolo_Etichetta}
+					</td>
+					</tr>
+				</table>
+			</td>
+			</tr>
+				<br/>
+				<tr>
+					<td>
+						<table width="100%" style="padding-left:90px">
+							<tr>
+								<td style="font-family: 'Arial Unicode MS';  font-weight: bold;  font-size: 20px; color: #000000;"> 
+									MITTENTE: <br />
+									{!Contact.Name}<br />
+									{!Contact.Indirizzo__c}<br />
+									{!Contact.Citt__c}{!Contact.CAP__c}
+								</td>
+								<td style="font-family: 'Arial Unicode MS';  font-weight: bold;  font-size: 20px; color: #000000; font-size: 20px;">
+									{!$Label.Destinatario_Unieuro}
+								</td>
+							
+							</tr>					
+						</table>
+					</td>
+				</tr>	
+				<br/>
+				<tr>
+					<td style="font-size:20px; font-weight:bold; font-family:'Arial Unicode MS'; padding-left:3em; text-align:left"> 
+					Codice Ordine: {!Case.Ordine__c} <br/>
+					Codice RMA: {!Case.Codice_RMA__c}
+					</td>
+                </tr>
+				<tr>
+					<td>
+					</td>
+				</tr> 
+				
+				<tr>
+					<td style="padding-top:2em" width="20px">
+						<center>
+						<img src="https://unieuro--dev1--c.cs83.content.force.com/servlet/servlet.ImageServer?id=0154E000000EYAT&oid=00D4E0000000UcF&lastMod=1488903797000" width="300" height="70" >
+<br/>
+<br/>
+<br/>
+</center>
+					</td>
+				</tr>			
+            </table>
+        
+        </center>
+
+	</body>
+</html>

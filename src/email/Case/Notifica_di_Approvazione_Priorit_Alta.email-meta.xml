@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notifica di approvazione del caso con priorità alta</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Letterhead_1</letterhead>
+    <name>Notifica di Approvazione Priorità Alta</name>
+    <style>formalLetter</style>
+    <subject>Approvazione del caso n° {!Case.CaseNumber}</subject>
+    <textOnly>Gentile {!ApprovalRequest.Process_Approver},
+Il caso n° {!Case.CaseNumber} con priorità {!Case.Priority} è in attesa di approvazione.
+
+Le chiediamo di valutare l&apos;approvazione o il rifiuto al più presto possibile.
+
+Il link è il seguente:
+
+{!ApprovalRequest.Internal_URL}
+
+
+Per qualsiasi informazione non esiti a contattarci.
+
+Cordiali Saluti
+{!Case.OwnerFirstName}</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,69 @@
+<apex:page >
+	
+	<apex:includeScript value="/soap/ajax/34.0/connection.js"/>
+	<apex:includeScript value="/soap/ajax/34.0/apex.js"/>
+	<script type="text/javascript">
+	function init() { 
+		sforce.connection.sessionId = '{!$Api.Session_ID}'; 
+	}
+	// main code 
+	var previousOnload = window.onload; 
+	window.onload = function() { 
+		if (previousOnload) { previousOnload; }
+			init(); 
+			}  
+	 
+	function AnnullaVoucher() {
+		var V_ID =  document.getElementById('{!$Component.form1.pb1.pbs1.VC}').value; 
+		
+		if(V_ID != '') {	
+		    if(confirm('Sicuro di voler annullare il voucher?')) {
+			    var result = sforce.apex.execute("SG_WS_Voucher","AnnullaVoucher",{VoucherID:V_ID}); 
+				if(result=='OK'){ 
+					alert('Il codice ' + V_ID + ' è stato annullato '  );
+				}
+				else{ 
+					alert('Si è verificato un problema'); 
+				}
+				document.getElementById('{!$Component.form1.pb1.pbs1.VS}').value = result ;
+			}
+		}
+		else{
+			alert('Inserire un codice voucher');
+			document.getElementById('{!$Component.form1.pb1.pbs1.VS}').value = '';
+		}
+	}
+		
+
+
+	function VerificaVoucher() {
+		var V_ID =  document.getElementById('{!$Component.form1.pb1.pbs1.VC}').value; 
+			
+	    if(V_ID != '') {
+		    var result = sforce.apex.execute("SG_WS_Voucher","VerificaVoucher",{VoucherID:V_ID}); 
+		    alert(result );
+			document.getElementById('{!$Component.form1.pb1.pbs1.VS}').value = result ;
+		}
+		else{
+			alert('Inserire un codice voucher');
+			document.getElementById('{!$Component.form1.pb1.pbs1.VS}').value = '';
+		}
+	}
+	
+			 
+
+	</script>
+    <apex:form id="form1">   
+        <apex:pageBlock id="pb1"  title="Verifica oppure Annulla un voucher" > 
+            <apex:pageMessages />
+            <apex:pageBlockButtons location="bottom" >
+                <apex:commandButton value="Verifica" onclick="VerificaVoucher()"/>         
+                <apex:commandButton value="Annulla Voucher" onclick="AnnullaVoucher()" />        
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection id="pbs1" >
+                <apex:inputtext id="VC" >Voucher Code</apex:inputtext>  <br/><br/> 
+                <apex:inputtext id="VS">Voucher Status  </apex:inputtext>  
+            </apex:pageBlockSection>
+        </apex:pageBlock>   
+    </apex:form>
+</apex:page>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email di assegnazione caso al nuovo supporto</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Letterhead_1</letterhead>
+    <name>Assegnazione Caso</name>
+    <style>freeForm</style>
+    <subject>Assegnazione Caso</subject>
+    <textOnly>Gentile {!Case.OwnerFirstName},
+
+Il caso {!Case.CaseNumber} richiede il suo supporto.
+
+Cordiali Saluti,
+
+L&apos;Amministratore.</textOnly>
+    <type>html</type>
+</EmailTemplate>
